@@ -56,7 +56,7 @@ export default function Home() {
         </section>
         <section className="py-[50px] md:py-[100px] container grid grid-cols-1 md:grid-cols-2 gap-[30px]">
           <div className="flex-1">
-            <Image src={profile} width={500}  />
+            <Image src={profile} width={500} alt="Profile"  />
           </div>
           <div className="flex-1">
             <h1 className="text-[30px] text-gray-800 font-bold mb-[20px] md:mb-[30px]">Meet Saidur Rahman,</h1>
