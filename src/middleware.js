@@ -7,6 +7,10 @@ export function middleware(request) {
 
     if (path === "/free_training/content" && !isAccess) {
         return NextResponse.redirect(new URL("/free_training", request.url));
+    } else if (path === "/free_training" && isAccess) {
+        return NextResponse.redirect(
+            new URL("/free_training/content", request.url)
+        );
     } else {
         return NextResponse.next();
     }

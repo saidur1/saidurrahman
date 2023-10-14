@@ -5,7 +5,7 @@ import { useState } from "react";
 import { BiSolidLock } from "react-icons/bi";
 
 async function postData(data) {
-    const res = await fetch("http://localhost:3000/api/prospect", {
+    const res = await fetch(`${process.env.baseURL}/api/prospect`, {
         method: "POST",
         headers: {
             "content-type": "application/json",
