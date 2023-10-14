@@ -1,5 +1,4 @@
 "use client";
-import { setCookie } from "@/utils/cookies";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
@@ -36,9 +35,6 @@ const FreeTraining = () => {
         const data = { email, name };
         const result = await postData(data);
         setLoading(false);
-        if (result) {
-            setCookie("prospectAccess", true);
-        }
     };
     return (
         <div className="min-h-[calc(100vh-129px)]">
