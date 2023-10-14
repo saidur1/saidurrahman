@@ -16,11 +16,16 @@ const Contact = () => {
                         GET IN TOUCH WITH US
                     </h2>
                     <p className="text-center leading-relaxed mb-9 text-body-color max-w-[650px] mx-auto">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eius tempor incididunt ut labore e dolore magna
-                        aliqua. Ut enim adiqua minim veniam quis nostrud
-                        exercitation ullamco
+                        Feel free to get in touch with me! I'm just a message
+                        away, and you can reach out through my Facebook profile
+                        or drop me an email. Here are the links to my Facebook
+                        profile and my email address for your convenience. Don't
+                        hesitate to reach out—I look forward to hearing from
+                        you!
                     </p>
+                    <h3 className="text-center text-gray-800 hover:text-gray-900 duration-200 font-medium">
+                        support@saidurrahman.org
+                    </h3>
                 </section>
                 <section className="max-w-[500px] mx-auto flex justify-center gap-[30px]">
                     <a href="#" className="group">
