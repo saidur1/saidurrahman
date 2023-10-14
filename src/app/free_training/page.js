@@ -98,6 +98,7 @@ const FreeTraining = () => {
                                 )}
                             </button>
                         </form>
+                        <p>Yes this is updated</p>
                     </div>
                 </div>
             </section>
