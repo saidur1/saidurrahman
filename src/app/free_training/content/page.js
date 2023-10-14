@@ -20,7 +20,7 @@ const Content = () => {
                 </div>
                 <CallBookHighLight
                     title="Interested to keep a accountable coach?"
-                    href="/"
+                    href="/booking"
                 />
             </div>
         </div>

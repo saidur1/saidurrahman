@@ -48,12 +48,13 @@ const FreeTraining = () => {
                     every week!
                 </p>
                 <div className="flex flex-col md:flex-row justify-center gap-[30px] py-[50px]">
-                    <div>
+                    <div className="max-w-[500px] max-h-[500px] bg-red-600">
                         <Image
                             src="https://img.freepik.com/free-vector/flat-design-english-lessons-youtube-thumbnail_23-2149287548.jpg?size=626&ext=jpg&ga=GA1.2.1223700389.1697031934&semt=ais"
                             alt="thumbnail"
                             width={500}
                             height={500}
+                            layout="responsive"
                         />
                     </div>
                     <div>
@@ -98,7 +99,6 @@ const FreeTraining = () => {
                                 )}
                             </button>
                         </form>
-                        <p>Yes this is updated</p>
                     </div>
                 </div>
             </section>
