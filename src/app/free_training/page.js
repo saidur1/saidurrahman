@@ -1,16 +1,45 @@
 "use client";
+import { setCookie } from "@/utils/cookies";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { BiSolidLock } from "react-icons/bi";
+
+async function postData(data) {
+    const res = await fetch("http://localhost:3000/api/prospect", {
+        method: "POST",
+        headers: {
+            "content-type": "application/json",
+        },
+        body: JSON.stringify(data),
+    });
+
+    if (!res.ok) {
+        throw new Error("Failed to fetch data");
+    }
+
+    return true;
+}
 
 const FreeTraining = () => {
+    const [loading, setLoading] = useState(false);
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
-    const emailSubmit = (e) => {
+
+    const router = useRouter();
+
+    const emailSubmit = async (e) => {
         e.preventDefault();
+        setLoading(true);
         const email = e.target.email.value;
         const name = e.target.name.value;
         const data = { email, name };
-        console.log(data);
+        const result = await postData(data);
+        setLoading(false);
+        if (result) {
+            setCookie("prospectAccess", true);
+            router.push("/free_training/content");
+        }
     };
     return (
         <div className="min-h-[calc(100vh-129px)]">
@@ -58,12 +87,20 @@ const FreeTraining = () => {
                                 onChange={(e) => setEmail(e.target.value)}
                                 required
                             />
-                            <input
+                            <button
                                 type="submit"
-                                value="Access Now"
-                                className="py-[14px] max-w-[200px] px-[56px] bg-red-500 text-white font-semibold text-[16px] leading-[26px] text-center disabled:bg-red-400"
+                                style={{ maxWidth: "max-content" }}
+                                className="py-[14px]  px-[56px] bg-red-500 text-white font-semibold text-[16px] gap-x-[10px] leading-[26px] text-center disabled:bg-red-400 flex items-center"
                                 disabled={!name || !email}
-                            />
+                            >
+                                {loading ? (
+                                    <span class="loader"></span>
+                                ) : (
+                                    <>
+                                        <BiSolidLock /> Access Now
+                                    </>
+                                )}
+                            </button>
                         </form>
                     </div>
                 </div>
