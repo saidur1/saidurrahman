@@ -38,7 +38,6 @@ const FreeTraining = () => {
         setLoading(false);
         if (result) {
             setCookie("prospectAccess", true);
-            router.push("content");
         }
     };
     return (
