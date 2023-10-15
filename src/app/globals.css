@@ -30,12 +30,7 @@ body {
     @apply mx-auto max-w-7xl px-2 sm:px-6 lg:px-8;
 }
 
-.video-responsive {
-    overflow: hidden;
-    padding-bottom: 36.25%;
-    position: relative;
-    height: 0;
-}
+/* Define default styles for the video player */
 
 .loader {
     width: 24px;

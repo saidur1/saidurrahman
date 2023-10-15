@@ -14,7 +14,7 @@ const Content = () => {
                         Empowering Excellence: Mastering Accountability for
                         Success
                     </h1>
-                    <div className="w-full md:w-3/4 flex justify-center">
+                    <div className="w-auto">
                         <YouTubePlayer videoId="BJDnem6Fzqo" />
                     </div>
                 </div>
