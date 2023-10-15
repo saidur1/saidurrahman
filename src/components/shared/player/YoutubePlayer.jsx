@@ -23,7 +23,7 @@ const YouTubePlayer = ({ videoId }) => {
     const height = isMobile ? 250 : 320;
 
     return (
-        <div className="video-responsive">
+        <div className="video-responsive flex justify-center">
             <iframe
                 width={width}
                 height={height}
