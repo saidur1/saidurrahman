@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ["https://tailwindui.com", "img.freepik.com"],
+        domains: ["https://tailwindui.com", "img.freepik.com", "i.postimg.cc"],
     },
     env: {
         MONGODB_URI: `mongodb+srv://saidurrahman:saidur@cluster0.qf4haff.mongodb.net/?retryWrites=true&w=majority`,

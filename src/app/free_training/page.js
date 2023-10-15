@@ -48,13 +48,15 @@ const FreeTraining = () => {
                     every week!
                 </p>
                 <div className="flex flex-col md:flex-row justify-center gap-[30px] py-[50px]">
-                    <div className="max-w-[500px] max-h-[500px] bg-red-600">
+                    <div>
                         <Image
                             src="https://img.freepik.com/free-vector/flat-design-english-lessons-youtube-thumbnail_23-2149287548.jpg?size=626&ext=jpg&ga=GA1.2.1223700389.1697031934&semt=ais"
                             alt="thumbnail"
                             width={500}
                             height={500}
                             layout="responsive"
+                            placeholder="blur"
+                            blurDataURL="https://i.postimg.cc/LsHQPTTR/blur.png"
                         />
                     </div>
                     <div>
