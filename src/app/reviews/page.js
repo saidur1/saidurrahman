@@ -8,7 +8,7 @@ const Reviews = () => {
                 <h1 className="text-black/80 text-[50px] font-bold text-center">
                     Customer Experiences
                 </h1>
-                <p className="text-black/80 text-[17px] font-medium text-center">
+                <p className="text-black/80 text-[17px] font-medium text-center dark:text-black/80">
                     Customer success is our success! See what our customers have
                     to say about working with us
                 </p>

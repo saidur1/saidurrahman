@@ -38,9 +38,9 @@ const FreeTraining = () => {
         router.push("/free_training/content");
     };
     return (
-        <div className="min-h-[calc(100vh-129px)]">
+        <div className="min-h-[calc(100vh-129px)] dark:bg-[#DFE3E4]">
             <section className="container py-[50px]">
-                <h1 className="font-bold text-center text-[40px] md:text-[60px]">
+                <h1 className="font-bold text-center text-[40px] md:text-[60px] dark:text-black/80">
                     Join Our Exclusive Email List
                 </h1>
                 <p className="text-[18px] text-center text-red-500 font-medium">

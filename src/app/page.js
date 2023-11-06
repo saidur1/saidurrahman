@@ -43,7 +43,7 @@ export default async function Home() {
                         art of reality creation.
                     </p>
                     <PrimaryButton
-                        href="/free_training"
+                        href="/free-training"
                         title={access ? "Access Now" : "Free Training"}
                     />
                 </div>
@@ -96,7 +96,7 @@ export default async function Home() {
                 </div>
             </section>
             <section className="py-[50px] md:py-[100px] container">
-                <h1 className="text-center text-[40px] md:text-[60px] font-semibold">
+                <h1 className="text-center text-[40px] md:text-[60px] font-semibold dark:text-black/80">
                     Here's What People <br /> Are Saying
                 </h1>
                 <div>
