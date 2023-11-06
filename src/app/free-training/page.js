@@ -73,14 +73,14 @@ const FreeTraining = () => {
                         >
                             <input
                                 type="text"
-                                className="md:max-w-[400px] w-full shadow-[rgba(0,0,0,0.12)_0px_1px_3px,rgba(0,0,0,0.24)_0px_1px_2px] outline-none px-[12px] py-[6px] rounded-[4px] text-[18px]"
+                                className="md:max-w-[400px] w-full shadow-[rgba(0,0,0,0.12)_0px_1px_3px,rgba(0,0,0,0.24)_0px_1px_2px] outline-none px-[12px] py-[6px] rounded-[4px] text-[18px] dark:text-black/80"
                                 name="name"
                                 placeholder="First Name"
                                 onChange={(e) => setName(e.target.value)}
                             />
                             <input
                                 type="email"
-                                className="md:max-w-[400px] w-full shadow-[rgba(0,0,0,0.12)_0px_1px_3px,rgba(0,0,0,0.24)_0px_1px_2px] outline-none px-[12px] py-[6px] rounded-[4px] text-[18px]"
+                                className="md:max-w-[400px] w-full shadow-[rgba(0,0,0,0.12)_0px_1px_3px,rgba(0,0,0,0.24)_0px_1px_2px] outline-none px-[12px] py-[6px] rounded-[4px] text-[18px] dark:text-black/80"
                                 placeholder="Email"
                                 name="email"
                                 onChange={(e) => setEmail(e.target.value)}
