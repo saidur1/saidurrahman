@@ -1,9 +1,10 @@
 import profile from "@/assets/images/saidur.jpeg";
 import Reviews from "@/components/reviews/Reviews";
 import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
+import { isFreeTrainingAccess } from "@/utils/cookies";
 import Image from "next/image";
 
-export default function Home() {
+export default async function Home() {
     const programs = [
         {
             id: 1,
@@ -27,6 +28,9 @@ export default function Home() {
             href: "/mastermind",
         },
     ];
+
+    const access = isFreeTrainingAccess();
+
     return (
         <main className="bg-[#DFE3E4]">
             <section className="bg-gray-300 h-auto py-[50px] md:min-h-[40vh]">
@@ -40,7 +44,7 @@ export default function Home() {
                     </p>
                     <PrimaryButton
                         href="/free_training"
-                        title="Free Training"
+                        title={access ? "Access Now" : "Free Training"}
                     />
                 </div>
             </section>

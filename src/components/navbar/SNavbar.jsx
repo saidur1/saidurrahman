@@ -79,9 +79,12 @@ export default function SNavbar() {
                                 </Disclosure.Button>
                             </div>
                             <div className="flex flex-1 items-center justify-end sm:items-stretch sm:justify-start">
-                                <div className="flex flex-shrink-0 items-center">
+                                <Link
+                                    href="/"
+                                    className="flex flex-shrink-0 items-center text-white/70 hover:text-white/90 cursor-pointer duration-150"
+                                >
                                     <h1>Saidur</h1>
-                                </div>
+                                </Link>
                             </div>
                             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                                 <div className="hidden sm:ml-6 sm:block">
