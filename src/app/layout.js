@@ -1,7 +1,6 @@
 import Footer from "@/components/footer/Footer";
 import SNavbar from "@/components/navbar/SNavbar";
 import { Inter } from "next/font/google";
-import { cookies } from "next/headers";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -13,8 +12,6 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-    const access = cookies().get("prospect");
-    console.log(access);
     return (
         <html lang="en">
             <body className={`${inter.className}`}>
