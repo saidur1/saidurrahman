@@ -7,7 +7,7 @@ const Footer = () => {
                 <Link href="/privacy" className="text-white">
                     Privacy
                 </Link>
-                <Link href="/" className="text-white">
+                <Link href="/terms" className="text-white">
                     Terms
                 </Link>
                 <a

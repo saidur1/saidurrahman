@@ -1,4 +1,4 @@
-const page = () => {
+const Privacy = () => {
     return (
         <div className="min-h-[calc(100vh-145px)] container flex justify-center items-center text-center">
             This is Privacy page is <br /> under construction
@@ -6,4 +6,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Privacy;
