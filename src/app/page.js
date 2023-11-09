@@ -29,6 +29,7 @@ export default async function Home() {
         },
     ];
 
+    // check if user submit their email or not
     const access = isFreeTrainingAccess();
 
     return (
@@ -42,13 +43,10 @@ export default async function Home() {
                         We help entrepreneurs grow to 6 & 7 figures through the
                         art of reality creation.
                     </p>
-                    <PrimaryButton
-                        href="/free-training"
-                        title={access ? "Access Now" : "Free Training"}
-                    />
+                    <PrimaryButton href="/booking" title="Call Book" />
                 </div>
             </section>
-            <section className=" py-[50px] md:py-[100px] w-full container justify-between grid gap-[30px] grid-cols-1 md:grid-cols-2 lg:grid-cols-3 bg">
+            {/* <section className=" py-[50px] md:py-[100px] w-full container justify-between grid gap-[30px] grid-cols-1 md:grid-cols-2 lg:grid-cols-3 bg">
                 {programs?.map(({ id, CH, title, desc, href }) => {
                     return (
                         <div
@@ -70,8 +68,11 @@ export default async function Home() {
                         </div>
                     );
                 })}
-            </section>
-            <section className="py-[50px] md:py-[100px] container grid grid-cols-1 md:grid-cols-2 gap-[30px]">
+            </section> */}
+            <section
+                id="contact"
+                className="py-[50px] md:py-[100px] container grid grid-cols-1 md:grid-cols-2 gap-[30px]"
+            >
                 <div className="flex-1">
                     <Image src={profile} width={500} alt="Profile" />
                 </div>

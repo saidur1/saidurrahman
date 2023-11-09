@@ -10,21 +10,21 @@ import { Fragment } from "react";
 
 const navigation = [
     { name: "Home", href: "/", current: true, icon: false },
-    {
-        name: "About",
-        href: "/",
-        current: false,
-        icon: true,
-        submenus: [
-            { name: "Contact", href: "/contact", current: false },
-            { name: "Our Story", href: "/story", current: false },
-            {
-                name: "Mission, Vision",
-                href: "/mission",
-                current: false,
-            },
-        ],
-    },
+    // {
+    //     name: "About",
+    //     href: "/",
+    //     current: false,
+    //     icon: true,
+    //     submenus: [
+    //         { name: "Contact", href: "/contact", current: false },
+    //         { name: "Our Story", href: "/story", current: false },
+    //         {
+    //             name: "Mission, Vision",
+    //             href: "/mission",
+    //             current: false,
+    //         },
+    //     ],
+    // },
     // {
     //     name: "Programs",
     //     href: "#",
@@ -207,10 +207,10 @@ export default function SNavbar() {
                                             Reviews
                                         </Link>
                                         <Link
-                                            href="/free-training"
-                                            className={`text-gray-300 hover:bg-gray-700  rounded-md px-3 py-2 text-sm font-medium `}
+                                            href="/booking"
+                                            className={`text-gray-300 hover:bg-gray-700  rounded-md px-3 py-2 text-sm font-medium bg-gray-700 `}
                                         >
-                                            Free Training
+                                            Call Book
                                         </Link>
                                     </div>
                                 </div>
@@ -260,9 +260,9 @@ export default function SNavbar() {
                                     </Disclosure>
                                 </div>
                             ))}
-                            <Link href="/free-training">
+                            <Link href="/booking">
                                 <Disclosure.Button className="text-gray-300 bg-gray-600 hover:bg-gray-700  block rounded-md px-3 py-2 text-start font-medium w-full">
-                                    Free Training
+                                    Book Now
                                 </Disclosure.Button>
                             </Link>
                         </div>

@@ -35,7 +35,7 @@ const FreeTraining = () => {
         const data = { email, name };
         const result = await postData(data);
         setLoading(false);
-        router.push("/free_training/content");
+        router.push("/free-training/content");
     };
     return (
         <div className="min-h-[calc(100vh-129px)] dark:bg-[#DFE3E4]">

@@ -15,7 +15,7 @@ const Contact = () => {
                     <h2 className="mb-6 text-[32px] font-bold uppercase text-gray-800 sm:text-[40px] lg:text-[36px] xl:text-[40px] text-center">
                         GET IN TOUCH WITH US
                     </h2>
-                    <p className="text-center leading-relaxed mb-9 text-body-color max-w-[650px] mx-auto">
+                    <p className="text-center leading-relaxed mb-9 text-body-color max-w-[650px] mx-auto dark:text-black">
                         Feel free to get in touch with me! I'm just a message
                         away, and you can reach out through my Facebook profile
                         or drop me an email. Here are the links to my Facebook
