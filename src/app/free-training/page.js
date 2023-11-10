@@ -47,17 +47,21 @@ const FreeTraining = () => {
                     Free Identify Shifting Bootcamp upon Joining + 4 new bonuses
                     every week!
                 </p>
-                <div className="flex flex-col md:flex-row justify-center gap-[30px] py-[50px]">
-                    <div>
+                <div className="flex flex-col md:flex-row justify-center gap-x-[50px] gap-[30px] py-[50px]">
+                    <div className="flex flex-col items-center gap-y-8">
                         <Image
-                            src="https://img.freepik.com/free-vector/flat-design-english-lessons-youtube-thumbnail_23-2149287548.jpg?size=626&ext=jpg&ga=GA1.2.1223700389.1697031934&semt=ais"
+                            src="https://res.cloudinary.com/dzlrpspps/image/upload/v1699577047/Projects/Saidur/said_afxj8v.png"
                             alt="thumbnail"
-                            width={500}
-                            height={500}
-                            layout="responsive"
-                            placeholder="blur"
-                            blurDataURL="https://i.postimg.cc/LsHQPTTR/blur.png"
+                            width={300}
+                            height={300}
+                            className="rounded-full"
                         />
+                        <div className="text-center">
+                            <h3 className="text-[18px] font-medium">
+                                Saidur Rahman
+                            </h3>
+                            <p className="text-[14px]">Accountability Coach</p>
+                        </div>
                     </div>
                     <div>
                         <h3 className="text-[30px] font-semibold text-gray-800">
