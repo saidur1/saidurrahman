@@ -1,5 +1,6 @@
 import Footer from "@/components/footer/Footer";
 import SNavbar from "@/components/navbar/SNavbar";
+import NProgress from "@/components/progressBar/NProgress";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
                 className={`${inter.className}`}
                 suppressHydrationWarning={true}
             >
+                <NProgress />
                 <SNavbar />
                 {children}
 

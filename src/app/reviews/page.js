@@ -1,6 +1,6 @@
-import ReviewDisplayCard from "@/components/shared/cards/ReviewDisplayCard";
+import Reviews from "@/components/reviews/Reviews";
 
-const Reviews = () => {
+const ReviewsContainer = () => {
     const arr = [1, 2, 3, 4, 5];
     return (
         <div>
@@ -13,15 +13,11 @@ const Reviews = () => {
                     to say about working with us
                 </p>
             </section>
-            <section className="min-h-[calc(75vh-129px)] bg-white ">
-                <div className="container grid grid-cols-1 md:grid-cols-3 gap-[20px] md:gap-[30px] py-[50px]">
-                    {arr.map((item) => (
-                        <ReviewDisplayCard key={item} />
-                    ))}
-                </div>
+            <section className="min-h-[calc(75vh-129px)] bg-white  pb-[100px] container ">
+                <Reviews />
             </section>
         </div>
     );
 };
 
-export default Reviews;
+export default ReviewsContainer;

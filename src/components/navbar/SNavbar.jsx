@@ -208,7 +208,7 @@ export default function SNavbar() {
                                         </Link>
                                         <Link
                                             href="/free-training"
-                                            className={`text-gray-300 hover:bg-gray-700  rounded-md px-3 py-2 text-sm font-medium bg-gray-700 `}
+                                            className={`text-gray-300 hover:bg-gray-700  rounded-md px-3 py-2 text-sm font-medium  `}
                                         >
                                             Free Training
                                         </Link>
@@ -261,7 +261,7 @@ export default function SNavbar() {
                                 </div>
                             ))}
                             <Link href="/free-training">
-                                <Disclosure.Button className="text-gray-300 bg-gray-600 hover:bg-gray-700  block rounded-md px-3 py-2 text-start font-medium w-full">
+                                <Disclosure.Button className="text-gray-300  hover:bg-gray-700  block rounded-md px-3 py-2 text-start font-medium w-full">
                                     Free Training
                                 </Disclosure.Button>
                             </Link>
