@@ -5,11 +5,11 @@ export function middleware(request) {
     const path = request.nextUrl.pathname;
     const isAccess = request.cookies.get("prospect");
 
-    if (path === "/free_training/content" && !isAccess) {
+    if (path === "/free-training/content" && !isAccess) {
         return NextResponse.redirect(new URL("/free_training", request.url));
-    } else if (path === "/free_training" && isAccess) {
+    } else if (path === "/free-training" && isAccess) {
         return NextResponse.redirect(
-            new URL("/free_training/content", request.url)
+            new URL("/free-training/content", request.url)
         );
     } else {
         return NextResponse.next();
@@ -18,5 +18,5 @@ export function middleware(request) {
 
 // See "Matching Paths" below to learn more
 export const config = {
-    matcher: ["/", "/free_training", "/free_training/content"],
+    matcher: ["/", "/free-training", "/free-training/content"],
 };

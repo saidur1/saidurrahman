@@ -1,6 +1,6 @@
 "use client";
 import CallBookHighLight from "@/components/shared/callBookHighlight/CallBookHighLight";
-import YouTubePlayer from "@/components/shared/player/YoutubePlayer";
+import MyWistiaVideo from "@/components/trainingVideo/TrainingVideo";
 
 const Content = () => {
     return (
@@ -14,8 +14,9 @@ const Content = () => {
                         Empowering Excellence: Mastering Accountability for
                         Success
                     </h1>
-                    <div className="w-auto">
-                        <YouTubePlayer videoId="BJDnem6Fzqo" />
+                    <div className="w-[500px]">
+                        {/* <YouTubePlayer videoId="BJDnem6Fzqo" /> */}
+                        <MyWistiaVideo />
                     </div>
                 </div>
                 <CallBookHighLight

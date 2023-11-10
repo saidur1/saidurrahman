@@ -207,10 +207,10 @@ export default function SNavbar() {
                                             Reviews
                                         </Link>
                                         <Link
-                                            href="/booking"
+                                            href="/free-training"
                                             className={`text-gray-300 hover:bg-gray-700  rounded-md px-3 py-2 text-sm font-medium bg-gray-700 `}
                                         >
-                                            Call Book
+                                            Free Training
                                         </Link>
                                     </div>
                                 </div>
@@ -260,9 +260,9 @@ export default function SNavbar() {
                                     </Disclosure>
                                 </div>
                             ))}
-                            <Link href="/booking">
+                            <Link href="/free-training">
                                 <Disclosure.Button className="text-gray-300 bg-gray-600 hover:bg-gray-700  block rounded-md px-3 py-2 text-start font-medium w-full">
-                                    Book Now
+                                    Free Training
                                 </Disclosure.Button>
                             </Link>
                         </div>
