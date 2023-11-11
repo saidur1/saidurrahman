@@ -43,7 +43,7 @@ export default async function Home() {
                         We help entrepreneurs grow to 6 & 7 figures through the
                         art of reality creation.
                     </p>
-                    <PrimaryButton href="/booking" title="Call Book" />
+                    <PrimaryButton href="/schedule" title="Call Book" />
                 </div>
             </section>
             {/* <section className=" py-[50px] md:py-[100px] w-full container justify-between grid gap-[30px] grid-cols-1 md:grid-cols-2 lg:grid-cols-3 bg">
