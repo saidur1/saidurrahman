@@ -10,15 +10,15 @@ export default async function Home() {
             id: 1,
             CH: "AC",
             title: "Accountability Community",
-            desc: "Reality Creator Academy is for beginners on the journey who want to master the fundamentals of reality creation alongside a community.",
-            href: "/community",
+            desc: "Accountability community is a group of online entrepreneurs who want to keep themselves accountability to stay on track with their habits and priorities.",
+            href: "/schedule",
         },
         {
             id: 2,
             CH: "AA",
             title: "Accountability Accelerator",
-            desc: "Reality Creator Academy is for beginners on the journey who want to master the fundamentals of reality creation alongside a community.",
-            href: "/accelerator",
+            desc: "Accountability accelerator is a six weeks program for online entrepreneurs who want to learn and implement fundamental principles, build habits, identify and eliminate distractions, and keep themself accountable.",
+            href: "/schedule",
         },
     ];
 
@@ -55,7 +55,7 @@ export default async function Home() {
                             <h1 className="text-[30px] text-center font-bold text-gray-800">
                                 {title}
                             </h1>
-                            <p className="text-[#2c2c2c] font-normal text-[17px] mb-[40px]">
+                            <p className="text-[#2c2c2c] font-normal text-[17px] mb-[40px] text-center">
                                 {desc}
                             </p>
                             <div className="w-full flex justify-center">
