@@ -13,7 +13,7 @@ const nextConfig = {
         baseURL:
             process.env.NODE_ENV !== "production"
                 ? "http://localhost:3000"
-                : "https://saidurrahman.vercel.app",
+                : "https://www.saidurrahman.org",
     },
 };
 
