@@ -1,7 +1,6 @@
 import profile from "@/assets/images/saidur.jpeg";
 import Reviews from "@/components/reviews/Reviews";
 import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
-import { isFreeTrainingAccess } from "@/utils/cookies";
 import Image from "next/image";
 
 export default async function Home() {
@@ -21,9 +20,6 @@ export default async function Home() {
             href: "/schedule",
         },
     ];
-
-    // check if user submit their email or not
-    const access = isFreeTrainingAccess();
 
     return (
         <main className="bg-[#DFE3E4]">
