@@ -6,7 +6,7 @@ export function middleware(request) {
     const isAccess = request.cookies.get("prospect");
 
     if (path === "/free-training/content" && !isAccess) {
-        return NextResponse.redirect(new URL("/free_training", request.url));
+        return NextResponse.redirect(new URL("/free-training", request.url));
     } else if (path === "/free-training" && isAccess) {
         return NextResponse.redirect(
             new URL("/free-training/content", request.url)

@@ -30,15 +30,15 @@ export default async function Home() {
             <section className="bg-gray-300 h-auto py-[50px] md:min-h-[40vh]">
                 <div className="container flex flex-col gap-[30px] justify-center items-center h-full">
                     <h1 className="text-black/80 text-[50px] font-bold text-center">
-                        How to master your reality by mastering <br /> yourself.
+                        Accountability coaching for <br /> entrepreneurs.
                     </h1>
                     <p className="text-black/80 text-[17px] font-medium text-center">
-                        We help entrepreneurs grow to 6 & 7 figures through the
-                        art of reality creation.
+                        We help ENTREPRENEURS stay ACCOUNTABLE so they achieve
+                        their financial goals
                     </p>
                     <PrimaryButton
                         href="/schedule"
-                        title="Get A FREE Discovery Call"
+                        title="Book A FREE Discovery Call"
                     />
                 </div>
             </section>

@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { BiSolidLock } from "react-icons/bi";
+import { toast } from "react-toastify";
 
 async function postData(data) {
     const res = await fetch(`${process.env.baseURL}/api/prospect`, {
@@ -30,12 +31,18 @@ const FreeTraining = () => {
     const emailSubmit = async (e) => {
         e.preventDefault();
         setLoading(true);
-        const email = e.target.email.value;
-        const name = e.target.name.value;
-        const data = { email, name };
-        const result = await postData(data);
-        setLoading(false);
-        router.push("/free-training/content");
+        try {
+            const email = e.target.email.value;
+            const name = e.target.name.value;
+            const data = { email, name };
+            await postData(data);
+            setLoading(false);
+            toast.success("Successfully authorized");
+            router.push("/free-training/content");
+        } catch (error) {
+            setLoading(false);
+            toast.error("Something is wrong!");
+        }
     };
     return (
         <div className="min-h-[calc(100vh-129px)] dark:bg-[#DFE3E4]">
@@ -97,7 +104,7 @@ const FreeTraining = () => {
                                 disabled={!name || !email}
                             >
                                 {loading ? (
-                                    <span class="loader"></span>
+                                    <span className="loader"></span>
                                 ) : (
                                     <>
                                         <BiSolidLock /> Access Now
