@@ -28,7 +28,7 @@ const Contact = () => {
                         Whatsapp: ‭+44 (0) 7904 226135‬
                     </h3>
                 </section>
-                <section className="max-w-[500px] mx-auto flex justify-center gap-[30px]">
+                <section className="max-w-[500px] mx-auto py-[30px] flex justify-center gap-[30px]">
                     <a href="#" className="group">
                         <AiFillFacebook className="text-[30px] group-hover:scale-125 duration-300" />
                     </a>

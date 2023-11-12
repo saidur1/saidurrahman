@@ -12,6 +12,7 @@
     "dependencies": {
         "@headlessui/react": "^1.7.17",
         "@heroicons/react": "^2.0.18",
+        "keep-react": "^1.0.1",
         "mongoose": "^7.6.1",
         "next": "13.5.4",
         "next-nprogress-bar": "^2.1.2",
