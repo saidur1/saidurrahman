@@ -13,18 +13,19 @@ const Contact = () => {
                 </div>
                 <section className="py-[50px]">
                     <h2 className="mb-6 text-[32px] font-bold uppercase text-gray-800 sm:text-[40px] lg:text-[36px] xl:text-[40px] text-center">
-                        GET IN TOUCH WITH US
+                        Want to get in touch? Let's talk!
                     </h2>
                     <p className="text-center leading-relaxed mb-9 text-body-color max-w-[650px] mx-auto dark:text-black">
-                        Feel free to get in touch with me! I'm just a message
-                        away, and you can reach out through my Facebook profile
-                        or drop me an email. Here are the links to my Facebook
-                        profile and my email address for your convenience. Don't
-                        hesitate to reach out—I look forward to hearing from
-                        you!
+                        To contact Saidur or his staff please use the following
+                        information. Saidur Rahman and his staff operate Monday
+                        – Friday. To contact Saidur Rahman or his team please
+                        use the information below
                     </p>
                     <h3 className="text-center text-gray-800 hover:text-gray-900 duration-200 font-medium">
-                        support@saidurrahman.org
+                        Email: support@saidurrahman.org
+                    </h3>
+                    <h3 className="text-center text-gray-800 hover:text-gray-900 duration-200 font-medium">
+                        Whatsapp: ‭+44 (0) 7904 226135‬
                     </h3>
                 </section>
                 <section className="max-w-[500px] mx-auto flex justify-center gap-[30px]">

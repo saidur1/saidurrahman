@@ -20,13 +20,6 @@ export default async function Home() {
             desc: "Reality Creator Academy is for beginners on the journey who want to master the fundamentals of reality creation alongside a community.",
             href: "/accelerator",
         },
-        {
-            id: 3,
-            CH: "AM",
-            title: "Accountability Mastermind",
-            desc: "Reality Creator Academy is for beginners on the journey who want to master the fundamentals of reality creation alongside a community.",
-            href: "/mastermind",
-        },
     ];
 
     // check if user submit their email or not
@@ -43,15 +36,18 @@ export default async function Home() {
                         We help entrepreneurs grow to 6 & 7 figures through the
                         art of reality creation.
                     </p>
-                    <PrimaryButton href="/schedule" title="Call Book" />
+                    <PrimaryButton
+                        href="/schedule"
+                        title="Get A FREE Discovery Call"
+                    />
                 </div>
             </section>
-            {/* <section className=" py-[50px] md:py-[100px] w-full container justify-between grid gap-[30px] grid-cols-1 md:grid-cols-2 lg:grid-cols-3 bg">
+            <section className=" py-[50px] md:py-[100px] w-full container justify-between grid gap-[30px] grid-cols-1 md:grid-cols-2  bg">
                 {programs?.map(({ id, CH, title, desc, href }) => {
                     return (
                         <div
                             key={id}
-                            className="px-[20px] py-[30px] border-[1px] border-gray-600 max-w-[380px] flex gap-y-[20px] flex-col justify-center items-center rounded-[6px] mx-auto"
+                            className="px-[20px] py-[30px] border-[1px] border-gray-600 max-w-[380px] flex gap-y-[20px] flex-col justify-center items-center rounded-[6px] mx-auto hover:shadow-md duration-300"
                         >
                             <div className="h-[90px] w-[90px] text-[30px] bg-gray-800 text-white rounded-[20px] flex justify-center items-center">
                                 {CH}
@@ -68,7 +64,7 @@ export default async function Home() {
                         </div>
                     );
                 })}
-            </section> */}
+            </section>
             <section
                 id="contact"
                 className="py-[50px] md:py-[100px] container grid grid-cols-1 md:grid-cols-2 gap-[30px]"
