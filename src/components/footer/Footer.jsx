@@ -17,7 +17,7 @@ const Footer = () => {
                 >
                     YouTube
                 </a>
-                <Link href="/news-letter" className="text-white">
+                <Link href="/newsletter" className="text-white">
                     NewsLetter
                 </Link>
             </section>

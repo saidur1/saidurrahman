@@ -10,7 +10,7 @@ export default async function Home() {
             CH: "AC",
             title: "Accountability Community",
             desc: "Accountability community is a group of online entrepreneurs who want to keep themselves accountability to stay on track with their habits and priorities.",
-            href: "/schedule",
+            href: "/community",
         },
         {
             id: 2,
