@@ -14,6 +14,7 @@ const nextConfig = {
             process.env.NODE_ENV !== "production"
                 ? "http://localhost:3000"
                 : "https://www.saidurrahman.org",
+        MEASUREMENT_ID: "G-1YSD4PK63G",
     },
 };
 

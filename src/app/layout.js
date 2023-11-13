@@ -4,6 +4,7 @@ import NProgress from "@/components/progressBar/NProgress";
 import { Inter } from "next/font/google";
 import { ToastContainer } from "react-toastify";
 
+import GoogleAnalytics from "@/utils/GoogleAnalytics";
 import "react-toastify/dist/ReactToastify.css";
 import "./globals.css";
 
@@ -22,11 +23,14 @@ export default function RootLayout({ children }) {
                 className={`${inter.className}`}
                 suppressHydrationWarning={true}
             >
+                {/* Google analytics */}
+                <GoogleAnalytics />
+                {/* Google analytics */}
+
                 <NProgress />
                 <SNavbar />
                 <ToastContainer />
                 {children}
-
                 <Footer />
             </body>
         </html>
