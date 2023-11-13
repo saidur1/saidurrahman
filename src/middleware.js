@@ -11,6 +11,8 @@ export function middleware(request) {
         return NextResponse.redirect(
             new URL("/free-training/content", request.url)
         );
+    } else if (path == "/community") {
+        return NextResponse.redirect("https://discord.gg/uxfQY7HmQS");
     } else {
         return NextResponse.next();
     }
@@ -18,5 +20,5 @@ export function middleware(request) {
 
 // See "Matching Paths" below to learn more
 export const config = {
-    matcher: ["/", "/free-training", "/free-training/content"],
+    matcher: ["/", "/free-training", "/free-training/content", "/community"],
 };
