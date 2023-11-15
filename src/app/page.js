@@ -2,25 +2,9 @@ import profile from "@/assets/images/saidur.jpeg";
 import Reviews from "@/components/reviews/Reviews";
 import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
 import Image from "next/image";
+import Programms from "./_sections/Programms";
 
 export default async function Home() {
-    const programs = [
-        {
-            id: 1,
-            CH: "AC",
-            title: "Accountability Community",
-            desc: "Accountability community is a group of online entrepreneurs who want to keep themselves accountability to stay on track with their habits and priorities.",
-            href: "/community",
-        },
-        {
-            id: 2,
-            CH: "AA",
-            title: "Accountability Accelerator",
-            desc: "Accountability accelerator is a six weeks program for online entrepreneurs who want to learn and implement fundamental principles, build habits, identify and eliminate distractions, and keep themself accountable.",
-            href: "/schedule",
-        },
-    ];
-
     return (
         <main className="bg-[#DFE3E4]">
             <section className="bg-gray-100 h-auto py-[50px] md:min-h-[40vh]">
@@ -38,29 +22,7 @@ export default async function Home() {
                     />
                 </div>
             </section>
-            <section className=" py-[50px] md:py-[100px] w-full container justify-between grid gap-[30px] grid-cols-1 md:grid-cols-2  bg">
-                {programs?.map(({ id, CH, title, desc, href }) => {
-                    return (
-                        <div
-                            key={id}
-                            className="px-[20px] py-[30px] border-[1px] border-gray-600 max-w-[380px] flex gap-y-[20px] flex-col justify-center items-center rounded-[6px] mx-auto hover:shadow-md duration-300"
-                        >
-                            <div className="h-[90px] w-[90px] text-[30px] bg-gray-800 text-white rounded-[20px] flex justify-center items-center">
-                                {CH}
-                            </div>
-                            <h1 className="text-[30px] text-center font-bold text-gray-800">
-                                {title}
-                            </h1>
-                            <p className="text-[#2c2c2c] font-normal text-[17px] mb-[40px] text-center">
-                                {desc}
-                            </p>
-                            <div className="w-full flex justify-center">
-                                <PrimaryButton title="Learn More" href={href} />
-                            </div>
-                        </div>
-                    );
-                })}
-            </section>
+            <Programms />
             <section
                 id="contact"
                 className="py-[50px] md:py-[100px] container grid grid-cols-1 md:grid-cols-2 gap-[30px]"
