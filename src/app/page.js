@@ -7,7 +7,7 @@ import Programms from "./_sections/Programms";
 export default async function Home() {
     return (
         <main className="bg-[#DFE3E4]">
-            <section className="bg-gray-100 h-auto py-[50px] md:min-h-[40vh]">
+            <section className="bg-gray-100 h-auto py-[50px] md:min-h-[45vh]">
                 <div className="container flex flex-col gap-[30px] justify-center items-center h-full">
                     <h1 className="text-black/80 text-[50px] font-bold text-center">
                         Accountability coaching for <br /> entrepreneurs.

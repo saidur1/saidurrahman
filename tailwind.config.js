@@ -1,5 +1,3 @@
-import keepPreset from "keep-react/src/keep-preset.js";
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: [
@@ -16,5 +14,5 @@ module.exports = {
             },
         },
     },
-    presets: [keepPreset],
+    plugins: [],
 };

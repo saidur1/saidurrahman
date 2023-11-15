@@ -1,15 +1,8 @@
-"use client";
-
+import JoinDiscord from "@/components/JoinDiscord/JoinDiscord";
 import Image from "next/image";
 
 const AccountabilityCommunity = () => {
     const benefits = [
-        {
-            id: 1,
-            title: "Accountability Partnerships: ",
-            description:
-                "Forge meaningful connections with like-mindedindividuals dedicate to achieving their goals. Our community thrives on mutual support, ensuring that you're never alone on your journey.",
-        },
         {
             id: 2,
             title: "Accountability Partnerships: ",
@@ -49,7 +42,7 @@ const AccountabilityCommunity = () => {
     ];
 
     return (
-        <div className="min-h-[calc(100vh-145px)] container py-[50px] space-y-28 ">
+        <div className="min-h-[calc(100vh-145px)] container py-[50px] space-y-28 relative">
             <section className="flex flex-col-reverse md:flex-row h-auto">
                 <div className="flex-1 space-y-8 text-[#333333] mt-[30px] md:mt-0">
                     <h1 className="text-[22px] md:text-[30px] lg:text-[40px] font-semibold">
@@ -63,15 +56,7 @@ const AccountabilityCommunity = () => {
                         converge. Your journey to unlocking your full potential
                         begins here!
                     </p>
-                    <div>
-                        <a
-                            href="https://discord.gg/uxfQY7HmQS"
-                            target="_blank"
-                            className="bg-black/70 hover:bg-black/80 text-white/80 rounded-sm px-10 py-2 duration-200 "
-                        >
-                            Join Now
-                        </a>
-                    </div>
+                    <JoinDiscord />
                 </div>
                 <div className="flex-1 flex flex-col items-center">
                     <Image
