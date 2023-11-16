@@ -1,4 +1,4 @@
-import JoinDiscord from "@/components/JoinDiscord/JoinDiscord";
+import Discord from "@/components/JoinDiscord/Discord";
 import Image from "next/image";
 
 const AccountabilityCommunity = () => {
@@ -57,7 +57,7 @@ const AccountabilityCommunity = () => {
                         begins here!
                     </p>
                     <div>
-                        <JoinDiscord />
+                        <Discord />
                     </div>
                 </div>
                 <div className="flex-1 flex flex-col items-center">
