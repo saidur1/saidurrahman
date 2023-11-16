@@ -45,9 +45,10 @@ const DiscordJoiningForm = () => {
                     Join the Accountability Community for Consistency, Support,
                     and Success!
                 </h1>
-                {/* <form className="space-y-4" onSubmit={submit}>
-                    <Input
-                        label="Your Name"
+                <form className="space-y-4">
+                    <input
+                        name="name"
+                        className="md:max-w-[400px] w-full shadow-[rgba(0,0,0,0.12)_0px_1px_3px,rgba(0,0,0,0.24)_0px_1px_2px] outline-none px-[12px] py-[6px] rounded-[4px] text-[18px] dark:text-black/80"
                         onChange={(e) => {
                             setData((prev) => {
                                 return {
@@ -56,20 +57,9 @@ const DiscordJoiningForm = () => {
                                 };
                             });
                         }}
+                        placeholder="Your name"
                     />
-                    <Input
-                        label="Your email"
-                        onChange={(e) => {
-                            setData((prev) => {
-                                return {
-                                    ...prev,
-                                    email: value,
-                                };
-                            });
-                        }}
-                    />
-                    <Button type="submit">Join Community</Button>
-                </form> */}
+                </form>
             </div>
         </section>
     );
