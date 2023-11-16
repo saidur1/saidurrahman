@@ -27,29 +27,23 @@ export const NewsLetterPopUp = ({ modalControll }) => {
             name,
         };
 
-        try {
-            // POST request going to the server
-            const res = await fetch("/api/prospect", {
-                method: "POST",
-                body: JSON.stringify(data),
-            });
+        // POST request going to the server
+        const res = await fetch("/api/prospect", {
+            method: "POST",
+            body: JSON.stringify(data),
+        });
 
-            // if fetch not comppleted
-            if (!res.ok) {
-                toast.error("Something went wrong. Please try again later");
-                setLoading(false);
-                return;
-            }
-
-            // if fetch completed then redirect to the discord server
-            // redirect
-            window.location.replace("https://discord.com/invite/uxfQY7HmQS");
+        // if fetch not comppleted
+        if (!res.ok) {
+            toast.error("Something went wrong. Please try again later");
             setLoading(false);
-        } catch (error) {
-            // if anything error display will be error toast
-            setLoading(false);
-            toast.error("Something went wrong. Please try again late");
+            return;
         }
+
+        // if fetch completed then redirect to the discord server
+        // redirect
+        window.location.replace("https://discord.com/invite/uxfQY7HmQS");
+        setLoading(false);
     };
 
     return (
