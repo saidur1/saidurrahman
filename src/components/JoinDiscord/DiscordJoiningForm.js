@@ -63,42 +63,42 @@ const DiscordJoiningForm = () => {
 
     const submit = async (e) => {
         e.preventDefault();
-        if (data.name === "" || data.email === "") {
-            if (data.name === "") {
-                setError((prev) => {
-                    return {
-                        ...prev,
-                        name: true,
-                    };
-                });
-            }
+        // if (data.name === "" || data.email === "") {
+        //     if (data.name === "") {
+        //         setError((prev) => {
+        //             return {
+        //                 ...prev,
+        //                 name: true,
+        //             };
+        //         });
+        //     }
 
-            if (data.email === "") {
-                setError((prev) => {
-                    return {
-                        ...prev,
-                        email: true,
-                    };
-                });
-            }
+        //     if (data.email === "") {
+        //         setError((prev) => {
+        //             return {
+        //                 ...prev,
+        //                 email: true,
+        //             };
+        //         });
+        //     }
 
-            // Do not set loading state here, as there are validation errors.
-        } else {
-            // No validation errors, set loading state and proceed with the request.
-            setLoading(true);
+        //     // Do not set loading state here, as there are validation errors.
+        // } else {
+        //     // No validation errors, set loading state and proceed with the request.
 
-            try {
-                await postData(data);
-                window.location.replace(
-                    "https://discord.com/invite/uxfQY7HmQS"
-                );
-            } catch (error) {
-                // Handle error as needed
-                console.error("Error submitting data:", error);
-                toast.error("Something went wrong");
-            } finally {
-                setLoading(false);
-            }
+        // }
+
+        setLoading(true);
+
+        try {
+            await postData(data);
+            window.location.replace("https://discord.com/invite/uxfQY7HmQS");
+        } catch (error) {
+            // Handle error as needed
+            console.error("Error submitting data:", error);
+            toast.error("Something went wrong");
+        } finally {
+            setLoading(false);
         }
     };
 
