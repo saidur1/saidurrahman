@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { DefaultDialog } from "../Modal/Dialog";
 
 const Discord = () => {
     const [open, setOpen] = useState(false);
@@ -15,6 +16,7 @@ const Discord = () => {
             >
                 Join Now
             </button>
+            {open && <DefaultDialog />}
         </div>
     );
 };
