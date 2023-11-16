@@ -11,7 +11,8 @@ import { useState } from "react";
 const Discord = () => {
     const [open, setOpen] = useState(false);
 
-    const handleOpen = () => setOpen(!open);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
 
     return (
         <div>
@@ -21,7 +22,7 @@ const Discord = () => {
             >
                 Join Now
             </button>
-            <Dialog open={open} handler={handleOpen}>
+            <Dialog open={open} handler={handleClose}>
                 <DialogHeader>Its a simple dialog.</DialogHeader>
                 <DialogBody>
                     The key to more success is to have a lot of pillows. Put it
@@ -34,7 +35,7 @@ const Discord = () => {
                     <Button
                         variant="text"
                         color="red"
-                        onClick={handleOpen}
+                        onClick={handleClose}
                         className="mr-1"
                     >
                         <span>Cancel</span>
@@ -42,7 +43,7 @@ const Discord = () => {
                     <Button
                         variant="gradient"
                         color="green"
-                        onClick={handleOpen}
+                        onClick={handleClose}
                     >
                         <span>Confirm</span>
                     </Button>
