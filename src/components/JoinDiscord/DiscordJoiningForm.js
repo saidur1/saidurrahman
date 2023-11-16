@@ -81,15 +81,27 @@ const DiscordJoiningForm = () => {
                     };
                 });
             }
+
+            // Do not set loading state here, as there are validation errors.
+        } else {
+            // No validation errors, set loading state and proceed with the request.
+            setLoading(true);
+
+            try {
+                await postData(data);
+                window.location.replace(
+                    "https://discord.com/invite/uxfQY7HmQS"
+                );
+            } catch (error) {
+                // Handle error as needed
+                console.error("Error submitting data:", error);
+                toast.error("Something went wrong");
+            } finally {
+                setLoading(false);
+            }
         }
-
-        setLoading(true);
-
-        await postData(data);
-        setLoading(false);
-
-        window.location.replace("https://discord.com/invite/uxfQY7HmQS");
     };
+
     return (
         <section className="w-full flex justify-center min-h-[calc(100vh-145px)] items-center">
             <div className=" w-[400px] shadow-lg border-[1px] border-black/20 rounded-md p-[30px]">
