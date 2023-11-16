@@ -1,4 +1,4 @@
-const Modal = ({ children, modalControll, showModal }) => {
+const Modal = ({ children, modalControll }) => {
     return (
         <>
             <div
@@ -6,7 +6,7 @@ const Modal = ({ children, modalControll, showModal }) => {
                 onClick={modalControll}
             ></div>
             <div
-                className={`rounded w-[400px] lg:w-[600px] space-y-8 bg-white py-[37px] px-[30px] fixed duration-500 top-1/2  left-1/2 z-20 -translate-x-1/2 -translate-y-1/2`}
+                className={`rounded w-[400px] lg:w-[500px] space-y-8 bg-white py-[37px] px-[30px] fixed duration-500 top-1/2  left-1/2 z-20 -translate-x-1/2 -translate-y-1/2`}
             >
                 {children}
             </div>

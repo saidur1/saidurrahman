@@ -9,7 +9,10 @@ const JoinDiscord = () => {
     };
     return (
         <div>
-            <button className="bg-black/70 hover:bg-black/80 text-white/80 rounded-sm px-10 py-2 duration-200 ">
+            <button
+                className="bg-black/70 hover:bg-black/90 text-white/80 rounded-sm px-10 py-2 duration-200 "
+                onClick={modalControll}
+            >
                 Join Now
             </button>
             {showModal && (
