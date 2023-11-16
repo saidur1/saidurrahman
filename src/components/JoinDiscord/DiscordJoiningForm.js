@@ -1,4 +1,6 @@
 "use client";
+import { Loader2 } from "lucide-react";
+import Image from "next/image";
 import { useState } from "react";
 
 async function postData(data) {
@@ -41,12 +43,17 @@ const DiscordJoiningForm = () => {
     };
 
     return (
-        <section className="w-full flex justify-center h-auto items-center">
-            <div className=" w-[400px] shadow-lg border-[1px] border-black/20 rounded-md p-[30px]">
-                <h1 className="text-[16px] text-black/80 font-semibold mb-[30px]">
-                    Join the Accountability Community for Consistency, Support,
-                    and Success!
-                </h1>
+        <section className="w-full flex justify-center h-auto items-center relative">
+            <div className="w-[50px] h-[50px] bg-black/80  rounded-full flex justify-center items-center absolute top-[-25px]">
+                <Image src="discord.svg" width={30} height={30} alt="discord" />
+            </div>
+            <div className=" w-[400px] shadow-lg border-[1px] border-black/20 rounded-md p-[30px] pt-[50px]">
+                <div>
+                    <h1 className="text-[16px] text-black/80 font-semibold mb-[30px]">
+                        Join the Accountability Community for Consistency,
+                        Support, and Success!
+                    </h1>
+                </div>
                 <form className="space-y-4" onSubmit={submit}>
                     <input
                         name="name"
@@ -76,10 +83,16 @@ const DiscordJoiningForm = () => {
                     />
                     <button
                         type="submit"
-                        className="bg-black/70 hover:bg-black/80 disabled:opacity-75 duration-300 rounded-[6px] text-white w-full py-2"
+                        className="bg-black/70 hover:bg-black/80 disabled:opacity-60 duration-300 rounded-[6px] text-white w-full py-2"
                         disabled={loading}
                     >
-                        Accountability Community
+                        {loading ? (
+                            <div className="flex justify-center">
+                                <Loader2 className="w-5 h-5 animate-spin" />
+                            </div>
+                        ) : (
+                            "Accountability Community"
+                        )}
                     </button>
                 </form>
             </div>
