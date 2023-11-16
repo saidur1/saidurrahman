@@ -10,8 +10,9 @@ import { useState } from "react";
 
 const JoinDiscord = () => {
     const [open, setOpen] = useState(false);
+
     const handleOpen = () => {
-        setOpen(!open);
+        setOpen((prev) => !prev);
     };
     return (
         <div>
