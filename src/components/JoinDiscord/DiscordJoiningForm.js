@@ -26,69 +26,9 @@ const DiscordJoiningForm = () => {
         name: "",
         email: "",
     });
-    const [error, setError] = useState({
-        name: false,
-        email: false,
-    });
-
-    const onChangeData = (key, value) => {
-        if (key === "name") {
-            setError((prev) => {
-                return {
-                    ...prev,
-                    name: false,
-                };
-            });
-            setData((prev) => {
-                return {
-                    ...prev,
-                    name: value,
-                };
-            });
-        } else if (key === "email") {
-            setError((prev) => {
-                return {
-                    ...prev,
-                    email: false,
-                };
-            });
-            setData((prev) => {
-                return {
-                    ...prev,
-                    email: value,
-                };
-            });
-        }
-    };
 
     const submit = async (e) => {
         e.preventDefault();
-        // if (data.name === "" || data.email === "") {
-        //     if (data.name === "") {
-        //         setError((prev) => {
-        //             return {
-        //                 ...prev,
-        //                 name: true,
-        //             };
-        //         });
-        //     }
-
-        //     if (data.email === "") {
-        //         setError((prev) => {
-        //             return {
-        //                 ...prev,
-        //                 email: true,
-        //             };
-        //         });
-        //     }
-
-        //     // Do not set loading state here, as there are validation errors.
-        // } else {
-        //     // No validation errors, set loading state and proceed with the request.
-
-        // }
-
-        setLoading(true);
 
         try {
             await postData(data);
@@ -96,9 +36,7 @@ const DiscordJoiningForm = () => {
         } catch (error) {
             // Handle error as needed
             console.error("Error submitting data:", error);
-            toast.error("Something went wrong");
         } finally {
-            setLoading(false);
         }
     };
 
@@ -111,24 +49,28 @@ const DiscordJoiningForm = () => {
                 </h1>
                 <form className="space-y-4" onSubmit={submit}>
                     <Input
-                        label={
-                            error.name ? "Please enter your name" : "Your Name"
-                        }
-                        onChange={(e) => onChangeData("name", e.target.value)}
-                        error={error.name}
+                        label="Your Name"
+                        onChange={(e) => {
+                            setData((prev) => {
+                                return {
+                                    ...prev,
+                                    name: value,
+                                };
+                            });
+                        }}
                     />
                     <Input
-                        label={
-                            error.email
-                                ? "Please enter your email"
-                                : "Your email"
-                        }
-                        onChange={(e) => onChangeData("email", e.target.value)}
-                        error={error.email}
+                        label="Your email"
+                        onChange={(e) => {
+                            setData((prev) => {
+                                return {
+                                    ...prev,
+                                    email: value,
+                                };
+                            });
+                        }}
                     />
-                    <Button type="submit" disabled={loading}>
-                        Join Community
-                    </Button>
+                    <Button type="submit">Join Community</Button>
                 </form>
             </div>
         </section>
