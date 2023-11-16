@@ -57,7 +57,7 @@ const Discord = () => {
             >
                 Join Now
             </button>
-            {open && (
+            {open ? (
                 <Modal modalControll={modalControll}>
                     <form className="space-y-4" onSubmit={submit}>
                         <Input
@@ -95,7 +95,7 @@ const Discord = () => {
                         <Button type="submit">Subscribe</Button>
                     </form>
                 </Modal>
-            )}
+            ) : null}
         </div>
     );
 };
