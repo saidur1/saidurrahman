@@ -59,7 +59,7 @@ export const NewsLetterPopUp = ({ modalControll }) => {
                         your journey to success!
                     </p>
                 </div>
-                <form className="space-y-4" onSubmit={onSubmit}>
+                <form className="space-y-4">
                     <Input
                         label="Your Name"
                         onChange={(e) => setName(e.target.value)}

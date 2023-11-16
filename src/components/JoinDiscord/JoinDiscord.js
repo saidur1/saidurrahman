@@ -15,7 +15,9 @@ const JoinDiscord = () => {
             >
                 Join Now
             </button>
-            {showModal && <NewsLetterPopUp modalControll={modalControll} />}
+            {showModal ? (
+                <NewsLetterPopUp modalControll={modalControll} />
+            ) : null}
         </div>
     );
 };
