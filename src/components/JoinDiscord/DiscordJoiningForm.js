@@ -3,6 +3,23 @@ import { Button, Input } from "@material-tailwind/react";
 import { useState } from "react";
 import { toast } from "react-toastify";
 
+async function postData(data) {
+    const res = await fetch(`${process.env.baseURL}/api/prospect`, {
+        method: "POST",
+        headers: {
+            "content-type": "application/json",
+        },
+        body: JSON.stringify(data),
+    });
+
+    if (!res.ok) {
+        toast.error("Something went wrong");
+        throw new Error("Failed to fetch data");
+    }
+
+    return true;
+}
+
 const DiscordJoiningForm = () => {
     const [loading, setLoading] = useState(false);
     const [data, setData] = useState({
@@ -68,15 +85,7 @@ const DiscordJoiningForm = () => {
 
         setLoading(true);
 
-        const res = await fetch("/api/prospect", {
-            method: "POST",
-            body: JSON.stringify(data),
-        });
-
-        if (!res.ok) {
-            setLoading(false);
-            toast.error("something went wrong");
-        }
+        await postData(data);
         setLoading(false);
 
         window.location.replace("https://discord.com/invite/uxfQY7HmQS");
