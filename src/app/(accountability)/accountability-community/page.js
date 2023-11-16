@@ -1,4 +1,3 @@
-import JoinDiscord from "@/components/JoinDiscord/JoinDiscord";
 import Image from "next/image";
 
 const AccountabilityCommunity = () => {
@@ -56,7 +55,6 @@ const AccountabilityCommunity = () => {
                         converge. Your journey to unlocking your full potential
                         begins here!
                     </p>
-                    <JoinDiscord />
                 </div>
                 <div className="flex-1 flex flex-col items-center">
                     <Image
