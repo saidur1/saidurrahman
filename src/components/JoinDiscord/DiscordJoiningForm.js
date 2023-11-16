@@ -1,24 +1,22 @@
 "use client";
-import { Button, Input } from "@material-tailwind/react";
 import { useState } from "react";
-import { toast } from "react-toastify";
 
-async function postData(data) {
-    const res = await fetch(`${process.env.baseURL}/api/prospect`, {
-        method: "POST",
-        headers: {
-            "content-type": "application/json",
-        },
-        body: JSON.stringify(data),
-    });
+// async function postData(data) {
+//     const res = await fetch(`${process.env.baseURL}/api/prospect`, {
+//         method: "POST",
+//         headers: {
+//             "content-type": "application/json",
+//         },
+//         body: JSON.stringify(data),
+//     });
 
-    if (!res.ok) {
-        toast.error("Something went wrong");
-        throw new Error("Failed to fetch data");
-    }
+//     if (!res.ok) {
+//         toast.error("Something went wrong");
+//         throw new Error("Failed to fetch data");
+//     }
 
-    return true;
-}
+//     return true;
+// }
 
 const DiscordJoiningForm = () => {
     const [loading, setLoading] = useState(false);
@@ -27,18 +25,18 @@ const DiscordJoiningForm = () => {
         email: "",
     });
 
-    const submit = async (e) => {
-        e.preventDefault();
+    // const submit = async (e) => {
+    //     e.preventDefault();
 
-        try {
-            await postData(data);
-            window.location.replace("https://discord.com/invite/uxfQY7HmQS");
-        } catch (error) {
-            // Handle error as needed
-            console.error("Error submitting data:", error);
-        } finally {
-        }
-    };
+    //     try {
+    //         await postData(data);
+    //         window.location.replace("https://discord.com/invite/uxfQY7HmQS");
+    //     } catch (error) {
+    //         // Handle error as needed
+    //         console.error("Error submitting data:", error);
+    //     } finally {
+    //     }
+    // };
 
     return (
         <section className="w-full flex justify-center min-h-[calc(100vh-145px)] items-center">
@@ -47,7 +45,7 @@ const DiscordJoiningForm = () => {
                     Join the Accountability Community for Consistency, Support,
                     and Success!
                 </h1>
-                <form className="space-y-4" onSubmit={submit}>
+                {/* <form className="space-y-4" onSubmit={submit}>
                     <Input
                         label="Your Name"
                         onChange={(e) => {
@@ -71,7 +69,7 @@ const DiscordJoiningForm = () => {
                         }}
                     />
                     <Button type="submit">Join Community</Button>
-                </form>
+                </form> */}
             </div>
         </section>
     );
