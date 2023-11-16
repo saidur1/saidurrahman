@@ -41,7 +41,7 @@ const DiscordJoiningForm = () => {
     };
 
     return (
-        <section className="w-full flex justify-center min-h-[calc(100vh-145px)] items-center">
+        <section className="w-full flex justify-center h-auto items-center">
             <div className=" w-[400px] shadow-lg border-[1px] border-black/20 rounded-md p-[30px]">
                 <h1 className="text-[16px] text-black/80 font-semibold mb-[30px]">
                     Join the Accountability Community for Consistency, Support,
