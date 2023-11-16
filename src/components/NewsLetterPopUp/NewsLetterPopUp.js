@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 // Components
 import Modal from "../Modal/Modal";
 
-export const NewsLetterPopUp = ({ modalControll, showModal }) => {
+export const NewsLetterPopUp = ({ modalControll }) => {
     const [loading, setLoading] = useState(false);
     const [name, setName] = useState(null);
     const [email, setEmail] = useState(null);
@@ -54,7 +54,7 @@ export const NewsLetterPopUp = ({ modalControll, showModal }) => {
 
     return (
         <>
-            <Modal modalControll={modalControll} showModal={showModal}>
+            <Modal modalControll={modalControll}>
                 <div>
                     <h1 className="text-center text-[22px] text-black/80 font-semibold">
                         Habit Hack Newsletter
