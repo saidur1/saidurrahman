@@ -1,8 +1,8 @@
 import profile from "@/assets/images/saidur.jpeg";
-import Reviews from "@/components/reviews/Reviews";
 import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
 import Image from "next/image";
-import Programms from "./_sections/Programms";
+import Programms from "./(Website)/_sections/Programms";
+import Reviews from "./(Website)/_sections/Reviews";
 
 export default async function Home() {
     return (
