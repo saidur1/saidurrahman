@@ -1,7 +1,6 @@
-import Reviews from "@/components/reviews/Reviews";
+import Reviews from "../_sections/Reviews";
 
 const ReviewsContainer = () => {
-    const arr = [1, 2, 3, 4, 5];
     return (
         <div>
             <section className="bg-gray-300 h-auto py-[50px] md:min-h-[25vh]">

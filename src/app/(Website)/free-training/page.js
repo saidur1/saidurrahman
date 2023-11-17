@@ -21,7 +21,7 @@ async function postData(data) {
     return true;
 }
 
-const FreeTraining = () => {
+const FreeTraining = async () => {
     const [loading, setLoading] = useState(false);
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
