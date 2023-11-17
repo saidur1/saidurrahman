@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    pageExtensions: ["js", "jsx", "mjs"],
     images: {
         domains: [
             "https://tailwindui.com",
@@ -15,6 +16,11 @@ const nextConfig = {
                 ? "http://localhost:3000"
                 : "https://www.saidurrahman.org",
         MEASUREMENT_ID: "G-1YSD4PK63G",
+    },
+    webpack: (config) => {
+        config.resolve.fallback = { fs: false };
+
+        return config;
     },
 };
 

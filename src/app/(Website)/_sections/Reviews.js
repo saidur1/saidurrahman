@@ -1,4 +1,7 @@
-import YouTubePlayer from "../shared/player/YoutubePlayer";
+import dynamic from "next/dynamic";
+const YouTubePlayer = dynamic(() =>
+    import("@/components/shared/player/YoutubePlayer")
+);
 
 const Reviews = () => {
     const data = [
