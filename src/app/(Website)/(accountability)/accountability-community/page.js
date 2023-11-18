@@ -42,7 +42,7 @@ const AccountabilityCommunity = () => {
     ];
 
     return (
-        <div className="min-h-[calc(100vh-145px)] container py-[50px] space-y-28 relative">
+        <div className="min-h-[calc(100vh-145px)]  py-[50px] space-y-28 relative container ">
             <section className="flex flex-col-reverse md:flex-row h-auto">
                 <div className="flex-1 space-y-8 text-[#333333] mt-[30px] md:mt-0">
                     <h1 className="text-[22px] md:text-[30px] lg:text-[40px] font-semibold">
