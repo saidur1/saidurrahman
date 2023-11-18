@@ -3,7 +3,7 @@ import { InlineWidget } from "react-calendly";
 
 const Booking = () => {
     return (
-        <div className="min-h-screen ">
+        <section className="min-h-screen ">
             <InlineWidget
                 className="h-full bg-transparent"
                 styles={{
@@ -12,7 +12,7 @@ const Booking = () => {
                 }}
                 url="https://calendly.com/saidur/schedule"
             />
-        </div>
+        </section>
     );
 };
 

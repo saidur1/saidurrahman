@@ -29,10 +29,7 @@ export default function RootLayout({ children }) {
                 {/* Google analytics */}
 
                 <NProgress />
-                <RemoveComponentsByCondition>
-                    <NextNavbar />
-                </RemoveComponentsByCondition>
-
+                <NextNavbar />
                 <ToastContainer />
                 {children}
                 <RemoveComponentsByCondition>
