@@ -1,9 +1,9 @@
 import Footer from "@/components/footer/Footer";
-import SNavbar from "@/components/navbar/SNavbar";
 import NProgress from "@/components/progressBar/NProgress";
 import { Inter } from "next/font/google";
 import { ToastContainer } from "react-toastify";
 
+import NextNavbar from "@/components/navbar/NextNavbar";
 import GoogleAnalytics from "@/utils/GoogleAnalytics";
 import "react-toastify/dist/ReactToastify.css";
 import "./globals.css";
@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
                 {/* Google analytics */}
 
                 <NProgress />
-                <SNavbar />
+                <NextNavbar />
                 <ToastContainer />
                 {children}
                 <Footer />

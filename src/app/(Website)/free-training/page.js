@@ -62,6 +62,7 @@ const FreeTraining = async () => {
                             width={300}
                             height={300}
                             className="rounded-full"
+                            priority
                         />
                         <div className="text-center">
                             <h3 className="text-[18px] font-medium">
