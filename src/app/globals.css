@@ -8,7 +8,7 @@ html {
 
 @layer base {
     .container {
-        @apply mx-auto max-w-6xl px-3 sm:px-6 lg:px-8;
+        @apply lg:max-w-[1200px] xl:max-w-[1024px] px-3 lg:px-20 mx-auto;
     }
 }
 

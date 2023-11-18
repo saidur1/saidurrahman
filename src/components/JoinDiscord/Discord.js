@@ -10,20 +10,26 @@ import DiscordJoiningForm from "./DiscordJoiningForm";
 
 const Discord = () => {
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 600);
+    const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
-        const handleResize = () => {
+        // Check if window is defined (i.e., we are in the browser)
+        if (typeof window !== "undefined") {
+            // Set initial value based on window width
             setIsMobile(window.innerWidth < 600);
-        };
 
-        // Attach the event listener
-        window.addEventListener("resize", handleResize);
+            // Add event listener for window resize
+            const handleResize = () => {
+                setIsMobile(window.innerWidth < 600);
+            };
 
-        // Clean up the event listener on component unmount
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
+            window.addEventListener("resize", handleResize);
+
+            // Clean up the event listener on component unmount
+            return () => {
+                window.removeEventListener("resize", handleResize);
+            };
+        }
     }, []);
     return (
         <div>

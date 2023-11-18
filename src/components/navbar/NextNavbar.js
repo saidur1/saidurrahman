@@ -83,7 +83,8 @@ export default function NextNavbar() {
             onMenuOpenChange={setIsMenuOpen}
             shouldHideOnScroll
             isMenuOpen={isMenuOpen}
-            className="bg-black/80 "
+            className="bg-black/80"
+            maxWidth="xl"
             classNames={{
                 item: [
                     "flex",
@@ -98,6 +99,7 @@ export default function NextNavbar() {
                     "data-[active=true]:after:h-[4px]",
                     "data-[active=true]:after:rounded-[2px]",
                     "data-[active=true]:after:bg-[#FFFFFF]",
+                    "max-width: ",
                 ],
             }}
         >
@@ -111,6 +113,7 @@ export default function NextNavbar() {
                     <Link
                         href="/"
                         className="font-bold  text-white/60 duration-250 cursor-pointer hover:text-white"
+                        onClick={() => setIsMenuOpen(false)}
                     >
                         Saidur Rahman
                     </Link>
