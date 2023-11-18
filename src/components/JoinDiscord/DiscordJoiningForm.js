@@ -1,7 +1,8 @@
 "use client";
-import { Loader2 } from "lucide-react";
+import { Button, Input } from "@nextui-org/react";
 import Image from "next/image";
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 async function postData(data) {
     const res = await fetch(`${process.env.baseURL}/api/prospect`, {
@@ -20,8 +21,18 @@ async function postData(data) {
     return true;
 }
 
-const DiscordJoiningForm = () => {
+const DiscordJoiningForm = ({ isMobile }) => {
     const [loading, setLoading] = useState(false);
+    const [error, setError] = useState([
+        {
+            status: false,
+            msg: "Please enter your name",
+        },
+        {
+            status: false,
+            msg: "Please enter a valid email address",
+        },
+    ]);
     const [data, setData] = useState({
         name: "",
         email: "",
@@ -29,6 +40,41 @@ const DiscordJoiningForm = () => {
 
     const submit = async (e) => {
         e.preventDefault();
+
+        if (data.name === "") {
+            setError((prev) => {
+                return [
+                    {
+                        ...prev[0],
+                        status: true,
+                    },
+                    ...prev.slice(1),
+                ];
+            });
+            return;
+        } else if (data.email === "") {
+            setError((prev) => {
+                return [
+                    { ...prev[0], status: false },
+                    {
+                        ...prev[1],
+                        status: true,
+                    },
+                ];
+            });
+            return;
+        } else {
+            setError((prev) => {
+                return [
+                    ...prev.slice(0, 1),
+                    {
+                        ...prev[1],
+                        status: false,
+                    },
+                ];
+            });
+        }
+
         setLoading(true);
 
         try {
@@ -37,14 +83,15 @@ const DiscordJoiningForm = () => {
         } catch (error) {
             // Handle error as needed
             console.error("Error submitting data:", error);
+            toast.error("Something went wrong");
         } finally {
             setLoading(false);
         }
     };
 
     return (
-        <section className="w-full flex justify-center h-auto items-center relative">
-            <div className="w-[50px] h-[50px] bg-black/80  rounded-full flex justify-center items-center absolute top-[-25px]">
+        <section className="w-full  flex justify-center h-auto items-center relative">
+            <div className="w-[50px] h-[50px] bg-white border-[1px] border-black/40  rounded-full flex justify-center items-center absolute top-[-25px]">
                 <Image src="discord.svg" width={30} height={30} alt="discord" />
             </div>
             <div className=" w-[400px] shadow-lg border-[1px] border-black/20 rounded-md p-[30px] pt-[50px]">
@@ -55,45 +102,46 @@ const DiscordJoiningForm = () => {
                     </h1>
                 </div>
                 <form className="space-y-4" onSubmit={submit}>
-                    <input
-                        name="name"
-                        className="md:max-w-[400px] w-full border-[1px] border-black/20 rounded-[6px] outline-none px-[12px] py-[6px]  text-[18px] dark:text-black/80"
-                        onChange={(e) => {
-                            setData((prev) => {
-                                return {
-                                    ...prev,
-                                    name: e.target.value,
-                                };
-                            });
-                        }}
+                    <Input
+                        type="text"
+                        label="Name"
                         placeholder="Your name"
-                    />
-                    <input
-                        name="name"
-                        className="md:max-w-[400px] w-full border-[1px] border-black/20 outline-none px-[12px] py-[6px] rounded-[6px] text-[18px] dark:text-black/80"
-                        onChange={(e) => {
+                        variant="bordered"
+                        color={error[0].status ? "danger" : "success"}
+                        errorMessage={error[0].status && error[0].msg}
+                        onValueChange={(value) =>
                             setData((prev) => {
                                 return {
                                     ...prev,
-                                    email: e.target.value,
+                                    name: value,
                                 };
-                            });
-                        }}
-                        placeholder="Your Email"
+                            })
+                        }
                     />
-                    <button
+                    <Input
+                        type="email"
+                        label="Email"
+                        placeholder="Your email"
+                        color={error[1].status ? "danger" : "success"}
+                        errorMessage={error[1].status && error[1].msg}
+                        variant="bordered"
+                        onValueChange={(value) =>
+                            setData((prev) => {
+                                return {
+                                    ...prev,
+                                    email: value,
+                                };
+                            })
+                        }
+                    />
+                    <Button
                         type="submit"
-                        className="bg-black/70 hover:bg-black/80 disabled:opacity-60 duration-300 rounded-[6px] text-white w-full py-2"
+                        className="w-full disabled:bg-black bg-black/70 hover:bg-black/90 text-white"
+                        isLoading={loading}
                         disabled={loading}
                     >
-                        {loading ? (
-                            <div className="flex justify-center">
-                                <Loader2 className="w-5 h-5 animate-spin" />
-                            </div>
-                        ) : (
-                            "Accountability Community"
-                        )}
-                    </button>
+                        Accountability Community
+                    </Button>
                 </form>
             </div>
         </section>
