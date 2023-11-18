@@ -65,3 +65,8 @@ html {
         );
     }
 }
+
+/* next ui modified */
+.shadow-medium {
+    box-shadow: none;
+}
