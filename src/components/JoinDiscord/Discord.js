@@ -1,25 +1,61 @@
 "use client";
-import { useState } from "react";
-import Modal from "../Modal/Modal";
+import {
+    Modal,
+    ModalBody,
+    ModalContent,
+    useDisclosure,
+} from "@nextui-org/react";
+import { useEffect, useState } from "react";
 import DiscordJoiningForm from "./DiscordJoiningForm";
 
 const Discord = () => {
-    const [open, setOpen] = useState(false);
-    const modalControll = () => setOpen(!open);
+    const { isOpen, onOpen, onOpenChange } = useDisclosure();
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 600);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 600);
+        };
+
+        // Attach the event listener
+        window.addEventListener("resize", handleResize);
+
+        // Clean up the event listener on component unmount
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
     return (
         <div>
             <button
                 // href="/accountability-community/request"
                 className="bg-black/70 hover:bg-black/90 text-white/80 rounded-sm px-10 py-2 duration-200 "
-                onClick={modalControll}
+                onClick={onOpen}
             >
                 Join Now
             </button>
-            {open && (
-                <Modal modalControll={modalControll}>
-                    <DiscordJoiningForm />
-                </Modal>
-            )}
+            <Modal
+                size="2xl"
+                isOpen={isOpen}
+                onOpenChange={onOpenChange}
+                backdrop="blur"
+                placement={isMobile ? "bottom-center" : "center"}
+            >
+                <ModalContent>
+                    {(onClose) => (
+                        <div
+                            className={
+                                isMobile ? "py-[40px]" : "p-[30px] py-[50px]"
+                            }
+                        >
+                            <ModalBody>
+                                <DiscordJoiningForm />
+                            </ModalBody>
+                        </div>
+                    )}
+                </ModalContent>
+                /
+            </Modal>
         </div>
     );
 };
