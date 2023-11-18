@@ -5,6 +5,7 @@ import { ToastContainer } from "react-toastify";
 
 import NextNavbar from "@/components/navbar/NextNavbar";
 import GoogleAnalytics from "@/utils/GoogleAnalytics";
+import RemoveComponentsByCondition from "@/utils/RemoveComponentsByCondition";
 import "react-toastify/dist/ReactToastify.css";
 import "./globals.css";
 
@@ -28,10 +29,15 @@ export default function RootLayout({ children }) {
                 {/* Google analytics */}
 
                 <NProgress />
-                <NextNavbar />
+                <RemoveComponentsByCondition>
+                    <NextNavbar />
+                </RemoveComponentsByCondition>
+
                 <ToastContainer />
                 {children}
-                <Footer />
+                <RemoveComponentsByCondition>
+                    <Footer />
+                </RemoveComponentsByCondition>
             </body>
         </html>
     );
