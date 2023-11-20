@@ -1,8 +1,9 @@
+import WebWrapper from "@/components/shared/WebWrapper/WebWrapper";
 import Reviews from "../_sections/Reviews";
 
 const ReviewsContainer = () => {
     return (
-        <div>
+        <WebWrapper>
             <section className="bg-gray-300 h-auto py-[50px] md:min-h-[25vh]">
                 <h1 className="text-black/80 text-[50px] font-bold text-center">
                     Customer Experiences
@@ -15,7 +16,7 @@ const ReviewsContainer = () => {
             <section className="min-h-[calc(75vh-129px)] bg-white  pb-[100px] container ">
                 <Reviews />
             </section>
-        </div>
+        </WebWrapper>
     );
 };
 

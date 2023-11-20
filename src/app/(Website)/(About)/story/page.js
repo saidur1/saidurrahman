@@ -1,8 +1,11 @@
+import WebWrapper from "@/components/shared/WebWrapper/WebWrapper";
 
 const Our_Story = () => {
-  return (
-    <div>Our_Story</div>
-  )
-}
+    return (
+        <WebWrapper>
+            <div>Our_Story</div>
+        </WebWrapper>
+    );
+};
 
-export default Our_Story
+export default Our_Story;

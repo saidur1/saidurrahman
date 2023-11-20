@@ -10,7 +10,11 @@ const nextConfig = {
         ],
     },
     env: {
-        MONGODB_URI: `mongodb+srv://saidurrahman:saidur@cluster0.qf4haff.mongodb.net/?retryWrites=true&w=majority`,
+        MONGODB_URI:
+            process.env.NODE_ENV !== "production"
+                ? "mongodb+srv://monir:monirhrabby@cluster0.9qmlsqw.mongodb.net/?retryWrites=true&w=majority"
+                : "`mongodb+srv://saidurrahman:saidur@cluster0.qf4haff.mongodb.net/?retryWrites=true&w=majority`",
+
         baseURL:
             process.env.NODE_ENV !== "production"
                 ? "http://localhost:3000"
