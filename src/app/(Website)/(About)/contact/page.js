@@ -1,3 +1,4 @@
+import WebWrapper from "@/components/shared/WebWrapper/WebWrapper";
 import {
     AiFillFacebook,
     AiFillInstagram,
@@ -6,7 +7,7 @@ import {
 
 const Contact = () => {
     return (
-        <>
+        <WebWrapper>
             <section className="bg-white min-h-[calc(100vh-129px)] mx-auto">
                 <div className="w-full min-h-[30vh] bg-gray-300 flex items-center justify-center text-gray-800 font-bold text-[40px] md:text-[60px]">
                     Contact
@@ -44,7 +45,7 @@ const Contact = () => {
                     </a>
                 </section>
             </section>
-        </>
+        </WebWrapper>
     );
 };
 
