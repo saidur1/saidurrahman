@@ -21,14 +21,10 @@ import {
     TableHeader,
     TableRow,
     User,
+    useDisclosure,
 } from "@nextui-org/react";
 import React from "react";
-
-async function getData() {
-    const res = await fetch(`${process.env.baseURL}/api/admin/prospects`);
-    const data = await res.json();
-    return data;
-}
+import EditProspectModal from "./DeleteModal";
 
 const statusColorMap = {
     Customer: "success",
@@ -57,6 +53,8 @@ export default function TableContent({ users }) {
         direction: "ascending",
     });
     const [page, setPage] = React.useState(1);
+    //custom state
+    const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
     const hasSearchFilter = Boolean(filterValue);
 
@@ -152,9 +150,9 @@ export default function TableContent({ users }) {
                                 </Button>
                             </DropdownTrigger>
                             <DropdownMenu>
-                                <DropdownItem>View</DropdownItem>
-                                <DropdownItem>Edit</DropdownItem>
-                                <DropdownItem>Delete</DropdownItem>
+                                <DropdownItem onClick={onOpen}>
+                                    View
+                                </DropdownItem>
                             </DropdownMenu>
                         </Dropdown>
                     </div>
@@ -391,6 +389,7 @@ export default function TableContent({ users }) {
                     )}
                 </TableBody>
             </Table>
+            <EditProspectModal {...{ isOpen, onOpen, onOpenChange }} />
         </div>
     );
 }

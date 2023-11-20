@@ -13,8 +13,6 @@ export function middleware(request) {
         );
     } else if (path == "/community") {
         return NextResponse.redirect("https://discord.gg/uxfQY7HmQS");
-    } else if (path === "/admin") {
-        return NextResponse.redirect(`${process.env.baseURL}`);
     } else {
         return NextResponse.next();
     }
@@ -22,11 +20,5 @@ export function middleware(request) {
 
 // See "Matching Paths" below to learn more
 export const config = {
-    matcher: [
-        "/",
-        "/free-training",
-        "/free-training/content",
-        "/community",
-        "/admin",
-    ],
+    matcher: ["/", "/free-training", "/free-training/content", "/community"],
 };
