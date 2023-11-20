@@ -12,6 +12,32 @@ const ProspectSchema = new Schema(
             type: String,
             required: true,
         },
+        country: {
+            type: String,
+        },
+        tags: [
+            {
+                type: String,
+            },
+        ],
+        customerValue: {
+            type: String,
+        },
+        notes: {
+            type: String,
+        },
+        avatar: {
+            type: String,
+        },
+        facebook: {
+            type: String,
+        },
+        website: {
+            type: String,
+        },
+        linkedin: {
+            type: String,
+        },
     },
     {
         timestamps: true,

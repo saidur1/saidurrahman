@@ -1,4 +1,5 @@
 import Discord from "@/components/JoinDiscord/Discord";
+import WebWrapper from "@/components/shared/WebWrapper/WebWrapper";
 import Image from "next/image";
 
 const AccountabilityCommunity = () => {
@@ -42,67 +43,71 @@ const AccountabilityCommunity = () => {
     ];
 
     return (
-        <div className="min-h-[calc(100vh-145px)]  py-[50px] space-y-28 relative container ">
-            <section className="flex flex-col-reverse md:flex-row h-auto">
-                <div className="flex-1 space-y-8 text-[#333333] mt-[30px] md:mt-0">
-                    <h1 className="text-[22px] md:text-[30px] lg:text-[40px] font-semibold">
-                        Join the Accountability Community™ for Consistency,
-                        Support, and Success!
-                    </h1>
-                    <p>
-                        Dive into a world of growth and achievement! Join the
-                        Accountability Community on Discord for a supportive
-                        space where consistency, encouragement, and success
-                        converge. Your journey to unlocking your full potential
-                        begins here!
-                    </p>
-                    <div>
-                        <Discord />
+        <WebWrapper>
+            <div className="min-h-[calc(100vh-145px)]  py-[50px] space-y-28 relative container ">
+                <section className="flex flex-col-reverse md:flex-row h-auto">
+                    <div className="flex-1 space-y-8 text-[#333333] mt-[30px] md:mt-0">
+                        <h1 className="text-[22px] md:text-[30px] lg:text-[40px] font-semibold">
+                            Join the Accountability Community™ for Consistency,
+                            Support, and Success!
+                        </h1>
+                        <p>
+                            Dive into a world of growth and achievement! Join
+                            the Accountability Community on Discord for a
+                            supportive space where consistency, encouragement,
+                            and success converge. Your journey to unlocking your
+                            full potential begins here!
+                        </p>
+                        <div>
+                            <Discord />
+                        </div>
                     </div>
-                </div>
-                <div className="flex-1 flex flex-col items-center">
-                    <Image
-                        src="discord.svg"
-                        width={230}
-                        height={230}
-                        alt="discord"
-                        className=""
-                    />
-                    <p>@Accountability Community™</p>
-                </div>
-            </section>
-            <section className="text-[#1a1a1a]">
-                <h3 className="text-[16px] ">
-                    <span className="font-medium border-b-[2px] border-b-[#f9dd94] text-[18px]">
-                        Accountability Community™
-                    </span>{" "}
-                    meets camaraderie! Join our Discord server to embark on a
-                    transformative journey towards achieving your goals. Here,
-                    we understand the power of accountability, and we've curated
-                    a supportive community that empowers you to stay consistent
-                    and build habits that last.
-                </h3>
-                <div className="mt-[50px] space-y-14 text-[15px]">
-                    <ol className="text-[16px] space-y-4">
-                        {benefits?.map(({ id, title, description }) => {
-                            return (
-                                <li key={id} className="text-[15px]">
-                                    <span className="font-medium">{title}</span>
-                                    {description}
-                                </li>
-                            );
-                        })}
-                    </ol>
-                    <p className="text-[15px]">
-                        Don't just dream about your goals—achieve them with the
-                        Accountability Community™. Join us on Discord and take
-                        the first step towards a more accountable, empowered,
-                        and fulfilling life. Your journey to success starts
-                        here! 💪🚀
-                    </p>
-                </div>
-            </section>
-        </div>
+                    <div className="flex-1 flex flex-col items-center">
+                        <Image
+                            src="discord.svg"
+                            width={230}
+                            height={230}
+                            alt="discord"
+                            className=""
+                        />
+                        <p>@Accountability Community™</p>
+                    </div>
+                </section>
+                <section className="text-[#1a1a1a]">
+                    <h3 className="text-[16px] ">
+                        <span className="font-medium border-b-[2px] border-b-[#f9dd94] text-[18px]">
+                            Accountability Community™
+                        </span>{" "}
+                        meets camaraderie! Join our Discord server to embark on
+                        a transformative journey towards achieving your goals.
+                        Here, we understand the power of accountability, and
+                        we've curated a supportive community that empowers you
+                        to stay consistent and build habits that last.
+                    </h3>
+                    <div className="mt-[50px] space-y-14 text-[15px]">
+                        <ol className="text-[16px] space-y-4">
+                            {benefits?.map(({ id, title, description }) => {
+                                return (
+                                    <li key={id} className="text-[15px]">
+                                        <span className="font-medium">
+                                            {title}
+                                        </span>
+                                        {description}
+                                    </li>
+                                );
+                            })}
+                        </ol>
+                        <p className="text-[15px]">
+                            Don't just dream about your goals—achieve them with
+                            the Accountability Community™. Join us on Discord
+                            and take the first step towards a more accountable,
+                            empowered, and fulfilling life. Your journey to
+                            success starts here! 💪🚀
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </WebWrapper>
     );
 };
 

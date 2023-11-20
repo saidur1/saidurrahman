@@ -1,3 +1,4 @@
+import WebWrapper from "@/components/shared/WebWrapper/WebWrapper";
 import {
     AiFillFacebook,
     AiFillInstagram,
@@ -6,7 +7,7 @@ import {
 
 const Contact = () => {
     return (
-        <>
+        <WebWrapper>
             <section className="bg-white min-h-[calc(100vh-129px)] mx-auto">
                 <div className="w-full min-h-[30vh] bg-gray-300 flex items-center justify-center text-gray-800 font-bold text-[40px] md:text-[60px]">
                     Contact
@@ -29,10 +30,18 @@ const Contact = () => {
                     </h3>
                 </section>
                 <section className="max-w-[500px] mx-auto py-[30px] flex justify-center gap-[30px]">
-                    <a href="#" className="group">
+                    <a
+                        href="https://www.facebook.com/saidurrahmanfb"
+                        target="_facebook"
+                        className="group"
+                    >
                         <AiFillFacebook className="text-[30px] group-hover:scale-125 duration-300" />
                     </a>
-                    <a href="#" className="group">
+                    <a
+                        href="https://www.instagram.com/saidurrahmanorg/"
+                        target="_blank"
+                        className="group"
+                    >
                         <AiFillInstagram className="text-[30px] group-hover:scale-125 duration-300" />
                     </a>
                     <a
@@ -44,7 +53,7 @@ const Contact = () => {
                     </a>
                 </section>
             </section>
-        </>
+        </WebWrapper>
     );
 };
 

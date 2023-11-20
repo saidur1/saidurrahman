@@ -1,8 +1,11 @@
+import WebWrapper from "@/components/shared/WebWrapper/WebWrapper";
 
 const Accelerator = () => {
-  return (
-    <div>Accelerator</div>
-  )
-}
+    return (
+        <WebWrapper>
+            <div>Accelerator</div>
+        </WebWrapper>
+    );
+};
 
-export default Accelerator
+export default Accelerator;
