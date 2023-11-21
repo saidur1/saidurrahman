@@ -3,6 +3,7 @@ export async function getProspects() {
     try {
         const res = await fetch(`${process.env.baseURL}/api/admin/prospects`, {
             cache: "no-store",
+            next: { tags: ["prospects"] },
         });
         const data = await res.json();
 

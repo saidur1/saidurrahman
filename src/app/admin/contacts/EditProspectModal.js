@@ -1,3 +1,4 @@
+import updateProspect from "@/assets/fetch/updateProspect";
 import {
     Button,
     Input,
@@ -14,7 +15,6 @@ import { Check, Edit3 } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
-
 const tagsOptions = [
     {
         lable: "Leads",
@@ -29,27 +29,6 @@ const tagsOptions = [
         value: "Follow Up",
     },
 ];
-
-async function updateData({ data, prospectId }) {
-    console.log("yes propspect id", prospectId);
-    try {
-        const res = await fetch(
-            `${process.env.baseURL}/api/admin/prospects/${prospectId}`,
-            {
-                method: "PUT",
-                body: JSON.stringify(data),
-            }
-        );
-
-        if (!res.ok) {
-            toast.error("Cannot update data");
-        } else {
-            return true;
-        }
-    } catch (error) {
-        console.log("Updated prospect from modal error:", error);
-    }
-}
 
 const EditProspectModal = ({ isOpen, onOpenChange, initialData, refetch }) => {
     const {
@@ -142,7 +121,7 @@ const EditProspectModal = ({ isOpen, onOpenChange, initialData, refetch }) => {
         };
 
         try {
-            await updateData({ data, prospectId: id });
+            await updateProspect({ data, prospectId: id });
             setIsEditable(false);
             refetch();
             toast.success("Update name successfully");
@@ -174,7 +153,7 @@ const EditProspectModal = ({ isOpen, onOpenChange, initialData, refetch }) => {
         };
 
         try {
-            await updateData({ data, prospectId: id });
+            await updateProspect({ data, prospectId: id });
             setIsEditable(false);
             refetch();
             toast.success("Update email successfully");
