@@ -5,7 +5,11 @@ export async function getProspects() {
             cache: "no-store",
         });
         const data = await res.json();
-        return data;
+        const users = data?.map(({ _id, ...rest }) => ({
+            id: _id,
+            ...rest,
+        }));
+        return users;
     } catch (error) {
         console.log("FETCH in <getProspect>", error);
         return [];
