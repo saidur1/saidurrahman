@@ -66,6 +66,7 @@ const EditProspectModal = ({ isOpen, onOpenChange, initialData, refetch }) => {
     //function
     const [loading, setLoading] = useState({
         name: false,
+        email: false,
     });
 
     useEffect(() => {
@@ -77,6 +78,12 @@ const EditProspectModal = ({ isOpen, onOpenChange, initialData, refetch }) => {
             setTags(new Set());
             setIsEditable(false);
             setActionLoading(false);
+            setLoading((prev) => {
+                return {
+                    name: false,
+                    email: false,
+                };
+            });
         } else {
             // Set initial values when the modal is opened
             setName(initialName);
@@ -117,6 +124,7 @@ const EditProspectModal = ({ isOpen, onOpenChange, initialData, refetch }) => {
         setTags(new Set(e.target.value.split(",")));
     };
 
+    // responsible for change the name
     const nameChange = async (e) => {
         e.preventDefault();
 
@@ -149,6 +157,38 @@ const EditProspectModal = ({ isOpen, onOpenChange, initialData, refetch }) => {
         }
     };
 
+    const emailChange = async (e) => {
+        e.preventDefault();
+
+        // set start loading
+        setLoading((prev) => {
+            return {
+                ...prev,
+                email: true,
+            };
+        });
+        const updatedName = e.target.email.value;
+        const data = {
+            email: updatedName,
+        };
+
+        try {
+            await updateData({ data, prospectId: _id });
+            setIsEditable(false);
+            refetch();
+            toast.success("Update email successfully");
+        } catch (error) {
+            toast.error("cannot updated the email");
+        } finally {
+            setLoading((prev) => {
+                return {
+                    ...prev,
+                    email: false,
+                };
+            });
+        }
+    };
+
     return (
         <>
             <Modal
@@ -176,7 +216,6 @@ const EditProspectModal = ({ isOpen, onOpenChange, initialData, refetch }) => {
                                     >
                                         <Input
                                             name="name"
-                                            defaultValue={initialName}
                                             value={name}
                                             className="max-w-[400px]"
                                             variant="underlined"
@@ -209,21 +248,42 @@ const EditProspectModal = ({ isOpen, onOpenChange, initialData, refetch }) => {
                                         )}
                                     </form>
                                     <div>
-                                        <Input
-                                            value={
-                                                initalEmail
-                                                    ? initalEmail
-                                                    : email
-                                            }
-                                            className="max-w-[400px]"
-                                            variant="underlined"
-                                            placeholder={"Prospect Email"}
-                                            onValueChange={(value) =>
-                                                setEmail(value)
-                                            }
-                                            readOnly={!isEditable}
-                                            disabled={!isEditable}
-                                        />
+                                        <form
+                                            className="flex items-center"
+                                            onSubmit={emailChange}
+                                        >
+                                            <Input
+                                                value={email}
+                                                name="email"
+                                                className="max-w-[400px]"
+                                                variant="underlined"
+                                                placeholder={"Prospect Email"}
+                                                onValueChange={(value) =>
+                                                    setEmail(value)
+                                                }
+                                                readOnly={!isEditable}
+                                                disabled={!isEditable}
+                                            />
+                                            {loading.email ? (
+                                                <div>
+                                                    <Spinner
+                                                        size="sm"
+                                                        color="danger"
+                                                    />
+                                                </div>
+                                            ) : !isEditable ? (
+                                                <div>
+                                                    <Edit3 className="w-4 h-4" />
+                                                </div>
+                                            ) : (
+                                                <button
+                                                    type="submit"
+                                                    className="bg-gray-200 p-1 rounded-full hover:bg-pink-200 duration-200 group"
+                                                >
+                                                    <Check className="w-4 h-4 group-hover:text-white" />
+                                                </button>
+                                            )}
+                                        </form>
                                     </div>
                                     <Input
                                         value={country}
