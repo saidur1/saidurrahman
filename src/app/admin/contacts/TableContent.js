@@ -202,6 +202,10 @@ export default function TableContent({ users }) {
 
     const router = useRouter();
 
+    const refetch = () => {
+        router.refresh();
+    };
+
     const topContent = React.useMemo(() => {
         return (
             <div className="flex flex-col gap-4">
@@ -216,9 +220,7 @@ export default function TableContent({ users }) {
                         onValueChange={onSearchChange}
                     />
                     <div className="flex gap-3">
-                        <Button onPress={() => router.refresh()}>
-                            Refresh
-                        </Button>
+                        <Button onPress={refetch}>Refresh</Button>
                         <Dropdown>
                             <DropdownTrigger className="hidden sm:flex">
                                 <Button
@@ -399,12 +401,10 @@ export default function TableContent({ users }) {
                     )}
                 </TableBody>
             </Table>
-            {currentEditableData && (
-                <EditProspectModal
-                    {...{ isOpen, onOpen, onOpenChange }}
-                    initialData={currentEditableData}
-                />
-            )}
+            <EditProspectModal
+                {...{ isOpen, onOpen, onOpenChange, refetch }}
+                initialData={currentEditableData}
+            />
         </div>
     );
 }
