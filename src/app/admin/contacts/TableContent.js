@@ -65,12 +65,13 @@ export default function TableContent({ initialData }) {
     const getAndSetProspects = async () => {
         const newData = await getProspects();
         setUsers(newData);
+        return true;
     };
 
     const router = useRouter();
 
-    const refetch = () => {
-        getAndSetProspects();
+    const refetch = async () => {
+        await getAndSetProspects();
         router.refresh();
     };
 

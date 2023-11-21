@@ -3,7 +3,7 @@ export async function getProspects() {
     try {
         const res = await fetch(`${process.env.baseURL}/api/admin/prospects`, {
             cache: "no-cache",
-            next: { tags: ["prospects"] },
+            next: { tags: ["prospects"], revalidate: 0 },
         });
         const data = await res.json();
 
