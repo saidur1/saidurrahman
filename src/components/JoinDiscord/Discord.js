@@ -38,7 +38,7 @@ const Discord = () => {
                 className="bg-black/70 hover:bg-black/90 text-white/80 rounded-sm px-10 py-2 duration-200 "
                 onClick={onOpen}
             >
-                Join Now
+                Join Now FREE
             </button>
             <Modal
                 size="2xl"

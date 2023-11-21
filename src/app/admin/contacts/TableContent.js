@@ -23,8 +23,9 @@ import {
     User,
     useDisclosure,
 } from "@nextui-org/react";
+import { useRouter } from "next/navigation";
 import React from "react";
-import EditProspectModal from "./DeleteModal";
+import EditProspectModal from "./EditProspectModal";
 
 const statusColorMap = {
     Customer: "success",
@@ -55,6 +56,7 @@ export default function TableContent({ users }) {
     const [page, setPage] = React.useState(1);
     //custom state
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
+    const [currentEditableData, setCurentEditableData] = React.useState(null);
 
     const hasSearchFilter = Boolean(filterValue);
 
@@ -150,7 +152,12 @@ export default function TableContent({ users }) {
                                 </Button>
                             </DropdownTrigger>
                             <DropdownMenu>
-                                <DropdownItem onClick={onOpen}>
+                                <DropdownItem
+                                    onClick={() => {
+                                        setCurentEditableData(user);
+                                        onOpen();
+                                    }}
+                                >
                                     View
                                 </DropdownItem>
                             </DropdownMenu>
@@ -193,7 +200,7 @@ export default function TableContent({ users }) {
         setPage(1);
     }, []);
 
-    console.log("statusFilter is ", statusFilter);
+    const router = useRouter();
 
     const topContent = React.useMemo(() => {
         return (
@@ -209,6 +216,9 @@ export default function TableContent({ users }) {
                         onValueChange={onSearchChange}
                     />
                     <div className="flex gap-3">
+                        <Button onPress={() => router.refresh()}>
+                            Refresh
+                        </Button>
                         <Dropdown>
                             <DropdownTrigger className="hidden sm:flex">
                                 <Button
@@ -389,7 +399,12 @@ export default function TableContent({ users }) {
                     )}
                 </TableBody>
             </Table>
-            <EditProspectModal {...{ isOpen, onOpen, onOpenChange }} />
+            {currentEditableData && (
+                <EditProspectModal
+                    {...{ isOpen, onOpen, onOpenChange }}
+                    initialData={currentEditableData}
+                />
+            )}
         </div>
     );
 }
