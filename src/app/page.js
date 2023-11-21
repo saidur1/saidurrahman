@@ -1,7 +1,6 @@
-import profile from "@/assets/images/saidur.jpeg";
+import Blur from "@/components/plaiceholder/blur";
 import WebWrapper from "@/components/shared/WebWrapper/WebWrapper";
 import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
-import Image from "next/image";
 import Programms from "./(Website)/_sections/Programms";
 import Reviews from "./(Website)/_sections/Reviews";
 
@@ -27,12 +26,10 @@ export default async function Home() {
                 <Programms />
                 <section className="bg-white">
                     <section className="py-[50px] md:py-[100px] container grid grid-cols-1 md:grid-cols-2 gap-[30px]">
-                        <div className="flex-1">
-                            <Image
-                                src={profile}
-                                width={500}
-                                className="opacity-75 hover:opacity-100 duration-300 rounded-sm"
-                                alt="Profile"
+                        <div className="flex-1 max-w-[450px] h-auto relative imgContainer">
+                            <Blur
+                                src="https://res.cloudinary.com/dzlrpspps/image/upload/v1700540627/Projects/Saidur/saidur_sfwsaw.jpg"
+                                className="rounded-md hover:scale-105 duration-300"
                                 title="Saidur Rahman"
                             />
                         </div>
