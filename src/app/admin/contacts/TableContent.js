@@ -69,7 +69,7 @@ export default function TableContent({ users }) {
     }, [visibleColumns]);
 
     const filteredItems = React.useMemo(() => {
-        let filteredUsers = [...users];
+        let filteredUsers = Array.isArray(users) ? [...users] : [];
 
         if (hasSearchFilter) {
             filteredUsers = filteredUsers.filter((user) =>
@@ -127,7 +127,7 @@ export default function TableContent({ users }) {
             case "tags":
                 return (
                     <div className="flex gap-x-2">
-                        {user.tags.map((tagName, index) => (
+                        {user?.tags?.map((tagName, index) => (
                             <Chip
                                 key={index}
                                 className="capitalize"

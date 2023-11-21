@@ -12,9 +12,7 @@ const nextConfig = {
     },
     env: {
         MONGODB_URI:
-            process.env.NODE_ENV !== "production"
-                ? "mongodb+srv://monir:monirhrabby@cluster0.9qmlsqw.mongodb.net/?retryWrites=true&w=majority"
-                : "`mongodb+srv://monir:monirhrabby@cluster0.9qmlsqw.mongodb.net/?retryWrites=true&w=majority`",
+            "mongodb+srv://fearlessAdmin:bBp6^B7$TqBC@cluster0.qf4haff.mongodb.net/?retryWrites=true&w=majority",
 
         baseURL:
             process.env.NODE_ENV !== "production"
