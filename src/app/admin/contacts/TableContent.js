@@ -221,7 +221,7 @@ export default function TableContent({ users }) {
                     />
                     <div className="flex gap-3">
                         <Button onPress={refetch}>Refresh</Button>
-                        <Dropdown>
+                        {/* <Dropdown>
                             <DropdownTrigger className="hidden sm:flex">
                                 <Button
                                     endContent={
@@ -249,7 +249,7 @@ export default function TableContent({ users }) {
                                     </DropdownItem>
                                 ))}
                             </DropdownMenu>
-                        </Dropdown>
+                        </Dropdown> */}
                         <Dropdown>
                             <DropdownTrigger className="hidden sm:flex">
                                 <Button
