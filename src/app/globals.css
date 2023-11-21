@@ -70,3 +70,7 @@ html {
 .shadow-medium {
     box-shadow: none;
 }
+
+.imgContainer img {
+    object-fit: cover;
+}

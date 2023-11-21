@@ -68,7 +68,6 @@ const AccountabilityCommunity = () => {
                             width={230}
                             height={230}
                             alt="discord"
-                            className=""
                         />
                         <p>@Accountability Community™</p>
                     </div>

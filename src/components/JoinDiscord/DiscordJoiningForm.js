@@ -93,7 +93,13 @@ const DiscordJoiningForm = ({ isMobile }) => {
     return (
         <section className="w-full  flex justify-center h-auto items-center relative">
             <div className="w-[50px] h-[50px] bg-white border-[1px] border-black/40  rounded-full flex justify-center items-center absolute top-[-25px]">
-                <Image src={acLogo} width={30} height={30} alt="discord" />
+                <Image
+                    src={acLogo}
+                    width={30}
+                    height={30}
+                    alt="discord"
+                    placeholder="blur"
+                />
             </div>
             <div className=" w-[400px] shadow-lg border-[1px] border-black/20 rounded-md p-[30px] pt-[50px]">
                 <div>

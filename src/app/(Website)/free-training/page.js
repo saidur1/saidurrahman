@@ -57,12 +57,12 @@ const FreeTraining = async () => {
                         bonuses every week!
                     </p>
                     <div className="flex flex-col md:flex-row justify-center gap-x-[50px] gap-[30px] py-[50px]">
-                        <div className="flex flex-col items-center gap-y-8">
+                        <div className="flex flex-col items-center gap-y-8 w-[300px] h-auto">
                             <Image
                                 src="https://res.cloudinary.com/dzlrpspps/image/upload/v1699577047/Projects/Saidur/said_afxj8v.png"
-                                alt="thumbnail"
                                 width={300}
-                                height={300}
+                                height={200}
+                                alt="thumbnail"
                                 className="rounded-full"
                                 priority
                             />
