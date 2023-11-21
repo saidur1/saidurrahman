@@ -1,12 +1,11 @@
 "use client";
-import { columns, statusOptions } from "@/components/shared/data/data";
+import { columns, statusOptions, users } from "@/components/shared/data/data";
 import { ChevronDownIcon } from "@/components/shared/icons/ChevronDownIcon";
 import { PlusIcon } from "@/components/shared/icons/PlusIcon";
 import { SearchIcon } from "@/components/shared/icons/SearchIcon";
 import { VerticalDotsIcon } from "@/components/shared/icons/VerticalDotsIcon";
 import {
     Button,
-    Chip,
     Dropdown,
     DropdownItem,
     DropdownMenu,
@@ -41,7 +40,7 @@ export function capitalize(str) {
     return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-export default function TableContent({ users }) {
+export default function TableContent() {
     const [filterValue, setFilterValue] = React.useState("");
     const [selectedKeys, setSelectedKeys] = React.useState(new Set([]));
     const [visibleColumns, setVisibleColumns] = React.useState(
@@ -127,7 +126,7 @@ export default function TableContent({ users }) {
             case "tags":
                 return (
                     <div className="flex gap-x-2">
-                        {user.tags.map((tagName, index) => (
+                        {/* {user.tags.map((tagName, index) => (
                             <>
                                 <Chip
                                     key={index}
@@ -139,7 +138,8 @@ export default function TableContent({ users }) {
                                     {tagName}
                                 </Chip>
                             </>
-                        ))}
+                        ))} */}
+                        tag
                     </div>
                 );
             case "actions":
@@ -221,7 +221,7 @@ export default function TableContent({ users }) {
                     />
                     <div className="flex gap-3">
                         <Button onPress={refetch}>Refresh</Button>
-                        {/* <Dropdown>
+                        <Dropdown>
                             <DropdownTrigger className="hidden sm:flex">
                                 <Button
                                     endContent={
@@ -249,7 +249,7 @@ export default function TableContent({ users }) {
                                     </DropdownItem>
                                 ))}
                             </DropdownMenu>
-                        </Dropdown> */}
+                        </Dropdown>
                         <Dropdown>
                             <DropdownTrigger className="hidden sm:flex">
                                 <Button
@@ -391,7 +391,7 @@ export default function TableContent({ users }) {
                     loadingContent={<Spinner label="Loading..." />}
                 >
                     {(item) => (
-                        <TableRow key={item._id}>
+                        <TableRow key={item.id}>
                             {(columnKey) => (
                                 <TableCell>
                                     {renderCell(item, columnKey)}
