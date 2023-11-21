@@ -6,7 +6,7 @@ const ContactAll = async () => {
 
     return (
         <div>
-            <TableContent users={data} />
+            <TableContent initialData={data} />
         </div>
     );
 };

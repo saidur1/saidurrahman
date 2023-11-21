@@ -1,4 +1,6 @@
 "use client";
+import { getProspects } from "@/assets/fetch/getProspects";
+import updateProspect from "@/assets/fetch/updateProspect";
 import { columns, statusOptions } from "@/components/shared/data/data";
 import { ChevronDownIcon } from "@/components/shared/icons/ChevronDownIcon";
 import { PlusIcon } from "@/components/shared/icons/PlusIcon";
@@ -24,7 +26,7 @@ import {
     useDisclosure,
 } from "@nextui-org/react";
 import { useRouter } from "next/navigation";
-import React from "react";
+import React, { useState } from "react";
 import EditProspectModal from "./EditProspectModal";
 
 const statusColorMap = {
@@ -41,7 +43,7 @@ export function capitalize(str) {
     return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-export default function TableContent({ users }) {
+export default function TableContent({ initialData }) {
     const [filterValue, setFilterValue] = React.useState("");
     const [selectedKeys, setSelectedKeys] = React.useState(new Set([]));
     const [visibleColumns, setVisibleColumns] = React.useState(
@@ -57,6 +59,20 @@ export default function TableContent({ users }) {
     //custom state
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
     const [currentEditableData, setCurentEditableData] = React.useState(null);
+    const [users, setUsers] = useState(initialData);
+
+    // get and set prospects
+    const getAndSetProspects = async () => {
+        const newData = await getProspects();
+        setUsers(newData);
+    };
+
+    const router = useRouter();
+
+    const refetch = () => {
+        getAndSetProspects();
+        router.refresh();
+    };
 
     const hasSearchFilter = Boolean(filterValue);
 
@@ -110,62 +126,69 @@ export default function TableContent({ users }) {
         });
     }, [sortDescriptor, items]);
 
-    const renderCell = React.useCallback((user, columnKey) => {
-        const cellValue = user[columnKey];
+    const renderCell = React.useCallback(
+        (user, columnKey) => {
+            const cellValue = user[columnKey];
 
-        switch (columnKey) {
-            case "name":
-                return (
-                    <User
-                        avatarProps={{ radius: "lg", src: user.avatar }}
-                        description={user.email}
-                        name={cellValue}
-                    >
-                        {user.email}
-                    </User>
-                );
-            case "tags":
-                return (
-                    <div className="flex gap-x-2">
-                        {user?.tags?.map((tagName, index) => (
-                            <Chip
-                                key={index}
-                                className="capitalize"
-                                color={statusColorMap[tagName]}
-                                size="sm"
-                                variant="flat"
-                            >
-                                {tagName}
-                            </Chip>
-                        ))}
-                    </div>
-                );
-            case "actions":
-                return (
-                    <div className="relative flex justify-start items-center gap-2">
-                        <Dropdown>
-                            <DropdownTrigger>
-                                <Button isIconOnly size="sm" variant="light">
-                                    <VerticalDotsIcon className="text-default-300" />
-                                </Button>
-                            </DropdownTrigger>
-                            <DropdownMenu>
-                                <DropdownItem
-                                    onClick={() => {
-                                        setCurentEditableData(user);
-                                        onOpen();
-                                    }}
+            switch (columnKey) {
+                case "name":
+                    return (
+                        <User
+                            avatarProps={{ radius: "lg", src: user.avatar }}
+                            description={user.email}
+                            name={cellValue}
+                        >
+                            {user.email}
+                        </User>
+                    );
+                case "tags":
+                    return (
+                        <div className="flex gap-x-2">
+                            {user?.tags?.map((tagName, index) => (
+                                <Chip
+                                    key={index}
+                                    className="capitalize"
+                                    color={statusColorMap[tagName]}
+                                    size="sm"
+                                    variant="flat"
                                 >
-                                    View
-                                </DropdownItem>
-                            </DropdownMenu>
-                        </Dropdown>
-                    </div>
-                );
-            default:
-                return cellValue;
-        }
-    }, []);
+                                    {tagName}
+                                </Chip>
+                            ))}
+                        </div>
+                    );
+                case "actions":
+                    return (
+                        <div className="relative flex justify-start items-center gap-2">
+                            <Dropdown>
+                                <DropdownTrigger>
+                                    <Button
+                                        isIconOnly
+                                        size="sm"
+                                        variant="light"
+                                    >
+                                        <VerticalDotsIcon className="text-default-300" />
+                                    </Button>
+                                </DropdownTrigger>
+                                <DropdownMenu>
+                                    <DropdownItem
+                                        onClick={() => {
+                                            setCurentEditableData(user);
+                                            onOpen();
+                                        }}
+                                    >
+                                        View
+                                    </DropdownItem>
+                                </DropdownMenu>
+                            </Dropdown>
+                        </div>
+                    );
+                default:
+                    return cellValue;
+            }
+        },
+        [updateProspect]
+    );
 
     const onNextPage = React.useCallback(() => {
         if (page < pages) {
@@ -197,12 +220,6 @@ export default function TableContent({ users }) {
         setFilterValue("");
         setPage(1);
     }, []);
-
-    const router = useRouter();
-
-    const refetch = () => {
-        router.refresh();
-    };
 
     const topContent = React.useMemo(() => {
         return (
