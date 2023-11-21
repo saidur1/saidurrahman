@@ -43,8 +43,9 @@ async function updateData({ data, prospectId }) {
 
         if (!res.ok) {
             toast.error("Cannot update data");
+        } else {
+            return true;
         }
-        return true;
     } catch (error) {
         console.log("Updated prospect from modal error:", error);
     }
@@ -52,7 +53,7 @@ async function updateData({ data, prospectId }) {
 
 const EditProspectModal = ({ isOpen, onOpenChange, initialData, refetch }) => {
     const {
-        _id,
+        id,
         email: initalEmail,
         name: initialName,
         tags: initaialTags,
@@ -141,7 +142,7 @@ const EditProspectModal = ({ isOpen, onOpenChange, initialData, refetch }) => {
         };
 
         try {
-            await updateData({ data, prospectId: _id });
+            await updateData({ data, prospectId: id });
             setIsEditable(false);
             refetch();
             toast.success("Update name successfully");
@@ -173,7 +174,7 @@ const EditProspectModal = ({ isOpen, onOpenChange, initialData, refetch }) => {
         };
 
         try {
-            await updateData({ data, prospectId: _id });
+            await updateData({ data, prospectId: id });
             setIsEditable(false);
             refetch();
             toast.success("Update email successfully");
