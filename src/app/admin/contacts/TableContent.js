@@ -1,11 +1,12 @@
 "use client";
-import { columns, statusOptions, users } from "@/components/shared/data/data";
+import { columns, statusOptions } from "@/components/shared/data/data";
 import { ChevronDownIcon } from "@/components/shared/icons/ChevronDownIcon";
 import { PlusIcon } from "@/components/shared/icons/PlusIcon";
 import { SearchIcon } from "@/components/shared/icons/SearchIcon";
 import { VerticalDotsIcon } from "@/components/shared/icons/VerticalDotsIcon";
 import {
     Button,
+    Chip,
     Dropdown,
     DropdownItem,
     DropdownMenu,
@@ -40,7 +41,7 @@ export function capitalize(str) {
     return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-export default function TableContent() {
+export default function TableContent({ users }) {
     const [filterValue, setFilterValue] = React.useState("");
     const [selectedKeys, setSelectedKeys] = React.useState(new Set([]));
     const [visibleColumns, setVisibleColumns] = React.useState(
@@ -126,20 +127,17 @@ export default function TableContent() {
             case "tags":
                 return (
                     <div className="flex gap-x-2">
-                        {/* {user.tags.map((tagName, index) => (
-                            <>
-                                <Chip
-                                    key={index}
-                                    className="capitalize"
-                                    color={statusColorMap[tagName]}
-                                    size="sm"
-                                    variant="flat"
-                                >
-                                    {tagName}
-                                </Chip>
-                            </>
-                        ))} */}
-                        tag
+                        {user.tags.map((tagName, index) => (
+                            <Chip
+                                key={index}
+                                className="capitalize"
+                                color={statusColorMap[tagName]}
+                                size="sm"
+                                variant="flat"
+                            >
+                                {tagName}
+                            </Chip>
+                        ))}
                     </div>
                 );
             case "actions":
@@ -240,12 +238,12 @@ export default function TableContent() {
                                 selectionMode="multiple"
                                 onSelectionChange={setStatusFilter}
                             >
-                                {statusOptions.map((status) => (
+                                {statusOptions.map(({ name, uid }) => (
                                     <DropdownItem
-                                        key={status.uid}
+                                        key={uid}
                                         className="capitalize"
                                     >
-                                        {capitalize(status.name)}
+                                        {capitalize(name)}
                                     </DropdownItem>
                                 ))}
                             </DropdownMenu>
@@ -269,12 +267,12 @@ export default function TableContent() {
                                 selectionMode="multiple"
                                 onSelectionChange={setVisibleColumns}
                             >
-                                {columns.map((column) => (
+                                {columns.map(({ uid, name }) => (
                                     <DropdownItem
-                                        key={column.uid}
+                                        key={uid}
                                         className="capitalize"
                                     >
-                                        {capitalize(column.name)}
+                                        {capitalize(name)}
                                     </DropdownItem>
                                 ))}
                             </DropdownMenu>

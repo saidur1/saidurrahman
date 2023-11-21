@@ -1,4 +1,5 @@
 export async function getProspects() {
+    console.log(`${process.env.baseURL}, called`);
     try {
         const res = await fetch(`${process.env.baseURL}/api/admin/prospects`, {
             cache: "no-store",
