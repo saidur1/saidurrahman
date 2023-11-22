@@ -70,7 +70,7 @@ const Privacy = () => {
             id: Math.floor(Math.random() * 10000),
             title: "HOW CAN A USER ACCESS, CHANGE, AND/OR DELETE PERSONAL INFORMATION?",
             content: [
-                "You may access, correct, update, and/or delete any personally-identifiable information that you submit to the web site. You may also unsubscribe from mailing lists or any registrations on the web site. To do so, please either follow instructions on the page of the web site on which you have provided such information or subscribed or registered or contact us at [youremailaddress@domain.com]",
+                "You may access, correct, update, and/or delete any personally-identifiable information that you submit to the web site. You may also unsubscribe from mailing lists or any registrations on the web site. To do so, please either follow instructions on the page of the web site on which you have provided such information or subscribed or registered or contact us at support@saidurrahman.org",
             ],
         },
         {
