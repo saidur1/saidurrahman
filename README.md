@@ -1,6 +1,3 @@
-Certainly! A README file is essential for providing information about your project and helping others understand how to use and contribute to it. Below is a template you can use for your Saidur Consulting project:
-
----
 
 # Saidur Consulting
 
@@ -12,7 +9,6 @@ Welcome to Saidur Consulting, a consulting website where Saidur showcases his re
 - [Installation](#installation)
 - [Usage](#usage)
 - [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Features
@@ -70,9 +66,6 @@ Visit [http://localhost:3000](http://localhost:3000) in your browser.
 - Next.js
 - Next UI
 
-## Contributing
-
-Contributions are welcome! Please follow the [contribution guidelines](CONTRIBUTING.md) when submitting pull requests or reporting issues.
 
 ## License
 
