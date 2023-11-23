@@ -16,13 +16,13 @@ async function postData(data) {
     });
 
     if (!res.ok) {
-        throw new Error("Failed to fetch data");
+        throw new Error("Failed to post data");
     }
 
     return true;
 }
 
-const FreeTraining = async () => {
+const FreeTraining = () => {
     const [loading, setLoading] = useState(false);
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -42,7 +42,7 @@ const FreeTraining = async () => {
             router.push("/free-training/content");
         } catch (error) {
             setLoading(false);
-            toast.error("Something is wrong!");
+            toast.error("Something is wrong!", error);
         }
     };
     return (
