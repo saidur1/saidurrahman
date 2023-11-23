@@ -1,6 +1,6 @@
-import Blur from "@/components/plaiceholder/blur";
 import WebWrapper from "@/components/shared/WebWrapper/WebWrapper";
 import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
+import Image from "next/image";
 import Programms from "./(Website)/_sections/Programms";
 import Reviews from "./(Website)/_sections/Reviews";
 
@@ -27,10 +27,12 @@ export default async function Home() {
                 <section className="bg-white">
                     <section className="py-[50px] md:py-[100px] container grid grid-cols-1 md:grid-cols-2 gap-[30px]">
                         <div className="flex-1 max-w-[450px] h-auto relative imgContainer">
-                            <Blur
+                            <Image
                                 src="https://res.cloudinary.com/dzlrpspps/image/upload/v1700540627/Projects/Saidur/saidur_sfwsaw.jpg"
+                                fill
                                 className="rounded-md hover:scale-105 duration-300"
                                 title="Saidur Rahman"
+                                alt="Saidur Rahman"
                             />
                         </div>
                         <div className="flex-1">
