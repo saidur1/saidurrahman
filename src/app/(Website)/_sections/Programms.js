@@ -14,7 +14,7 @@ const Programms = () => {
             CH: "AA",
             title: "Accountability Accelerator",
             desc: "Accountability accelerator is a six weeks program for online entrepreneurs who want to learn and implement fundamental principles, build habits, identify and eliminate distractions, and keep themself accountable.",
-            href: "/schedule",
+            href: "/accountability-accelerator",
         },
     ];
     return (

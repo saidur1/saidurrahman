@@ -1,4 +1,3 @@
-import withPlaiceholder from "@plaiceholder/next";
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     pageExtensions: ["js", "jsx", "mjs"],
@@ -15,7 +14,6 @@ const nextConfig = {
             process.env.NODE_ENV !== "production"
                 ? "http://localhost:3000"
                 : "https://www.saidurrahman.org",
-        MEASUREMENT_ID: "G-1YSD4PK63G",
     },
     webpack: (config) => {
         config.resolve.fallback = { fs: false };
@@ -23,7 +21,6 @@ const nextConfig = {
         return config;
     },
 };
-
-export default withPlaiceholder(nextConfig);
+module.exports = nextConfig;
 
 // baseUrl
