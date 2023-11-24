@@ -1,7 +1,6 @@
 "use client";
 import BlackFridayPromotionModal from "@/components/promotionModal/black-friday/blackFridayPromotionModal";
 import WebWrapper from "@/components/shared/WebWrapper/WebWrapper";
-import CallBookHighLight from "@/components/shared/callBookHighlight/CallBookHighLight";
 import { Chip } from "@nextui-org/react";
 import {
     FolderIcon,
@@ -12,8 +11,10 @@ import {
     TargetIcon,
 } from "lucide-react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const AccountabilityAccelerator = () => {
+    const router = useRouter();
     const keyFocusAres = [
         {
             id: Math.floor(Math.random() * 9999),
@@ -319,6 +320,12 @@ const AccountabilityAccelerator = () => {
         },
     ];
 
+    const payment = () => {
+        router.replace(
+            "https://buy.stripe.com/aEU8wZ7Ew6fP5ZS3ch?prefilled_promo_code=FRIDAY23"
+        );
+    };
+
     return (
         <WebWrapper>
             <div className="min-h-[calc(100vh-145px)]  py-[50px] space-y-28 relative container ">
@@ -478,10 +485,20 @@ const AccountabilityAccelerator = () => {
                     </p>
                 </section>
 
-                <CallBookHighLight
-                    title="Interested to Join Accountability Accelerator?"
-                    href="/schedule"
-                />
+                <div>
+                    <h3 className="text-[24px] text-gray-800 font-medium text-center">
+                        Interested to Join Accountability Accelerator & SAVE
+                        $1820
+                    </h3>
+                    <div className="w-full flex justify-center mt-[15px]">
+                        <button
+                            onClick={payment}
+                            className="py-[14px] px-[56px] bg-black/70 text-white font-semibold text-[16px] leading-[26px] text-center hover:bg-black/80 duration-200"
+                        >
+                            Join Now only $980
+                        </button>
+                    </div>
+                </div>
             </div>
             <BlackFridayPromotionModal />
         </WebWrapper>
