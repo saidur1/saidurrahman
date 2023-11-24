@@ -1,4 +1,5 @@
 "use client";
+import BlackFridayPromotionModal from "@/components/promotionModal/black-friday/blackFridayPromotionModal";
 import WebWrapper from "@/components/shared/WebWrapper/WebWrapper";
 import CallBookHighLight from "@/components/shared/callBookHighlight/CallBookHighLight";
 import { Chip } from "@nextui-org/react";
@@ -317,6 +318,7 @@ const AccountabilityAccelerator = () => {
             ],
         },
     ];
+
     return (
         <WebWrapper>
             <div className="min-h-[calc(100vh-145px)]  py-[50px] space-y-28 relative container ">
@@ -459,11 +461,29 @@ const AccountabilityAccelerator = () => {
                     </div>
                 </section>
 
+                <section>
+                    <p>
+                        After completing the{" "}
+                        <span className="font-medium border-b-2 border-b-[#f9dd94] w-fit ">
+                            6-week training program
+                        </span>
+                        , you will receive ongoing bi-weekly calls to provide
+                        sustained support, ensuring your continued progress.
+                        This includes continuous refinement of your goals and
+                        strategies for optimal results. Additionally, you'll
+                        have access to a vibrant community and valuable
+                        resources, fostering continued engagement and providing
+                        essential support for your long-term success in the
+                        program.
+                    </p>
+                </section>
+
                 <CallBookHighLight
                     title="Interested to Join Accountability Accelerator?"
                     href="/schedule"
                 />
             </div>
+            <BlackFridayPromotionModal />
         </WebWrapper>
     );
 };
