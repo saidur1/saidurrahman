@@ -9,6 +9,7 @@ import {
 } from "@nextui-org/react";
 
 export default function App({ initialData }) {
+    console.log(initialData);
     return (
         <Table removeWrapper aria-label="Example static collection table">
             <TableHeader>
