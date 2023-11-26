@@ -4,6 +4,7 @@ import { NextResponse } from "next/server";
 export function middleware(request) {
     const path = request.nextUrl.pathname;
     const isAccess = request.cookies.get("prospect");
+    const admin = request.cookies.get("admin");
 
     if (path === "/free-training/content" && !isAccess) {
         return NextResponse.redirect(new URL("/free-training", request.url));
