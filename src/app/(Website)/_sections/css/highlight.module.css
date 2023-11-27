@@ -1,0 +1,29 @@
+.highlight:first-child {
+    border: 1px solid #d4d4d4;
+    border-left: 0;
+    width: 100%;
+}
+
+.highlight:last-child {
+    border: 1px solid #d4d4d4;
+    border-right: 0;
+    border-left: 0;
+    width: 100%;
+}
+
+.highlight:not(:first-child):not(:last-child) {
+    /* Your CSS styles here */
+    border: 1px solid #d4d4d4;
+    border-left: 0;
+}
+
+/* Media query for mobile devices with a maximum width of 767px */
+@media only screen and (max-width: 767px) {
+    /* Adjust border color to black for mobile devices */
+    .highlight:first-child {
+        border-right: 0;
+    }
+    .highlight:last-child {
+        border-top: 0;
+    }
+}
