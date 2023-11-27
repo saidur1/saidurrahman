@@ -1,6 +1,7 @@
 import WebWrapper from "@/components/shared/WebWrapper/WebWrapper";
 import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
 import About from "./(Website)/_sections/About";
+import CompaniesSlider from "./(Website)/_sections/CompaniesSlider";
 import Programms from "./(Website)/_sections/Programms";
 import Reviews from "./(Website)/_sections/Reviews";
 
@@ -33,6 +34,7 @@ export default async function Home() {
                         <Reviews />
                     </div>
                 </section>
+                <CompaniesSlider />
             </main>
         </WebWrapper>
     );

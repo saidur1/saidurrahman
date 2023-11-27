@@ -7,7 +7,7 @@ const About = () => {
     const data = [
         {
             id: 1,
-            number: 150,
+            number: 160,
             text: "Students",
             text2: "Transformed their lives",
         },
