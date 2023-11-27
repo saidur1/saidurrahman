@@ -1,7 +1,6 @@
 "use client";
-import BlackFridayPromotionModal from "@/components/promotionModal/black-friday/blackFridayPromotionModal";
 import WebWrapper from "@/components/shared/WebWrapper/WebWrapper";
-import { Chip } from "@nextui-org/react";
+import { Badge } from "@/components/ui/badge";
 import {
     FolderIcon,
     HeartHandshakeIcon,
@@ -441,10 +440,10 @@ const AccountabilityAccelerator = () => {
                         {trainingProcess.map(({ id, title, week, options }) => (
                             <div className="p-6 border rounded-sm" key={id}>
                                 <div className="flex flex-col items-end gap-y-2">
-                                    <Chip size="sm">
-                                        <p className="text-[10px]">{week}</p>
-                                    </Chip>
-                                    <Chip size="md">{title}</Chip>
+                                    <div>
+                                        <p className="text-[12px]">{week}</p>
+                                    </div>
+                                    <Badge size="md">{title}</Badge>
                                 </div>
                                 <div className="space-y-4 mt-2">
                                     {options.map(
@@ -500,7 +499,6 @@ const AccountabilityAccelerator = () => {
                     </div>
                 </div>
             </div>
-            <BlackFridayPromotionModal />
         </WebWrapper>
     );
 };
