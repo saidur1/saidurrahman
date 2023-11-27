@@ -1,46 +1,20 @@
 "use client";
 import {
-    Modal,
-    ModalBody,
-    ModalContent,
-    useDisclosure,
-} from "@nextui-org/react";
-import { useEffect, useState } from "react";
+    Dialog,
+    DialogContent,
+    DialogDescription,
+    DialogHeader,
+    DialogTrigger,
+} from "@/components/ui/dialog";
+import { cn } from "@/lib/utils";
+import Image from "next/image";
+import acLogo from "../../../public/acLogo.webp";
 import DiscordJoiningForm from "./DiscordJoiningForm";
 
 const Discord = () => {
-    const { isOpen, onOpen, onOpenChange } = useDisclosure();
-    const [isMobile, setIsMobile] = useState(false);
-
-    useEffect(() => {
-        // Check if window is defined (i.e., we are in the browser)
-        if (typeof window !== "undefined") {
-            // Set initial value based on window width
-            setIsMobile(window.innerWidth < 600);
-
-            // Add event listener for window resize
-            const handleResize = () => {
-                setIsMobile(window.innerWidth < 600);
-            };
-
-            window.addEventListener("resize", handleResize);
-
-            // Clean up the event listener on component unmount
-            return () => {
-                window.removeEventListener("resize", handleResize);
-            };
-        }
-    }, []);
     return (
         <div>
-            <button
-                // href="/accountability-community/request"
-                className="bg-black/70 hover:bg-black/90 text-white/80 rounded-sm px-10 py-2 duration-200 "
-                onClick={onOpen}
-            >
-                Join Now FREE
-            </button>
-            <Modal
+            {/* <Modal
                 size="2xl"
                 isOpen={isOpen}
                 onOpenChange={onOpenChange}
@@ -61,7 +35,37 @@ const Discord = () => {
                     )}
                 </ModalContent>
                 /
-            </Modal>
+            </Modal> */}
+            <Dialog>
+                <DialogTrigger asChild>
+                    <button
+                        // href="/accountability-community/request"
+                        className="bg-black/70 hover:bg-black/90 text-white/80 rounded-sm px-10 py-2 duration-200 "
+                    >
+                        Join Now FREE
+                    </button>
+                </DialogTrigger>
+                <DialogContent>
+                    <DialogHeader className={cn("relative")}>
+                        <div className="w-[50px] h-[50px] bg-white border-[1px] border-black/40  rounded-full flex justify-center items-center absolute  top-[-50px] left-[45%] transform translate(-80%, -80%)">
+                            <Image
+                                src={acLogo}
+                                width={30}
+                                height={30}
+                                alt="discord"
+                                placeholder="blur"
+                            />
+                        </div>
+                        <h1 className="text-[16px] text-black/80 font-semibold mb-[30px]">
+                            Join the Accountability Community for Consistency,
+                            Support, and Success!
+                        </h1>
+                    </DialogHeader>
+                    <DialogDescription>
+                        <DiscordJoiningForm />
+                    </DialogDescription>
+                </DialogContent>
+            </Dialog>
         </div>
     );
 };
