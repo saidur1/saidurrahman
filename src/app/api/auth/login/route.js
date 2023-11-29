@@ -32,6 +32,7 @@ export async function POST(req) {
         const payload = {
             _id: user[0]["_id"],
             email: user[0]["email"],
+            profilePhoto: user[0]["profilePhoto"],
         };
 
         const token = await new SignJWT(payload)

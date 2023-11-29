@@ -7,13 +7,13 @@ import { Button } from "@/components/ui/button";
 import {
     Form,
     FormControl,
-    FormDescription,
     FormField,
     FormItem,
-    FormLabel,
     FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { useRouter } from "next/navigation";
+import { toast } from "react-toastify";
 import * as z from "zod";
 
 const formSchema = z.object({
@@ -34,14 +34,28 @@ const AdminLogin = () => {
         },
     });
 
+    const router = useRouter();
+
+    const { isSubmitting, isValid } = form.formState;
+
     async function submit(values) {
-        console.log(values);
+        try {
+            const baseURL = process.env.baseURL;
+            await fetch(`${baseURL}/api/auth/login`, {
+                method: "POST",
+                body: JSON.stringify(values),
+            });
+            toast.success("Authentication successful");
+            router.push("/admin");
+        } catch (error) {
+            console.log("login submit error", error);
+        }
     }
     return (
         <section className="min-h-screen w-full flex items-center justify-center">
-            <section className="w-full md:max-w-[1000px] flex">
+            <div className="w-full md:max-w-[1000px] flex">
                 <div className="flex-1 bg-black/80"></div>
-                <section className="mx-auto flex-1 w-full flex-col justify-center space-y-6 sm:w-[350px] border p-32">
+                <div className="mx-auto flex-1 w-full flex-col justify-center space-y-6 sm:w-[350px] border p-32">
                     <div className="flex flex-col space-y-2 text-center">
                         <h1 className="text-2xl font-semibold tracking-tight">
                             Login Now
@@ -61,14 +75,12 @@ const AdminLogin = () => {
                                 name="email"
                                 render={({ field }) => (
                                     <FormItem>
-                                        <FormLabel />
                                         <FormControl>
                                             <Input
                                                 placeholder="your email"
                                                 {...field}
                                             />
                                         </FormControl>
-                                        <FormDescription />
                                         <FormMessage />
                                     </FormItem>
                                 )}
@@ -78,23 +90,27 @@ const AdminLogin = () => {
                                 name="password"
                                 render={({ field }) => (
                                     <FormItem>
-                                        <FormLabel />
                                         <FormControl>
                                             <Input
                                                 placeholder="your password"
                                                 {...field}
                                             />
                                         </FormControl>
-                                        <FormDescription />
                                         <FormMessage />
                                     </FormItem>
                                 )}
                             />
-                            <Button className="w-full">Login</Button>
+                            <Button
+                                type="submit"
+                                className="w-full"
+                                disabled={!isValid || isSubmitting}
+                            >
+                                Login
+                            </Button>
                         </form>
                     </Form>
-                </section>
-            </section>
+                </div>
+            </div>
         </section>
     );
 };
