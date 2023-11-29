@@ -2,10 +2,12 @@ import { jwtVerify } from "jose";
 import { NextResponse } from "next/server";
 
 const tokenVerify = async (token) => {
-    // if token is invalid
     // if token is expired
     try {
         const key = new TextEncoder().encode(process.env.JWT_SECRET);
+
+        // if token is invalid
+        // if token is not valid it will go the the catch block
         const decodedString = await jwtVerify(token, key);
 
         const payload = decodedString?.payload;

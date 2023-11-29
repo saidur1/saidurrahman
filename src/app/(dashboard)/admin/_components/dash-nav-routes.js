@@ -20,10 +20,15 @@ const DashNavRoutes = () => {
     const cookies = useCookies();
     const router = useRouter();
 
+    // checked >> 1. if toke is not valid token removed from cookies and redirected to the auth page
     useEffect(() => {
-        const { _id, profilePhoto } = getAdminInfoFromCookie(
-            cookies.get("authToken")
-        );
+        const data = getAdminInfoFromCookie(cookies.get("authToken"));
+
+        if (!data) {
+            cookies.remove("authToken");
+            router.replace("/auth");
+        }
+        const { _id, profilePhoto } = data;
         // set info to the state
         setProfile(profilePhoto);
         setCurrentuserId(_id);
