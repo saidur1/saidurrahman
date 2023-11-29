@@ -1,4 +1,5 @@
 import NProgress from "@/components/progressBar/NProgress";
+import { CookiesProvider } from "next-client-cookies/server";
 import { Inter } from "next/font/google";
 import { ToastContainer } from "react-toastify";
 
@@ -27,7 +28,7 @@ export default function RootLayout({ children }) {
 
                 <NProgress />
                 <ToastContainer />
-                {children}
+                <CookiesProvider>{children}</CookiesProvider>
             </body>
         </html>
     );

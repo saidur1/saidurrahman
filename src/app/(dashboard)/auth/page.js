@@ -92,6 +92,7 @@ const AdminLogin = () => {
                                     <FormItem>
                                         <FormControl>
                                             <Input
+                                                type="password"
                                                 placeholder="your password"
                                                 {...field}
                                             />
