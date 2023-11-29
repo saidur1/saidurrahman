@@ -1,5 +1,6 @@
 "use client";
 import WebWrapper from "@/components/shared/WebWrapper/WebWrapper";
+import CallBookHighLight from "@/components/shared/callBookHighlight/CallBookHighLight";
 import { Badge } from "@/components/ui/badge";
 import {
     FolderIcon,
@@ -485,18 +486,10 @@ const AccountabilityAccelerator = () => {
                 </section>
 
                 <div>
-                    <h3 className="text-[24px] text-gray-800 font-medium text-center">
-                        Interested to Join Accountability Accelerator & SAVE
-                        $1820
-                    </h3>
-                    <div className="w-full flex justify-center mt-[15px]">
-                        <button
-                            onClick={payment}
-                            className="py-[14px] px-[56px] bg-black/70 text-white font-semibold text-[16px] leading-[26px] text-center hover:bg-black/80 duration-200"
-                        >
-                            Join Now only $980
-                        </button>
-                    </div>
+                    <CallBookHighLight
+                        title="Interested to keep a accountable coach?"
+                        href="/schedule"
+                    />
                 </div>
             </div>
         </WebWrapper>
