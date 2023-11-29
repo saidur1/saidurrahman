@@ -5,11 +5,13 @@ import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
 
 export async function POST(req) {
-    const { email, password } = await req.json();
-
     const key = new TextEncoder().encode(process.env.JWT_SECRET);
     try {
         await dbConnect();
+        const { email, password } = await req.json();
+
+        console.log("email is ", email);
+        console.log("password is ", password);
 
         // check if user exist
         const user = await Auth.find({ email });
@@ -19,7 +21,9 @@ export async function POST(req) {
         }
         // check if passwrod matched
 
-        const passwordMatched = user[0]["password"] === password;
+        const userObject = user[0];
+
+        const passwordMatched = userObject?.password == password;
 
         if (!passwordMatched) {
             return NextResponse.json("Password doesn't matched", {
