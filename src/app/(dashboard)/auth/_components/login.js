@@ -43,8 +43,14 @@ const LoginForm = () => {
                 method: "POST",
                 body: JSON.stringify(values),
             });
-            toast.success("Authentication successful");
-            router.push("/admin");
+            const resData = await res.json();
+
+            if (!res.ok) {
+                toast.error(resData);
+            } else {
+                toast.success("Authentication successful");
+                router.push("/admin");
+            }
         } catch (error) {
             console.log("login submit error", error);
         }

@@ -16,8 +16,10 @@ export async function POST(req) {
         // check if user exist
         const user = await Auth.find({ email });
 
-        if (!user) {
-            return NextResponse.json("User not found", { status: 404 });
+        if (user.length === 0) {
+            return NextResponse.json("Please check your email and try again", {
+                status: 404,
+            });
         }
         // check if passwrod matched
 
@@ -26,9 +28,12 @@ export async function POST(req) {
         const passwordMatched = userObject?.password == password;
 
         if (!passwordMatched) {
-            return NextResponse.json("Password doesn't matched", {
-                status: 404,
-            });
+            return NextResponse.json(
+                "Please make sure you entered the correct password and try again.",
+                {
+                    status: 404,
+                }
+            );
         }
 
         // prepare response
