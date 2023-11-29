@@ -25,6 +25,7 @@
         "class-variance-authority": "^0.7.0",
         "clsx": "^2.0.0",
         "framer-motion": "^10.16.5",
+        "jose": "^5.1.2",
         "lucide-react": "^0.292.0",
         "mongoose": "^7.6.1",
         "next": "13.5.4",
