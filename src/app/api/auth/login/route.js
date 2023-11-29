@@ -55,13 +55,7 @@ export async function POST(req) {
 
         cookies().set("authToken", token);
 
-        // response
-        const responseBody = {
-            name: user[0]["name"],
-            profilePhoto: user[0]["profilePhoto"],
-        };
-
-        return NextResponse.json(responseBody, { status: 200 });
+        return NextResponse.json(token, { status: 200 });
     } catch (error) {
         console.log("[admin login error:]", error);
         return NextResponse.json(error, { status: 500 });

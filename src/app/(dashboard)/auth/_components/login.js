@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { redirect, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 import * as z from "zod";
@@ -49,7 +49,7 @@ const LoginForm = () => {
                 toast.error(resData);
             } else {
                 toast.success("Authentication successful");
-                return redirect("/admin");
+                router.replace("/admin");
             }
         } catch (error) {
             console.log("login submit error", error);

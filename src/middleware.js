@@ -10,6 +10,8 @@ const tokenVerify = async (token) => {
         // if token is not valid it will go the the catch block
         const decodedString = await jwtVerify(token, key);
 
+        console.log("decoded string: ", decodedString);
+
         const payload = decodedString?.payload;
 
         // Get the current timestamp
@@ -18,6 +20,7 @@ const tokenVerify = async (token) => {
         // Check if the token has expired
         if (payload.exp && currentTimestamp >= payload.exp) {
             // Token has expired
+            console.log("token has expired");
 
             return false;
         } else {
@@ -44,11 +47,10 @@ export async function middleware(request) {
             return NextResponse.redirect(new URL("/auth", request.url));
         }
         const authenticated = await tokenVerify(adminToken["value"]);
-        if (authenticated) {
-            return NextResponse.next();
-        } else {
+        if (!authenticated) {
             return NextResponse.redirect(new URL("/auth", request.url));
         }
+        return NextResponse.next();
     }
 
     if (path === "/free-training/content" && !isAccess) {
