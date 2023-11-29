@@ -46,10 +46,10 @@ export async function middleware(request) {
         if (!adminToken) {
             return NextResponse.redirect(new URL("/auth", request.url));
         }
-        // const authenticated = await tokenVerify(adminToken["value"]);
-        // if (!authenticated) {
-        //     return NextResponse.redirect(new URL("/auth", request.url));
-        // }
+        const authenticated = await tokenVerify(adminToken["value"]);
+        if (!authenticated) {
+            return NextResponse.redirect(new URL("/auth", request.url));
+        }
         return NextResponse.next();
     }
 
