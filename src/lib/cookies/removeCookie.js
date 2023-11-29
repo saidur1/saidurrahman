@@ -1,8 +1,12 @@
 "use client";
-import Cookies from "js-cookie";
+
+import { useCookies } from "next-client-cookies";
 
 const removeCookie = (cookiesName) => {
-    Cookies.remove(cookiesName, { path: "/" });
+    const cookies = useCookies();
+
+    cookies.remove(cookiesName);
+    return true;
 };
 
 export default removeCookie;

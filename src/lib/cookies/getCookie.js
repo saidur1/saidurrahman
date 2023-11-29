@@ -1,7 +1,8 @@
-import Cookies from "js-cookie";
+"use client";
 
-const getCookie = (cookiesName) => {
-    return Cookies.get(cookiesName);
+import { useCookies } from "next-client-cookies";
+
+export const getCookie = (cookiesName) => {
+    const cookies = useCookies();
+    return cookies.get(cookiesName);
 };
-
-export default getCookie;

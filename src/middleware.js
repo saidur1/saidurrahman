@@ -31,7 +31,7 @@ const tokenVerify = async (token) => {
 };
 
 // This function can be marked `async` if using `await` inside
-export default async function middleware(request) {
+export async function middleware(request) {
     const path = request.nextUrl.pathname;
     const isAccess = request.cookies.get("prospect");
     const adminToken = request.cookies.get("authToken");
