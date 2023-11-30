@@ -487,7 +487,7 @@ const AccountabilityAccelerator = () => {
 
                 <div>
                     <CallBookHighLight
-                        title="Interested to keep a accountable coach?"
+                        title="Interested in Accountability Accelerator?"
                         href="/schedule"
                     />
                 </div>
