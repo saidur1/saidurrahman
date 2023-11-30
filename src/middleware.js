@@ -10,8 +10,6 @@ const tokenVerify = async (token) => {
         // if token is not valid it will go the the catch block
         const decodedString = await jwtVerify(token, key);
 
-        console.log("decoded string: ", decodedString);
-
         const payload = decodedString?.payload;
 
         // Get the current timestamp
