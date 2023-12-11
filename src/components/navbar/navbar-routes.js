@@ -33,12 +33,12 @@ const NavbarRoutes = () => {
             href: "/reviews",
             dropdown: false,
         },
-        {
-            id: 4,
-            name: "Free Training",
-            href: "/free-training",
-            dropdown: false,
-        },
+        // {
+        //     id: 4,
+        //     name: "Free Training",
+        //     href: "/free-training",
+        //     dropdown: false,
+        // },
     ];
     return (
         <section className="mt-[50px] md:mt-0">
