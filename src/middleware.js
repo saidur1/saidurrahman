@@ -65,7 +65,7 @@ export async function middleware(request) {
     );
   } else if (path === "/fb") {
     return NextResponse.redirect("https://www.facebook.com/saidurrahmanfb");
-  } else if (path === "li") {
+  } else if (path === "/li") {
     return NextResponse.redirect("https://www.linkedin.com/in/saidurrahmanorg");
   } else if (path === "/z") {
     return NextResponse.redirect(
@@ -105,7 +105,7 @@ export const config = {
     "/community",
     "/l",
     "/fb",
-    "li",
+    "/li",
     "/z",
     "/c",
     "/aa",
