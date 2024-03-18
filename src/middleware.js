@@ -63,6 +63,34 @@ export async function middleware(request) {
     return NextResponse.redirect(
       "https://us.bigin.online/org836263977/forms/f"
     );
+  } else if (path === "/fb") {
+    return NextResponse.redirect("https://www.facebook.com/saidurrahmanfb");
+  } else if (path === "li") {
+    return NextResponse.redirect("https://www.linkedin.com/in/saidurrahmanorg");
+  } else if (path === "/z") {
+    return NextResponse.redirect(
+      "https://zoom.us/j/4548282153?pwd=bWRpM0o4UlVnTTUwbWYwL2JHSTQwdz09"
+    );
+  } else if (path === "/c") {
+    return NextResponse.redirect("https://calendly.com/saidur/schedule");
+  } else if (path === "/aa") {
+    return NextResponse.redirect(
+      "https://www.skool.com/accountability-accelerator"
+    );
+  } else if (path === "/ac") {
+    return NextResponse.redirect(
+      "https://www.facebook.com/groups/accountabilitycommunitytm"
+    );
+  } else if (path === "/p") {
+    return NextResponse.redirect("https://buy.stripe.com/9AQ14x0c4dIhbkc14d");
+  } else if (path === "/s") {
+    return NextResponse.redirect(
+      "https://www.skool.com/refer?ref=f1e9e431ca874877b48764eb37c04b7c"
+    );
+  } else if (path === "/y") {
+    return NextResponse.redirect(
+      "https://www.youtube.com/saidurrahmanTV?sub_confirmation=1"
+    );
   } else {
     return NextResponse.next();
   }
@@ -76,6 +104,15 @@ export const config = {
     "/free-training/content",
     "/community",
     "/l",
+    "/fb",
+    "li",
+    "/z",
+    "/c",
+    "/aa",
+    "/ac",
+    "/p",
+    "/s",
+    "/y",
     "/admin/:path*",
   ],
 };
