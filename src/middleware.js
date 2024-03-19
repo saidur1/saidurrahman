@@ -61,7 +61,7 @@ export async function middleware(request) {
     return NextResponse.redirect("https://discord.gg/uxfQY7HmQS");
   } else if (path === "/lf") {
     return NextResponse.redirect(
-      "https://us.bigin.online/org836263977/forms/f"
+      "https://us.bigin.online/org836263977/forms/lead-form"
     );
   } else if (path === "/fb") {
     return NextResponse.redirect("https://www.facebook.com/saidurrahmanfb");
