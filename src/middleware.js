@@ -59,7 +59,7 @@ export async function middleware(request) {
     );
   } else if (path == "/community") {
     return NextResponse.redirect("https://discord.gg/uxfQY7HmQS");
-  } else if (path === "/l") {
+  } else if (path === "/lf") {
     return NextResponse.redirect(
       "https://us.bigin.online/org836263977/forms/f"
     );
@@ -103,7 +103,7 @@ export const config = {
     "/free-training",
     "/free-training/content",
     "/community",
-    "/l",
+    "/lf",
     "/fb",
     "/li",
     "/z",
