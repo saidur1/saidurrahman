@@ -44,7 +44,7 @@ const About = () => {
           <div>
             <PrimaryButton
               title="Book a Free Discovery Call"
-              href="/our_story"
+              href="/schedule"
             />
           </div>
         </div>
