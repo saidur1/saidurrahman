@@ -18,7 +18,7 @@ const Contact = () => {
             Saidur Rahman or his team please use the information below
           </p>
           <h3 className="text-center text-gray-800 hover:text-gray-900 duration-200 font-medium">
-            Email: support@saidurrahman.org
+            Email: saidur@saidurrahman.org
           </h3>
           {/* <h3 className="text-center text-gray-800 hover:text-gray-900 duration-200 font-medium">
                         Whatsapp: ‭+44 (0) 7904 226135‬
