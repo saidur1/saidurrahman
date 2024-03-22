@@ -1,4 +1,5 @@
 import WebWrapper from "@/components/shared/WebWrapper/WebWrapper";
+import Link from "next/link";
 import { AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
 
 const Contact = () => {
@@ -17,8 +18,14 @@ const Contact = () => {
             Saidur Rahman and his staff operate Monday – Friday. To contact
             Saidur Rahman or his team please use the information below
           </p>
-          <h3 className="text-center text-gray-800 hover:text-gray-900 duration-200 font-medium">
+          {/* <h3 className="text-center text-gray-800 hover:text-gray-900 duration-200 font-medium">
             Email: saidur@saidurrahman.org
+          </h3> */}
+          <h3 className="text-center text-gray-800 hover:text-gray-900 duration-200 font-medium">
+            Book a free discovery call:{" "}
+            <Link href="/schedule" className="font-semibold hover:underline">
+              Click here
+            </Link>
           </h3>
           {/* <h3 className="text-center text-gray-800 hover:text-gray-900 duration-200 font-medium">
                         Whatsapp: ‭+44 (0) 7904 226135‬
