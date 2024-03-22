@@ -91,6 +91,10 @@ export async function middleware(request) {
     return NextResponse.redirect(
       "https://www.youtube.com/saidurrahmanTV?sub_confirmation=1"
     );
+  } else if (path === "/paypal") {
+    return NextResponse.redirect(
+      "https://www.paypal.com/paypalme/saidurrahmanorg"
+    );
   } else {
     return NextResponse.next();
   }
@@ -113,6 +117,7 @@ export const config = {
     "/p",
     "/s",
     "/y",
+    "/paypal",
     "/admin/:path*",
   ],
 };
