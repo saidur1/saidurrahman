@@ -1,6 +1,4 @@
-import Footer from "@/components/footer/Footer";
 import Navbar2 from "@/components/navbar/navbar2";
-import RemoveComponentsByCondition from "@/utils/RemoveComponentsByCondition";
 
 const WebWrapper = ({ children }) => {
   return (
@@ -9,9 +7,9 @@ const WebWrapper = ({ children }) => {
       <Navbar2 />
       {children}
 
-      <RemoveComponentsByCondition>
+      {/* <RemoveComponentsByCondition>
         <Footer />
-      </RemoveComponentsByCondition>
+      </RemoveComponentsByCondition> */}
     </>
   );
 };
