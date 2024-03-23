@@ -33,7 +33,7 @@ const NavbarRoutes = () => {
     <section className="mt-[50px] md:mt-0">
       <div
         className={cn(
-          "flex flex-col md:flex-row  h-full md:items-center gap-x-[12px]"
+          "flex flex-col md:flex-row  h-full md:items-center gap-x-[12px] md:gap-x-[62px]"
         )}
       >
         {routes.map(({ dropdown, name, href, id, menus }) => {
