@@ -12,12 +12,18 @@ const NavbarRoutes = () => {
     },
     {
       id: 2,
+      name: "Blog",
+      dropdown: false,
+      href: "/blog",
+    },
+    {
+      id: 3,
       name: "Contact",
       dropdown: false,
       href: "/contact",
     },
     {
-      id: 3,
+      id: 4,
       name: "Reviews",
       href: "/reviews",
       dropdown: false,

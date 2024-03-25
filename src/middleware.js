@@ -95,6 +95,8 @@ export async function middleware(request) {
     return NextResponse.redirect(
       "https://www.paypal.com/paypalme/saidurrahmanorg"
     );
+  } else if (path === "/joinac") {
+    return NextResponse.redirect("https://buy.stripe.com/aEU8wZ7Ew6fP5ZS3ch");
   } else {
     return NextResponse.next();
   }
@@ -118,6 +120,7 @@ export const config = {
     "/s",
     "/y",
     "/paypal",
+    "/joinac",
     "/admin/:path*",
   ],
 };
