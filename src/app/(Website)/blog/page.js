@@ -1,4 +1,5 @@
 import WebWrapper from "@/components/shared/WebWrapper/WebWrapper";
+import { getToday } from "@/lib/today";
 import { cn } from "@/lib/utils";
 import { Raleway } from "next/font/google";
 
@@ -44,7 +45,7 @@ const Page = () => {
     <WebWrapper>
       <div className="pb-[100px]">
         <p className="text-[12px] text-center text-[rgb(136,136,136)] mt-[80px]">
-          Thursday 2nd March, 2023
+          {getToday()}
         </p>
         <h1
           className={cn(

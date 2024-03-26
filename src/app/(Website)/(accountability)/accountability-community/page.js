@@ -1,5 +1,6 @@
 // import  from "@/components/Join/";
 import WebWrapper from "@/components/shared/WebWrapper/WebWrapper";
+import { ArrowRight } from "lucide-react";
 
 const AccountabilityCommunity = () => {
   const benefits = [
@@ -56,7 +57,16 @@ const AccountabilityCommunity = () => {
               consistency, encouragement, and success converge. Your journey to
               unlocking your full potential begins here!
             </p>
-            <div></div>
+            <div>
+              <a
+                href="https://www.facebook.com/groups/accountabilitycommunitytm"
+                target="_facebook"
+                className="font-semibold hover:underline flex items-center gap-x-1"
+              >
+                Join Now
+                <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
           </div>
           <div className="flex-1 flex flex-col items-center">
             {/* <Image
