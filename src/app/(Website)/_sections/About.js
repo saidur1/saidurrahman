@@ -1,7 +1,14 @@
 // components
 import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
+import { cn } from "@/lib/utils";
+import { Raleway } from "next/font/google";
 import Image from "next/image";
 import Highlight from "./Highlight";
+
+const raleway = Raleway({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+});
 
 const About = () => {
   const data = [
@@ -31,15 +38,26 @@ const About = () => {
           />
         </div>
         <div className="flex-1">
-          <h1 className="text-[30px] text-gray-800 font-bold mb-[20px] md:mb-[30px]">
+          <h1
+            className={cn(
+              raleway.className,
+              "text-[30px] text-gray-800 font-bold mb-[20px] md:mb-[30px]"
+            )}
+          >
             Meet Saidur Rahman,
           </h1>
-          <p className="text-[20px] font-normal text-[#2c2c2c] mb-[40px] md:mb-[80px]">
+          <p
+            className={cn(
+              raleway.className,
+              "text-[20px] font-normal text-[#2c2c2c] mb-[40px] md:mb-[80px]"
+            )}
+          >
             I help entrepreneurs improve productivity; achieve goals by keeping
-            them accountable for habits and actions. Are you struggling to
-            improve your business, productivity, get more done and to achieve
-            your goals? If you’re interested in getting more out of your life &
-            business contact me for the FREE discovery call.
+            them accountable for habits and actions. I worked with
+            <br />
+            Are you struggling to improve your business, productivity, get more
+            done and to achieve your goals? If you’re interested in getting more
+            out of your life & business contact me for the FREE discovery call.
           </p>
           <div>
             <PrimaryButton
