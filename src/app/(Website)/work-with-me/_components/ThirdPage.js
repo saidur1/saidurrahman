@@ -13,18 +13,19 @@ const ThirdPage = () => {
     <section className="bg-[#f2e6f3]  relative">
       <div className="flex flex-col md:flex-row gap-x-[50px] mt-[50px] md:mt-0 py-[50px] md:pb-0 md:pt-[100px] max-w-[1093px] mx-auto relative px-[20px]">
         <div className="flex-1">
-          <div className="w-full md:w-[502px] h-[370px] relative">
+          <div className="w-full lg:w-[502px] h-[370px] relative">
             <Image
-              src="https://res.cloudinary.com/dzlrpspps/image/upload/v1700392817/profile_bq4fpi.jpg"
+              src="https://res.cloudinary.com/dzlrpspps/image/upload/v1711890670/Projects/Saidur/Accountability_Community_1_-_Saidur_Rahman_vacwxg.png"
               fill
-              alt="image"
+              alt="Saidur Rahman Accountability Coach 
+              to Entrepreneurs 1"
               className="border-black border-[2px]"
             />
           </div>
           <p className={cn(raleway.className, "mt-[27px] text-center")}>
-            William was awarded the prestigious{" "}
-            <span className="font-semibold">'Two Comma Club X'</span> award last
-            year for collecting over $10,000,000 in cash
+            Saidur Rahman{" "}
+            <span className="font-semibold">'Accountability'</span> Coach to
+            Entrepreneurs 1
           </p>
         </div>
         <div className="space-y-[22px] md:space-y-[32px] flex-1 mt-[50px] md:mt-0">
@@ -59,7 +60,7 @@ const ThirdPage = () => {
           </p>
           <Link
             href="/schedule"
-            className="py-[8px] px-[26px] bg-[#0174C7] text-white font-semibold text-[18px] md:text-[24px] leading-[26px] text-center hover:bg-[#0174C7]/90 duration-200 w-full flex flex-col gap-y-[1px]"
+            className="py-[8px] px-[16px] bg-[#0174C7] text-white font-semibold text-[18px] md:text-[24px] leading-[26px] text-center hover:bg-[#0174C7]/90 duration-200 w-full flex flex-col gap-y-[1px]"
           >
             Click here to Book a Call
             <span className="text-[12px] font-normal text-white/50">

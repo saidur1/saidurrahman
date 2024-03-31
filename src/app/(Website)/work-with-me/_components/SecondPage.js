@@ -42,7 +42,7 @@ const SecondPage = () => {
             Work With Will?
           </span>
         </h1>
-        <div className="space-y-[21px] md:space-y-[41px] mt-[41px]">
+        <div className="space-y-[21px] md:space-y-[41px] mt-[41px] flex-1">
           {whyWorkData.map(({ id, text }) => (
             <p
               className={cn(
@@ -56,18 +56,19 @@ const SecondPage = () => {
           ))}
         </div>
       </div>
-      <div className="w-full mt-[20px] md:mt-0 md:w-[525px]">
-        <div className="w-full h-auto md:w-[520px] md:h-[450px] relative">
+      <div className="w-full mt-[20px] md:mt-0 lg:w-[525px] flex-1">
+        <div className="w-full h-auto md:h-[350px] lg:w-[520px] lg:h-[450px] relative">
           <Image
-            src="https://res.cloudinary.com/dzlrpspps/image/upload/v1700392817/profile_bq4fpi.jpg"
+            src="https://res.cloudinary.com/dzlrpspps/image/upload/v1711890178/Projects/Saidur/Accountability_Community_with_Saidur_Rahman_x2uwbt.png"
             fill
-            alt="image"
+            alt="Saidur Rahman Accountability Coach To 
+            Entrepreneurs"
             className="border-black border-[2px]"
           />
         </div>
         <p className={cn(raleway.className, "mt-[27px] text-center")}>
-          <span className="font-semibold">Forbes Magazine</span> highlighted the
-          multi seven-figure acquisition of William's e-learning company in 2023
+          <span className="font-semibold">Saidur Rahman</span> Accountability
+          Coach To Entrepreneurs
         </p>
       </div>
     </div>

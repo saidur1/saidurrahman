@@ -43,16 +43,16 @@ const Page = () => {
           >
             Here are just a few people I've worked with so far...
           </p>
-          <div className="py-[50px] flex flex-col gap-y-[50px] md:flex-row gap-x-[50px]">
-            <div className="shadow-[0_10px_6px_-6px_#777] w-full md:w-[481px] h-auto md:h-[283px] bg-black rounded-[6px]">
+          <div className="py-[50px] flex flex-col gap-y-[50px] md:flex-row gap-x-[50px] px-[20px]">
+            <div className="shadow-[0_10px_6px_-6px_#777] flex-1 w-full md:w-[481px] h-auto md:h-[283px] bg-black rounded-[6px]">
               <YouTubePlayer
-                videoId="w7t4BdOZ1Uk"
+                videoId="8ohGC3dv-Mo"
                 playerHeight={283}
                 playerWidth={460}
               />
             </div>
 
-            <div className={cn("w-full  md:w-[504px], space-y-[33px]")}>
+            <div className={cn("w-full flex-1  lg:w-[504px], space-y-[33px]")}>
               <h1
                 className={cn(
                   "text-[#E43b2c] text-center font-bold w-full md:w-[456px] mx-auto text-[18px]",
@@ -104,7 +104,7 @@ const Page = () => {
         {/* second */}
         <div className="mt-[50px] md:mt-[122px] max-w-[1093px] mx-auto">
           <div className="my-[50px] flex flex-col-reverse md:flex-row gap-y-[50px] gap-x-[50px] px-[20px]">
-            <div className={cn("w-full md:w-[504px], space-y-[33px]")}>
+            <div className={cn("w-full flex-1 lg:w-[504px], space-y-[33px]")}>
               <h1
                 className={cn(
                   "text-[#E43b2c] text-center font-bold w-full md:w-[456px] mx-auto text-[18px]",
@@ -149,9 +149,9 @@ const Page = () => {
                 <span className="underline">costing you?</span>
               </p>
             </div>
-            <div className="shadow-[0_10px_6px_-6px_#777] w-full md:w-[481px] h-auto md:h-[283px] bg-black rounded-[6px]">
+            <div className="shadow-[0_10px_6px_-6px_#777] flex-1 w-full md:w-[481px] h-auto md:h-[283px] bg-black rounded-[6px]">
               <YouTubePlayer
-                videoId="w7t4BdOZ1Uk"
+                videoId="EPulO5_n12A"
                 playerHeight={283}
                 playerWidth={460}
               />
@@ -161,15 +161,15 @@ const Page = () => {
 
         {/* third */}
         <div className="py-[50px] md:my-[122px] flex flex-col md:flex-row gap-y-[50px] gap-x-[50px] max-w-[1093px] mx-auto px-[20px]">
-          <div className="shadow-[0_10px_6px_-6px_#777] w-full md:w-[481px] h-auto md:h-[283px] bg-black rounded-[6px]">
+          <div className="shadow-[0_10px_6px_-6px_#777] flex-1 w-full md:w-[481px] h-auto md:h-[283px] bg-black rounded-[6px]">
             <YouTubePlayer
-              videoId="w7t4BdOZ1Uk"
+              videoId="bQpFHO7IQlo"
               playerHeight={283}
               playerWidth={460}
             />
           </div>
 
-          <div className={cn("w-full md:w-[504px], space-y-[33px]")}>
+          <div className={cn("w-full flex-1 md:w-[504px], space-y-[33px]")}>
             <h1
               className={cn(
                 "text-[#E43b2c] text-center font-bold w-full md:w-[456px] mx-auto text-[18px]",
@@ -220,7 +220,7 @@ const Page = () => {
         {/* fourth */}
         <div className="mt-[50px] md:mt-[122px] max-w-[1093px] mx-auto">
           <div className="my-[50px] flex flex-col md:flex-row gap-y-[50px] gap-x-[50px] px-[20px]">
-            <div className={cn("w-full md:w-[504px], space-y-[33px]")}>
+            <div className={cn("w-full flex-1 lg:w-[504px], space-y-[33px]")}>
               <h1
                 className={cn(
                   "text-[#E43b2c] text-center font-bold w-full md:w-[456px] mx-auto text-[18px]",
@@ -265,9 +265,9 @@ const Page = () => {
                 <span className="underline">costing you?</span>
               </p>
             </div>
-            <div className="shadow-[0_10px_6px_-6px_#777] w-full md:w-[481px] h-auto md:h-[283px] bg-black rounded-[6px]">
+            <div className="shadow-[0_10px_6px_-6px_#777] flex-1 w-full lg:w-[481px] h-auto md:h-[283px] bg-black rounded-[6px]">
               <YouTubePlayer
-                videoId="w7t4BdOZ1Uk"
+                videoId="YwxE6655Ou4"
                 playerHeight={283}
                 playerWidth={460}
               />
@@ -297,16 +297,18 @@ const Page = () => {
         >
           Book a call with me now...
         </p>
-        <Link
-          href="/schedule"
-          className="py-[6px] px-[26px] md:px-[56px] bg-[#0174C7] text-white font-semibold text-[18px] md:text-[26px] leading-[26px] text-center hover:bg-[#0174C7]/90 duration-200 w-full md:w-[560px] lg:w-[1093px] flex flex-col gap-y-[1px] mt-[38px]"
-        >
-          Click here to Book a Call
-          <span className="text-[8px] md:text-[10px] font-normal text-white/50">
-            Please Do Not Book A Call Until You Have Watched The Above Video
-            in-Full
-          </span>
-        </Link>
+        <div className="w-full flex justify-center">
+          <Link
+            href="/schedule"
+            className="py-[6px] px-[26px] md:px-[56px] bg-[#0174C7] text-white font-semibold text-[18px] md:text-[26px] leading-[26px] text-center hover:bg-[#0174C7]/90 duration-200 w-full md:w-[560px] lg:w-[1093px] flex flex-col gap-y-[1px] mt-[38px]"
+          >
+            Click here to Book a Call
+            <span className="text-[8px] md:text-[10px] font-normal text-white/50">
+              Please Do Not Book A Call Until You Have Watched The Above Video
+              in-Full
+            </span>
+          </Link>
+        </div>
       </div>
       <div className="mt-[100px] md:mt-[454px] mb-[45px] max-w-[1093px] px-[20px] mx-auto">
         <h1
@@ -315,12 +317,15 @@ const Page = () => {
             "text-[20px] md:text-[32px] text-[#2F2F2F] text-center"
           )}
         >
-          <span className="font-bold">Have Questions?</span> No problem. Follow
-          me on <br /> Instagram{" "}
-          <a href="" className="text-[#1A77BD] hover:underline font-bold">
+          <span className="font-bold">Have Questions?</span> No problem. Drop Me
+          A Message on <br /> Whatsapp{" "}
+          <a
+            href="https://wa.me/8801745095753"
+            target="whatsapp"
+            className="text-[#1A77BD] hover:underline font-bold"
+          >
             here
           </a>
-          . Drop Me A Message!
         </h1>
       </div>
     </div>
