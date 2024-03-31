@@ -29,7 +29,7 @@ const FirstPage = () => {
       <div className="flex justify-center mt-[50px] px-[20px]">
         <Link
           href="/schedule"
-          className="py-[10px] px-[26px] md:px-[56px] bg-black/70 text-white font-semibold text-[20px] md:text-[28px] leading-[26px] text-center hover:bg-black/80 duration-200 w-full md:w-[560px] lg:w-[1093px] flex flex-col gap-y-[1px]"
+          className="py-[10px] px-[26px] md:px-[56px] bg-[#0174C7] text-white font-semibold text-[20px] md:text-[28px] leading-[26px] text-center hover:bg-[#0174C7]/90 duration-200 w-full md:w-[560px] lg:w-[1093px] flex flex-col gap-y-[1px]"
         >
           Click here to Book a Call
           <span className="text-[8px] md:text-[12px] font-normal text-white/50">

@@ -102,7 +102,7 @@ const Page = () => {
           </div>
         </div>
         {/* second */}
-        <div className="mt-[122px] max-w-[1093px] mx-auto">
+        <div className="mt-[50px] md:mt-[122px] max-w-[1093px] mx-auto">
           <div className="my-[50px] flex flex-col-reverse md:flex-row gap-y-[50px] gap-x-[50px] px-[20px]">
             <div className={cn("w-full md:w-[504px], space-y-[33px]")}>
               <h1
@@ -160,7 +160,7 @@ const Page = () => {
         </div>
 
         {/* third */}
-        <div className="my-[122px] flex flex-col md:flex-row gap-y-[50px] gap-x-[50px] max-w-[1093px] mx-auto px-[20px]">
+        <div className="py-[50px] md:my-[122px] flex flex-col md:flex-row gap-y-[50px] gap-x-[50px] max-w-[1093px] mx-auto px-[20px]">
           <div className="shadow-[0_10px_6px_-6px_#777] w-full md:w-[481px] h-auto md:h-[283px] bg-black rounded-[6px]">
             <YouTubePlayer
               videoId="w7t4BdOZ1Uk"
@@ -218,7 +218,7 @@ const Page = () => {
         </div>
 
         {/* fourth */}
-        <div className="mt-[122px] max-w-[1093px] mx-auto">
+        <div className="mt-[50px] md:mt-[122px] max-w-[1093px] mx-auto">
           <div className="my-[50px] flex flex-col md:flex-row gap-y-[50px] gap-x-[50px] px-[20px]">
             <div className={cn("w-full md:w-[504px], space-y-[33px]")}>
               <h1
@@ -299,7 +299,7 @@ const Page = () => {
         </p>
         <Link
           href="/schedule"
-          className="py-[6px] px-[26px] md:px-[56px] bg-black/70 text-white font-semibold text-[18px] md:text-[26px] leading-[26px] text-center hover:bg-black/80 duration-200 w-full md:w-[560px] lg:w-[1093px] flex flex-col gap-y-[1px] mt-[38px]"
+          className="py-[6px] px-[26px] md:px-[56px] bg-[#0174C7] text-white font-semibold text-[18px] md:text-[26px] leading-[26px] text-center hover:bg-[#0174C7]/90 duration-200 w-full md:w-[560px] lg:w-[1093px] flex flex-col gap-y-[1px] mt-[38px]"
         >
           Click here to Book a Call
           <span className="text-[8px] md:text-[10px] font-normal text-white/50">
@@ -317,7 +317,7 @@ const Page = () => {
         >
           <span className="font-bold">Have Questions?</span> No problem. Follow
           me on <br /> Instagram{" "}
-          <a href="" className="text-[#1A77BD] font-bold">
+          <a href="" className="text-[#1A77BD] hover:underline font-bold">
             here
           </a>
           . Drop Me A Message!

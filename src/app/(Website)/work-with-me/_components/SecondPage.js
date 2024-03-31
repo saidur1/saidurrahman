@@ -57,13 +57,14 @@ const SecondPage = () => {
         </div>
       </div>
       <div className="w-full mt-[20px] md:mt-0 md:w-[525px]">
-        <Image
-          src="https://res.cloudinary.com/dzlrpspps/image/upload/v1700392817/profile_bq4fpi.jpg"
-          width={600}
-          height={454}
-          alt="image"
-          className="border-black border-[2px]"
-        />
+        <div className="w-full h-auto md:w-[520px] md:h-[450px] relative">
+          <Image
+            src="https://res.cloudinary.com/dzlrpspps/image/upload/v1700392817/profile_bq4fpi.jpg"
+            fill
+            alt="image"
+            className="border-black border-[2px]"
+          />
+        </div>
         <p className={cn(raleway.className, "mt-[27px] text-center")}>
           <span className="font-semibold">Forbes Magazine</span> highlighted the
           multi seven-figure acquisition of William's e-learning company in 2023

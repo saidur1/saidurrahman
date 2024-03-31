@@ -59,7 +59,7 @@ const ThirdPage = () => {
           </p>
           <Link
             href="/schedule"
-            className="py-[8px] px-[26px] bg-black/70 text-white font-semibold text-[18px] md:text-[24px] leading-[26px] text-center hover:bg-black/80 duration-200 w-full flex flex-col gap-y-[1px]"
+            className="py-[8px] px-[26px] bg-[#0174C7] text-white font-semibold text-[18px] md:text-[24px] leading-[26px] text-center hover:bg-[#0174C7]/90 duration-200 w-full flex flex-col gap-y-[1px]"
           >
             Click here to Book a Call
             <span className="text-[12px] font-normal text-white/50">
