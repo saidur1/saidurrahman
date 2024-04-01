@@ -1,6 +1,13 @@
 import { cn } from "@/lib/utils";
 
-const HomeContent = ({ title, content1, content2, content3, footerText }) => {
+const HomeContent = ({
+  title,
+  content1,
+  content2,
+  content3,
+  content4,
+  footerText,
+}) => {
   return (
     <div>
       {title && (
@@ -38,6 +45,15 @@ const HomeContent = ({ title, content1, content2, content3, footerText }) => {
             )}
           >
             {content3}
+          </p>
+        )}
+        {content4 && (
+          <p
+            className={cn(
+              "text-[16px] font-normal text-[#2D2D2D] font-raleway leading-normal"
+            )}
+          >
+            {content4}
           </p>
         )}
         {footerText && <p className="font-raleway font-bold">{footerText}</p>}
