@@ -23,6 +23,7 @@ const FirstPage = () => {
           videoId="0vcgxhRPdz8"
           playerWidth={1093}
           playerHeight={520}
+          isBorder={false}
         />
       </div>
       <div className="flex justify-center mt-[50px] px-[20px]">

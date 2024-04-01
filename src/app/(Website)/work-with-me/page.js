@@ -43,7 +43,7 @@ const Page = () => {
             Here are just a few people I've worked with so far...
           </p>
           <div className="py-[50px] flex flex-col gap-y-[50px] md:flex-row gap-x-[50px] px-[20px]">
-            <div className="shadow-[0_10px_6px_-6px_#777] flex-1 w-full md:w-[460px] rounded-[3px] h-auto md:h-[283px]  ">
+            <div className=" flex-1 w-full md:w-[460px] rounded-[3px] h-auto md:h-[283px]  ">
               <YouTubePlayer
                 videoId="8ohGC3dv-Mo"
                 playerHeight={283}
