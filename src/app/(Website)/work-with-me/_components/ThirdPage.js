@@ -63,7 +63,7 @@ const ThirdPage = () => {
             className="text-white font-semibold text-[26px] bg-[rgb(1,116,199)] hover:shadow-[inset_0px_2px_2px_0_rgba(255,255,255,0.22),_0_233px_233px_0,rgba(255,255,255,0.12)_inset] hover:outline-none border-[1px] border-[rgba(0,0,0,0.2)] rounded-[3px] px-[25px] py-[10px] duration-300 w-full text-center hover:bg-[#0c69a8] flex flex-col items-center"
           >
             Click here to Book a Call
-            <span className="text-[12px] font-normal text-white/50">
+            <span className="text-[10px] font-normal text-white/50">
               Please Do Not Book A Call Until You Have Watched The Above Video
               in-Full
             </span>

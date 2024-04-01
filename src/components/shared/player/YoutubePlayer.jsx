@@ -32,14 +32,18 @@ const YouTubePlayer = ({ videoId, playerHeight, playerWidth }) => {
   const height = isMobile ? 250 : playerHeight ? playerHeight : 320;
 
   return (
-    <div className="video-responsive flex justify-center">
+    <div className="video-responsive flex justify-center rounded-[3px] shadow-[0_10px_6px_-6px_#777]">
       <iframe
         height={height}
         src={`https://www.youtube.com/embed/${videoId}`}
-        frameBorder="0"
+        frameBorder="3"
         allowFullScreen
         title="YouTube Video Player"
-        style={{ width: isTab ? "100%" : isMobile ? "100%" : "1093px" }}
+        style={{
+          width: isTab ? "100%" : isMobile ? "100%" : "1093px",
+          borderRadius: "10px",
+          border: "8px solid black",
+        }}
       ></iframe>
     </div>
   );

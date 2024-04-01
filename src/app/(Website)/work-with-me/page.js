@@ -1,7 +1,6 @@
 import YouTubePlayer from "@/components/shared/player/YoutubePlayer";
 import { cn } from "@/lib/utils";
 import { Open_Sans, Raleway } from "next/font/google";
-import Link from "next/link";
 import SecondPage from "./_components/SecondPage";
 import ThirdPage from "./_components/ThirdPage";
 import FirstPage from "./_components/firstPage";
@@ -44,7 +43,7 @@ const Page = () => {
             Here are just a few people I've worked with so far...
           </p>
           <div className="py-[50px] flex flex-col gap-y-[50px] md:flex-row gap-x-[50px] px-[20px]">
-            <div className="shadow-[0_10px_6px_-6px_#777] flex-1 w-full md:w-[481px] h-auto md:h-[283px] bg-black rounded-[6px]">
+            <div className="shadow-[0_10px_6px_-6px_#777] flex-1 w-full md:w-[460px] rounded-[3px] h-auto md:h-[283px]  ">
               <YouTubePlayer
                 videoId="8ohGC3dv-Mo"
                 playerHeight={283}
@@ -279,7 +278,7 @@ const Page = () => {
         <h1
           className={cn(
             raleway.className,
-            "text-[#2D2D2D] text-[24px] md:text-[36px] text-center"
+            "text-[#2D2D2D] leading-[1.3em] text-[24px] md:text-[36px] text-center"
           )}
         >
           Want me to{" "}
@@ -292,22 +291,23 @@ const Page = () => {
         <p
           className={cn(
             raleway.className,
-            "text-[#2D2D2D] text-[14px] md:text-[16px] text-center"
+            "text-[#2D2D2D] my-[25px] text-[14px] md:text-[16px] text-center"
           )}
         >
           Book a call with me now...
         </p>
         <div className="w-full flex justify-center">
-          <Link
-            href="/schedule"
-            className="py-[6px] px-[26px] md:px-[56px] bg-[#0174C7] text-white font-semibold text-[18px] md:text-[26px] leading-[26px] text-center hover:bg-[#0174C7]/90 duration-200 w-full md:w-[560px] lg:w-[1093px] flex flex-col gap-y-[1px] mt-[38px]"
+          <a
+            href="https://www.saidurrahman.org/schedule"
+            target="_schedule"
+            className="text-white font-semibold text-[26px] bg-[rgb(1,116,199)] hover:shadow-[inset_0px_2px_2px_0_rgba(255,255,255,0.22),_0_233px_233px_0,rgba(255,255,255,0.12)_inset] hover:outline-none border-[1px] border-[rgba(0,0,0,0.2)] rounded-[3px] px-[25px] py-[10px] w-full lg:w-[1093px] text-center hover:bg-[#0c69a8] duration-300 cursor-pointer"
           >
             Click here to Book a Call
-            <span className="text-[8px] md:text-[10px] font-normal text-white/50">
+            <p className="text-[10px] md:text-[12px] font-normal text-white/50">
               Please Do Not Book A Call Until You Have Watched The Above Video
               in-Full
-            </span>
-          </Link>
+            </p>
+          </a>
         </div>
       </div>
       <div className="mt-[100px] md:mt-[454px] mb-[45px] max-w-[1093px] px-[20px] mx-auto">
@@ -317,8 +317,8 @@ const Page = () => {
             "text-[20px] md:text-[32px] text-[#2F2F2F] text-center"
           )}
         >
-          <span className="font-bold">Have Questions?</span> No problem. Drop Me
-          A Message on <br /> Whatsapp{" "}
+          <span className="font-bold">Have Questions?</span> No problem. <br />{" "}
+          Drop Me A Message on Whatsapp{" "}
           <a
             href="https://wa.me/8801745095753"
             target="whatsapp"
