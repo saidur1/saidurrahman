@@ -1,7 +1,6 @@
 import { cn } from "@/lib/utils";
 import { Raleway } from "next/font/google";
 import Image from "next/image";
-import Link from "next/link";
 
 const raleway = Raleway({
   subsets: ["latin-ext"],
@@ -19,14 +18,14 @@ const ThirdPage = () => {
               fill
               alt="Saidur Rahman Accountability Coach 
               to Entrepreneurs 1"
-              className="border-black border-[2px]"
+              className="border-black border-[2px] object-contain"
             />
           </div>
-          <p className={cn(raleway.className, "mt-[27px] text-center")}>
+          {/* <p className={cn(raleway.className, "mt-[27px] text-center")}>
             Saidur Rahman{" "}
             <span className="font-semibold">'Accountability'</span> Coach to
             Entrepreneurs 1
-          </p>
+          </p> */}
         </div>
         <div className="space-y-[22px] md:space-y-[32px] flex-1 mt-[50px] md:mt-0">
           <p
@@ -58,16 +57,17 @@ const ThirdPage = () => {
             Building the company was fun, fulfilling, rewarding and made me a
             multi-millionaire by the time I turned 30.
           </p>
-          <Link
-            href="/schedule"
-            className="py-[8px] px-[16px] bg-[#0174C7] text-white font-semibold text-[18px] md:text-[24px] leading-[26px] text-center hover:bg-[#0174C7]/90 duration-200 w-full flex flex-col gap-y-[1px]"
+          <a
+            href="https://www.saidurrahman.org/schedule"
+            target="_schedule"
+            className="text-white font-semibold text-[26px] bg-[rgb(1,116,199)] hover:shadow-[inset_0px_2px_2px_0_rgba(255,255,255,0.22),_0_233px_233px_0,rgba(255,255,255,0.12)_inset] hover:outline-none border-[1px] border-[rgba(0,0,0,0.2)] rounded-[3px] px-[25px] py-[10px] duration-300 w-full text-center hover:bg-[#0c69a8] flex flex-col items-center"
           >
             Click here to Book a Call
             <span className="text-[12px] font-normal text-white/50">
               Please Do Not Book A Call Until You Have Watched The Above Video
               in-Full
             </span>
-          </Link>
+          </a>
         </div>
       </div>
     </section>

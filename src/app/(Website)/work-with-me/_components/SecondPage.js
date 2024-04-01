@@ -63,13 +63,13 @@ const SecondPage = () => {
             fill
             alt="Saidur Rahman Accountability Coach To 
             Entrepreneurs"
-            className="border-black border-[2px]"
+            className="border-black border-[2px] object-contain"
           />
         </div>
-        <p className={cn(raleway.className, "mt-[27px] text-center")}>
+        {/* <p className={cn(raleway.className, "mt-[27px] text-center")}>
           <span className="font-semibold">Saidur Rahman</span> Accountability
           Coach To Entrepreneurs
-        </p>
+        </p> */}
       </div>
     </div>
   );
