@@ -311,25 +311,31 @@ const Page = () => {
         </div>
       </div>
       <div className="mt-[100px] md:mt-[454px] mb-[45px] max-w-[1093px] px-[20px] mx-auto">
-        <h1
-          className={cn(
-            raleway.className,
-            "text-[20px] md:text-[32px] text-[#2F2F2F] text-center"
-          )}
-        >
-          <span className="font-bold">Have Questions?</span> No problem. <br />{" "}
-          Drop Me A Message on Whatsapp{" "}
-          <a
-            href="https://wa.me/8801745095753"
-            target="whatsapp"
-            className="text-[#1A77BD] hover:underline font-bold"
-          >
-            here
-          </a>
-        </h1>
+        <FooterAction />
       </div>
     </div>
   );
 };
 
 export default Page;
+
+export const FooterAction = () => {
+  return (
+    <h1
+      className={cn(
+        raleway.className,
+        "text-[20px] md:text-[32px] text-[#2F2F2F] text-center leading-[1.3em]"
+      )}
+    >
+      <span className="font-bold">Have Questions?</span> No problem. <br /> Drop
+      Me A Message on Whatsapp{" "}
+      <a
+        href="https://wa.me/8801745095753"
+        target="whatsapp"
+        className="text-[#1A77BD] hover:underline font-bold"
+      >
+        here
+      </a>
+    </h1>
+  );
+};
