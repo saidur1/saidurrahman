@@ -1,52 +1,11 @@
+// Components
 import WistiaPlayer from "@/components/shared/player/WistiaPlayer";
-import { cn } from "@/lib/utils";
-import { Raleway } from "next/font/google";
-
-const raleway = Raleway({
-  subsets: ["latin-ext"],
-  weight: ["300", "400", "500", "600", "700", "800"],
-});
 
 export default async function Home() {
   return (
-    // <WebWrapper>
-    //   <main className="bg-[#DFE3E4]">
-    //     <section className="bg-gray-100 h-auto py-[50px] md:min-h-[45vh]">
-    //       <div className="container flex flex-col gap-[30px] justify-center items-center h-full">
-    //         <h1 className="text-black/80 text-[50px] font-bold text-center">
-    //           Accountability coaching for <br /> entrepreneurs.
-    //         </h1>
-    //         <p className="text-black/80 text-[17px] font-medium text-center">
-    //           We help ENTREPRENEURS stay ACCOUNTABLE so they achieve their
-    //           financial goals
-    //         </p>
-    //         <PrimaryButton
-    //           href="/schedule"
-    //           title="Book A FREE Discovery Call"
-    //         />
-    //       </div>
-    //     </section>
-    //     <Programms />
-    //     <About />
-    //     <section className="py-[50px] md:py-[100px] container">
-    //       <h1 className="text-center text-[40px] md:text-[60px] font-semibold dark:text-black/80">
-    //         Here's What People <br /> Are Saying
-    //       </h1>
-    //       <div>
-    //         <Reviews />
-    //       </div>
-    //     </section>
-    //     {/* <CompaniesSlider /> */}
-    //   </main>
-    // </WebWrapper>
     <>
       <div className="my-[61px]">
-        <h1
-          className={cn(
-            raleway.className,
-            "text-[#2D2D2D] text-[36px] font-bold text-center"
-          )}
-        >
+        <h1 className="text-[#2D2D2D] font-raleway text-[36px] font-bold text-center">
           Here's how I might be able to help you
         </h1>
         <div className="mt-[61px] px-[20px] max-w-[1093px] mx-auto">

@@ -38,7 +38,7 @@ const WistiaPlayer = () => {
           }}
         >
           <div
-            className="wistia_embed wistia_async_d0yog38ne6 seo=false videoFoam=true"
+            className="wistia_embed wistia_async_30ktnx5jkx seo=false videoFoam=true"
             style={{ height: "100%", position: "relative", width: "100%" }}
           >
             <div
@@ -55,7 +55,7 @@ const WistiaPlayer = () => {
               }}
             >
               <img
-                src="https://fast.wistia.com/embed/medias/d0yog38ne6/swatch"
+                src="https://fast.wistia.com/embed/medias/30ktnx5jkx/swatch"
                 style={{
                   filter: "blur(5px)",
                   height: "100%",
