@@ -38,7 +38,7 @@ const Intro = () => {
       <div className="hidden md:block w-full h-[1px] bg-[rgb(25,25,25)] mt-[30px] "></div>
       <div className="mt-[20px] md:mt-[25px]">
         <p className="text-[14px] text-center md:text-left md:text-[22px] text-[#2D2D2D]">
-          Here’s how I became a coach...
+            {/* Here’s how I became a coach...*/}
         </p>
       </div>
       <div className="block md:hidden w-1/2 mx-auto h-[1px] bg-[rgba(25,25,25,0.2)] mt-[30px] "></div>
