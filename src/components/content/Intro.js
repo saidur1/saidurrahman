@@ -24,7 +24,7 @@ const Intro = () => {
             "text-[#2D2D2D] text-center md:text-left text-[20px] md:text-[32px] font-bold leading-[.8em]"
           )}
         >
-          My name is Saidur Wahman.
+          My name is Saidur Rahman.
         </h1>
         <h1
           className={cn(
