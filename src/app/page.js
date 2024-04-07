@@ -13,7 +13,7 @@ export default async function Home() {
             <div className="flex-1 w-full flex justify-center">
               <div className="w-[150px] h-[150px] md:w-[350px] md:h-[350px]  relative">
                 <Image
-                  src="https://res.cloudinary.com/dzlrpspps/image/upload/v1700392817/profile_bq4fpi.jpg"
+                  src="https://res.cloudinary.com/dzlrpspps/image/upload/v1700540627/Projects/Saidur/saidur_sfwsaw.jpg"
                   fill
                   alt="photo"
                   className="object-center border-[3px] border-[rgba(0,0,0,0.7)] rounded-[5px] shadow-[0_2px_5px_2px_rgba(0,0,0,0.3)] overflow-clip"
