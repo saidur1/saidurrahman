@@ -23,7 +23,7 @@ const NavbarItem = ({ name, href }) => {
       //   isActive && "bg-white/10"
       // )}
       className={cn(
-        "text-[14px] md:text-[24px] font-bold hover:underline",
+        "text-[14px] md:text-[26px] font-bold hover:underline",
         railway.className,
         isActive ? "text-[rgb(45,45,45)]" : " text-[#1A0DAB]"
       )}
