@@ -51,19 +51,7 @@ export async function middleware(request) {
     return NextResponse.next();
   }
 
-  if (path === "/free-training/content" && !isAccess) {
-    return NextResponse.redirect(new URL("/free-training", request.url));
-  } else if (path === "/free-training" && isAccess) {
-    return NextResponse.redirect(
-      new URL("/free-training/content", request.url)
-    );
-  } else if (path == "/community") {
-    return NextResponse.redirect("https://discord.gg/uxfQY7HmQS");
-  } else if (path === "/lf") {
-    return NextResponse.redirect(
-      "https://us.bigin.online/org836263977/forms/lead-form"
-    );
-  } else if (path === "/fb") {
+  if (path === "/fb") {
     return NextResponse.redirect("https://www.facebook.com/saidurrahmanfb");
   } else if (path === "/li") {
     return NextResponse.redirect("https://www.linkedin.com/in/saidurrahmanorg");
@@ -106,9 +94,6 @@ export async function middleware(request) {
 export const config = {
   matcher: [
     "/",
-    "/free-training",
-    "/free-training/content",
-    "/community",
     "/lf",
     "/fb",
     "/li",
