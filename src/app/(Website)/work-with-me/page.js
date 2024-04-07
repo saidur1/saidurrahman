@@ -238,8 +238,7 @@ const Page = () => {
                   "text-[#2D2D2D] text-[15px] w-full md:w-[456px] mx-auto text-center"
                 )}
               >
-                He had this problem. I solved it for him, and he went on to make
-                $145,000 in net-cash in the following eight weeks.
+                I hold her accountable on her goals, and she  <span className="font-bold">2x her business</span> after working with me.
               </p>
               <p
                 className={cn(
@@ -247,10 +246,8 @@ const Page = () => {
                   "text-[#2D2D2D] text-[15px] w-full md:w-[456px] mx-auto text-center"
                 )}
               >
-                All he was missing was product-strategy, some knowledge on
-                implementation, and he's now got an offering that will generate
-                over $450,000 <span className="font-bold">per-year</span> in
-                net-cash going forwards.
+                All she was missing was accountability, She increase productivity in a day to a level that she didn't realise was possible. 
+some knowledge on.
               </p>
               <p
                 className={cn(
