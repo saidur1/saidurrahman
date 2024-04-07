@@ -3,6 +3,10 @@ import { CookiesProvider } from "next-client-cookies/server";
 import { Inter } from "next/font/google";
 import { ToastContainer } from "react-toastify";
 
+import Script from 'next/script' 
+// import for live chat
+
+
 // Components
 import GoogleAnalytics from "@/utils/GoogleAnalytics";
 
@@ -28,7 +32,7 @@ export default function RootLayout({ children }) {
         <ToastContainer />
         <CookiesProvider>{children}</CookiesProvider>
   <!--Start of Tawk.to Script-->
-<script type="text/javascript">
+<Script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
 var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
@@ -38,7 +42,7 @@ s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
-</script>
+</Script>
 <!--End of Tawk.to Script-->
       </body>
     </html>
