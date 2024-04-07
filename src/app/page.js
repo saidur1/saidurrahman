@@ -114,12 +114,12 @@ export default async function Home() {
 
         <section className="mt-[75px] md:mt-[155px] mb-[100px] md:mb-[175px] max-w-[1170px] mx-auto px-[20px]">
           <h1 className="font-raleway text-center text-[20px] md:text-[32px] text-[#2D2D2D] mb-[118px]">
-            That's everything, I'll keep this page updated if I do anything
-            else. <br />
+            Thanks for reading my story. <br />
             <span className="font-bold">
-              Until then, follow me on Instagram,{" "}
-              <a href="#" className="text-[rgb(26,119,189)]">
+              Add Me On InlinkedIn,{" "}
+              <a href="https://www.linkedin.com/in/saidurrahmanorg" target="_linkedin" className="text-[rgb(26,119,189)]">
                 here.
+              
               </a>
             </span>
           </h1>
