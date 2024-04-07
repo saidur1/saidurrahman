@@ -17,8 +17,8 @@ const Page = () => {
   return (
     <div>
       <FirstPage />
-      <SecondPage />
-      <ThirdPage />
+    {/*<SecondPage />
+      <ThirdPage /> */}
       <div className="relative bg-[#f2e6f3] pb-[122px] pt-[80px]  md:pt-[122px]">
         {/* first */}
         <div className=" max-w-[1093px] mx-auto px-[20px] md:px-0">
