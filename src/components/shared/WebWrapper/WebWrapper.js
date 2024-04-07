@@ -1,4 +1,4 @@
-import Navbar2 from "@/components/navbar/navbar2";
+import Navbar2 from "@/components/navbar/navbar";
 
 const WebWrapper = ({ children }) => {
   return (
