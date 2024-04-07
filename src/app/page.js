@@ -1,6 +1,6 @@
 // Components
-import HomeContent from "@/components/home2/HomeContent";
-import Intro from "@/components/home2/Intro";
+import HomeContent from "@/components/content/HomeContent";
+import Intro from "@/components/content/Intro";
 import WebWrapper from "@/components/shared/WebWrapper/WebWrapper";
 import Image from "next/image";
 
