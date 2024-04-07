@@ -116,7 +116,7 @@ export default async function Home() {
           <h1 className="font-raleway text-center text-[20px] md:text-[32px] text-[#2D2D2D] mb-[118px]">
             Thanks for reading my story. <br />
             <span className="font-bold">
-              Add Me On InlinkedIn,{" "}
+              Add Me On linkedIn,{" "}
               <a href="https://www.linkedin.com/in/saidurrahmanorg" target="_linkedin" className="text-[rgb(26,119,189)]">
                 here.
               
