@@ -58,9 +58,7 @@ const Page = () => {
                   openSans.className
                 )}
               >
-                Do you currently own an online business, but you are stuck at
-                'x' per-month, and you cannot scale past it, no matter what you
-                try?
+                Do you currently see inconsistencies on your actions, and cannot execute on your most important task for the day, no matter what you try?
               </h1>
               <p className="text-center text-[15px]">
                 Meet my client{" "}
