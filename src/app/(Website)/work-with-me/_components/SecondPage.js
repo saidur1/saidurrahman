@@ -21,14 +21,7 @@ const SecondPage = () => {
       id: 3,
       text: "He offered to pay me $50 to spend two hours with me, and he created a Word doc during our session to take away with him. That day, my e-learning company was born.",
     },
-    {
-      id: 4,
-      text: "The Word doc evolved into an e-book, then a Dropbox folder of videos and documents, then a full-blown online coaching program. The price evolved alongside the value from $50, to $500, to $5,000...",
-    },
-    {
-      id: 5,
-      text: "Over the following seven years, I made over $16,400,000 selling online education, before selling my company to a private equity firm for millions more.",
-    },
+  
   ];
   return (
     <div className=" my-[100px] max-w-[1093px] mx-auto h-auto w-full z-40 text-black flex flex-col md:flex-row gap-x-[50px] px-[20px]">
