@@ -50,7 +50,7 @@ export default async function Home() {
         </div>
 
         {/* content 2 */}
-        <div className="max-w-[1170px] mx-auto px-[20px]  mt-[85px] md:mt-[125px]">
+        <div hidden className="max-w-[1170px] mx-auto px-[20px]  mt-[85px] md:mt-[125px]">
           <section className="flex flex-col md:flex-row gap-y-[40px] gap-x-[60px] ">
             <div className="flex-1">
               <HomeContent
