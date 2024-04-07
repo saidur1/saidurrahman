@@ -238,7 +238,7 @@ const Page = () => {
                   "text-[#2D2D2D] text-[15px] w-full md:w-[456px] mx-auto text-center"
                 )}
               >
-                I helped her<span className="font-bold">2x her business</span> after working with me.
+                I helped her <span className="font-bold">2x her business</span> after working with me.
               </p>
               <p
                 className={cn(
