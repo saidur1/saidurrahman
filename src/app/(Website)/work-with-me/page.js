@@ -327,10 +327,9 @@ export const FooterAction = () => {
         "text-[20px] md:text-[32px] text-[#2F2F2F] text-center leading-[1.3em]"
       )}
     >
-      <span className="font-bold">Have Questions?</span> No problem. <br /> Drop
-      Me A Message on Whatsapp{" "}
+      <span className="font-bold">Have Questions?</span> No problem. <br /> Add Me On Linkedin{" "}
       <a
-        href="https://wa.me/8801745095753"
+        href="https://www.linkedin.com/in/saidurrahmanorg"
         target="whatsapp"
         className="text-[#1A77BD] hover:underline font-bold"
       >

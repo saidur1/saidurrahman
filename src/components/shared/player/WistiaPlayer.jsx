@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 const WistiaPlayer = () => {
   useEffect(() => {
-    // Ensure the script is loaded only once
+    // Ensure the script is loaded only once / test
     const script = document.createElement("script");
     script.src = "https://fast.wistia.com/assets/external/E-v1.js";
     script.async = true;
