@@ -32,7 +32,8 @@ const Page = () => {
             <span className="font-bold">
               I began working with entrepreneurs
             </span>{" "}
-            to help them stay focused and productive by holding them accountable to their goals.
+            to help them stay focused and productive by holding them accountable
+            to their goals.
           </h1>
           <p
             className={cn(
@@ -58,11 +59,15 @@ const Page = () => {
                   openSans.className
                 )}
               >
-                Do you currently see inconsistencies on your actions, cannot execute on your most important task for the day, no matter what you try?
+                Do you currently see inconsistencies on your actions, cannot
+                execute on your most important task for the day, no matter what
+                you try?
               </h1>
               <p className="text-center text-[15px]">
                 Meet my client{" "}
-                <span className="font-semibold italic">Michael Virahsawmy.</span>
+                <span className="font-semibold italic">
+                  Michael Virahsawmy.
+                </span>
               </p>
               <p
                 className={cn(
@@ -70,8 +75,9 @@ const Page = () => {
                   "text-[#2D2D2D] text-[15px] w-full md:w-[456px] mx-auto text-center"
                 )}
               >
-                He had this problem, I helped solved it for him, and he was able to be consistent,{" "}
-                <span className="font-bold">consistent</span>,  getting the most important things done.
+                He had this problem, I helped solved it for him, and he was able
+                to be consistent, <span className="font-bold">consistent</span>,
+                getting the most important things done.
               </p>
               <p
                 className={cn(
@@ -79,7 +85,9 @@ const Page = () => {
                   "text-[#2D2D2D] text-[15px] w-full md:w-[456px] mx-auto text-center"
                 )}
               >
-                All he was missing was accountability, He feels amazing to be able to do the most important things. Working with me helped him in a big scale.
+                All he was missing was accountability, He feels amazing to be
+                able to do the most important things. Working with me helped him
+                in a big scale.
               </p>
               <p
                 className={cn(
@@ -94,7 +102,7 @@ const Page = () => {
           </div>
         </div>
         {/* second */}
-        <div className="mt-[50px] md:mt-[122px] max-w-[1093px] mx-auto">
+        <div hidden className="mt-[50px] md:mt-[122px] max-w-[1093px] mx-auto">
           <div className="my-[50px] flex flex-col-reverse md:flex-row gap-y-[50px] gap-x-[50px] px-[20px]">
             <div className={cn("w-full flex-1 lg:w-[504px], space-y-[33px]")}>
               <h1
@@ -102,11 +110,11 @@ const Page = () => {
                   "text-[#E43b2c] text-center font-bold w-full md:w-[456px] mx-auto text-[18px]",
                   openSans.className
                 )}
-              > 
+              >
                 Do you currently have a large personal brand or audience, or one
                 you are currently building, but you do not know how to monetise
-                it? */}
-              </h1> 
+                it?
+              </h1>
               <p className="text-center text-[15px]">
                 Meet my client{" "}
                 <span className="font-semibold italic">Richard Rowlands.</span>
@@ -116,7 +124,7 @@ const Page = () => {
                   openSans.className,
                   "text-[#2D2D2D] text-[15px] w-full md:w-[456px] mx-auto text-center"
                 )}
-              > 
+              >
                 He had this problem. I solved it for him, and he went on to make
                 $145,000 in net-cash in the following eight weeks.
               </p>
@@ -125,7 +133,7 @@ const Page = () => {
                   openSans.className,
                   "text-[#2D2D2D] text-[15px] w-full md:w-[456px] mx-auto text-center"
                 )}
-              > 
+              >
                 All he was missing was product-strategy, some knowledge on
                 implementation, and he's now got an offering that will generate
                 over $450,000 <span className="font-bold">per-year</span> in
@@ -149,10 +157,12 @@ const Page = () => {
               />
             </div>
           </div>
-        </div> 
+        </div>
 
         {/* third */}
-        <div className="py-[50px] md:my-[122px] flex flex-col md:flex-row gap-y-[50px] gap-x-[50px] max-w-[1093px] mx-auto px-[20px]">
+        {/* <div
+          className="py-[50px] md:my-[122px] flex flex-col md:flex-row gap-y-[50px] gap-x-[50px] max-w-[1093px] mx-auto px-[20px]"
+        >
           <div className="shadow-[0_10px_6px_-6px_#777] flex-1 w-full md:w-[481px] h-auto md:h-[283px] bg-black rounded-[6px]">
             <YouTubePlayer
               videoId="bQpFHO7IQlo"
@@ -161,7 +171,9 @@ const Page = () => {
             />
           </div>
 
-          <div className={cn("w-full flex-1 md:w-[504px], space-y-[33px]")}>
+          <div
+            className={cn("w-full flex-1 md:w-[504px], space-y-[33px]")}
+          >
             <h1
               className={cn(
                 "text-[#E43b2c] text-center font-bold w-full md:w-[456px] mx-auto text-[18px]",
@@ -186,13 +198,13 @@ const Page = () => {
               monthly revenue from $19.8K per-month to{" "}
               <span className="font-bold">$189K per-month</span>, growing his
               business by +854%.
-            </p> 
+            </p>
             <p
               className={cn(
                 openSans.className,
                 "text-[#2D2D2D] text-[15px] w-full md:w-[456px] mx-auto text-center"
               )}
-            > 
+            >
               All he was missing was product-strategy, some knowledge on
               implementation, and he's now tracking for $2.3M in annual revenue,
               sustainably and predictably, going forwards.
@@ -207,10 +219,10 @@ const Page = () => {
               <span className="underline">costing you?</span>
             </p>
           </div>
-        </div> 
+        </div> */}
 
         {/* fourth */}
-        <div className="mt-[50px] md:mt-[122px] max-w-[1093px] mx-auto">
+        {/* <div  className="mt-[50px] md:mt-[122px] max-w-[1093px] mx-auto">
           <div className="my-[50px] flex flex-col md:flex-row gap-y-[50px] gap-x-[50px] px-[20px]">
             <div className={cn("w-full flex-1 lg:w-[504px], space-y-[33px]")}>
               <h1
@@ -219,7 +231,8 @@ const Page = () => {
                   openSans.className
                 )}
               >
-                Are you an entrepreneur, trying to get a lot done, looking for someone to keep you accountable?
+                Are you an entrepreneur, trying to get a lot done, looking for
+                someone to keep you accountable?
               </h1>
               <p className="text-center text-[15px]">
                 Meet my client{" "}
@@ -231,7 +244,8 @@ const Page = () => {
                   "text-[#2D2D2D] text-[15px] w-full md:w-[456px] mx-auto text-center"
                 )}
               >
-                I helped her <span className="font-bold">2x her business</span> after working with me.
+                I helped her <span className="font-bold">2x her business</span>{" "}
+                after working with me.
               </p>
               <p
                 className={cn(
@@ -239,7 +253,8 @@ const Page = () => {
                   "text-[#2D2D2D] text-[15px] w-full md:w-[456px] mx-auto text-center"
                 )}
               >
-                All she was missing was accountability, She increased productivity to a level that she didn't realise was possible.
+                All she was missing was accountability, She increased
+                productivity to a level that she didn't realise was possible.
               </p>
               <p
                 className={cn(
@@ -259,7 +274,7 @@ const Page = () => {
               />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="max-w-[1093px] mx-auto mt-[50px] px-[20px] md:mt-[100px]">
         <h1
@@ -314,7 +329,8 @@ export const FooterAction = () => {
         "text-[20px] md:text-[32px] text-[#2F2F2F] text-center leading-[1.3em]"
       )}
     >
-      <span className="font-bold">Have Questions?</span> No problem. <br /> Add Me On Linkedin{" "}
+      <span className="font-bold">Have Questions?</span> No problem. <br /> Add
+      Me On Linkedin{" "}
       <a
         href="https://www.linkedin.com/in/saidurrahmanorg"
         target="whatsapp"
