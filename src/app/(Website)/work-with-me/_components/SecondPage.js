@@ -50,7 +50,7 @@ const SecondPage = () => {
         </div>
       </div>
       <div className="w-full mt-[20px] md:mt-0 lg:w-[525px] flex-1">
-        <div className="w-full h-auto md:h-[350px] lg:w-[520px] lg:h-[450px] relative">
+        <div className="w-full h-auto md:h-[350px] lg:w-[520px] lg:h-[350px] relative">
           <Image
             src="https://res.cloudinary.com/dzlrpspps/image/upload/v1711890178/Projects/Saidur/Accountability_Community_with_Saidur_Rahman_x2uwbt.png"
             fill
