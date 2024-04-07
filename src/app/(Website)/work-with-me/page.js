@@ -94,7 +94,7 @@ const Page = () => {
                   "text-[#2D2D2D] text-[15px] w-full md:w-[456px] mx-auto text-center"
                 )}
               >
-                How much is "not knowing what you don't know"{" "}
+                How much is "not keeping you accountable"{" "}
                 <span className="underline">costing you?</span>
               </p>
             </div>
@@ -144,7 +144,7 @@ const Page = () => {
                   "text-[#2D2D2D] text-[15px] w-full md:w-[456px] mx-auto text-center"
                 )}
               >
-                How much is "not knowing what you don't know"{" "}
+                How much is "not keeping you accountable"{" "}
                 <span className="underline">costing you?</span>
               </p>
             </div>
@@ -210,7 +210,7 @@ const Page = () => {
                 "text-[#2D2D2D] text-[15px] w-full md:w-[456px] mx-auto text-center"
               )}
             >
-              How much is "not knowing what you don't know"{" "}
+              How much is "not keeping you accountable"{" "}
               <span className="underline">costing you?</span>
             </p>
           </div>
@@ -254,7 +254,7 @@ const Page = () => {
                   "text-[#2D2D2D] text-[15px] w-full md:w-[456px] mx-auto text-center"
                 )}
               >
-                How much is "not keeping your accountable"{" "}
+                How much is "not keeping you accountable"{" "}
                 <span className="underline">costing you?</span>
               </p>
             </div>
