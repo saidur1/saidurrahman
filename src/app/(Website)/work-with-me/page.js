@@ -63,7 +63,7 @@ const Page = () => {
                 try?
               </h1>
               <p className="text-center text-[15px]">
-                If yes, meet my client{" "}
+                Meet my client{" "}
                 <span className="font-semibold italic">Michael Virahsawmy.</span>
               </p>
               <p
@@ -115,7 +115,7 @@ const Page = () => {
                 it?
               </h1>
               <p className="text-center text-[15px]">
-                If yes, meet my client{" "}
+                Meet my client{" "}
                 <span className="font-semibold italic">Richard Rowlands.</span>
               </p>
               <p
@@ -179,7 +179,7 @@ const Page = () => {
               per-month, and you cannot scale past it, no matter what you try?
             </h1>
             <p className="text-center text-[15px]">
-              If yes, meet my client{" "}
+              Meet my client{" "}
               <span className="font-semibold italic">Jared Roger.</span>
             </p>
             <p
@@ -231,7 +231,7 @@ const Page = () => {
                 it?
               </h1>
               <p className="text-center text-[15px]">
-                If yes, meet my client{" "}
+                Meet my client{" "}
                 <span className="font-semibold italic">Faith Aumor.</span>
               </p>
               <p
