@@ -226,7 +226,7 @@ const Page = () => {
                   openSans.className
                 )}
               >
-                Are you an entrepreneur, trying to get a lot done and looking for someone to keep you accountable?
+                Are you an entrepreneur, trying to get a lot done, looking for someone to keep you accountable?
               </h1>
               <p className="text-center text-[15px]">
                 Meet my client{" "}
