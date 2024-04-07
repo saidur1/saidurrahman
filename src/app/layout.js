@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 import { ToastContainer } from "react-toastify";
 
 import Script from 'next/script' 
-// import for live chat
+{/*above line for live chat*/}
 
 
 // Components
@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
         {/* Google analytics */}
         <ToastContainer />
         <CookiesProvider>{children}</CookiesProvider>
-  <!--Start of Tawk.to Script-->
+{/*live chat code below*/}
 <Script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
@@ -43,7 +43,7 @@ s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
 </Script>
-<!--End of Tawk.to Script-->
+
       </body>
     </html>
   );
