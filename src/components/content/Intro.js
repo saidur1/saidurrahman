@@ -32,7 +32,7 @@ const Intro = () => {
             "text-[#2D2D2D] text-center md:text-left text-[20px] md:text-[32px] font-bold leading-[.8em]"
           )}
         >
-          I'm an Coach.
+          I'm an Accountability Coach.
         </h1>
       </div>
       <div className="hidden md:block w-full h-[1px] bg-[rgb(25,25,25)] mt-[30px] "></div>
