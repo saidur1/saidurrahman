@@ -31,7 +31,7 @@ export default async function Home() {
           <section className="flex flex-col md:flex-row gap-y-[40px] gap-x-[60px]">
             <div className="flex-1">
               <HomeContent
-                title="In my mid-teens..."
+                title="Title one goes here..."
                 content1="Me and my friends began skateboarding. I decided it would be fun to film their stunts and our travels across the country to different skateparks, edit together the video footage and create a product. Skateboard video/s."
                 content2="I began selling these to friends and other skateboarders we would meet as we travelled and built a network of other people
               interested in the sport."
@@ -40,7 +40,7 @@ export default async function Home() {
             </div>
             <div className="flex-1 mt-[20px] md:mt-0">
               <HomeContent
-                title="In my late-teens..."
+                title="Title two goes here..."
                 content1="Me and my friends became interested in street art and graffiti. I decided it would be fun to take pictures of our work, and the work of others, as we traveled across the country. I also interviewed prominent artists, combined all of this and created a product: A graffiti magazine."
                 content2="Whilst it was a small bootstrapped endeavour, I was selling advertising in the magazine to large global paint brands, and I had the magazine stocked in boutique art stores."
                 footerText="Selling these made me 4-figures."
@@ -54,7 +54,7 @@ export default async function Home() {
           <section className="flex flex-col md:flex-row gap-y-[40px] gap-x-[60px] ">
             <div className="flex-1">
               <HomeContent
-                title="In my early-twenties..."
+                title="title three goes here..."
                 content1="Me and my friends got into DJ-ing. I decided it would be fun to, rather than just play other people's music, produce my own, creating a product under the moniker Compa."
                 content2="Two years later, I got my music into the hands of a global DJ, Mala who signed me to his Deep Medi label. From there, I got a booking agent, a manager and began touring the world, playing in over 40+ countries and releasing records on a variety of prominent elec-
               tronic music record labels."
@@ -65,7 +65,7 @@ export default async function Home() {
             </div>
             <div className="flex-1 mt-[20px] md:mt-0">
               <HomeContent
-                title="In my mid-twenties..."
+                title="Title four goes here..."
                 content1="I became interested in investment and building wealth through real estate. I realised that I may not be able to sustain a music career forever, and that it would be wise to invest excess capital to
               grow it for the future."
                 content2="I started off by investing in small town-houses in the North of England, then grew to investing in larger family-houses, and then expanded
@@ -84,7 +84,7 @@ export default async function Home() {
           <section className="flex flex-col md:flex-row gap-y-[40px] gap-x-[60px] ">
             <div className="flex-1">
               <HomeContent
-                title="In my late-twenties..."
+                title="Title five goes in here..."
                 content1="I became interested in trading financial markets, as a way to supple-ment my music income, which at times could be slow if I only had
               one or two DJ bookings in a month."
                 content2="After working with a handful of coaches and mentors, I learned the necessary skills to construct my own strategies, unique to me. I
@@ -101,7 +101,7 @@ export default async function Home() {
             </div>
             <div className="flex-1 mt-[20px] md:mt-0">
               <HomeContent
-                title="In my early-thirties..."
+                title="Title six goes from here..."
                 content1="In September 2023, I sold my e-learning company to a private equity firm, based in America, for a multi seven-figure sum."
                 content2="Over the last year or so, I've been increasingly approached by people who've asked me to help them either build, or grow, or exit, their online education companies, and after my YouTube channel blew up at the start of 2024, growing by 40K subs and 1M views in just four months, the volume of people requesting consulting grew and grew."
                 content3="This led me to found my new company Build, Grow and Exit in order to help them to either build, grow or exit their online education companies. My mission statement is simple: 'Make money, have fun, and help people'"
