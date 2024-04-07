@@ -11,15 +11,15 @@ const SecondPage = () => {
   const whyWorkData = [
     {
       id: 1,
-      text: "Seven years ago, I was a struggling musician living in my parents spare room, making $1,500 per-month on average. I was completely broke.",
+      text: "I was struggling to be an entrepreneur, after quitting my 9-5 job.",
     },
     {
       id: 2,
-      text: "To solve my financial situation, I began learning to trade financial markets. A year or so later, I was asked by a friend to teach him what i was learning...",
+      text: "To improve my productivity I asked my brother to hold me accountable. Thats how I learned the power of accountability.",
     },
     {
       id: 3,
-      text: "He offered to pay me $50 to spend two hours with me, and he created a Word doc during our session to take away with him. That day, my e-learning company was born.",
+      text: "One of my clients from IT services I was offering back then, offered to pay me to hold him accountable. my accountability coaching journey began.",
     },
   
   ];
