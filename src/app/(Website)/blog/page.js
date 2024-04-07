@@ -43,7 +43,7 @@ const Page = () => {
   ];
   return (
     <WebWrapper>
-      <div className="pb-[100px]">
+      <div className="pb-[100px] px-[20px]">
         <p className="text-[12px] text-center text-[rgb(136,136,136)] mt-[80px]">
           {getToday()}
         </p>
