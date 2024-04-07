@@ -246,7 +246,7 @@ const Page = () => {
                   "text-[#2D2D2D] text-[15px] w-full md:w-[456px] mx-auto text-center"
                 )}
               >
-                All she was missing was accountability, She increase productivity in a day to a level that she didn't realise was possible. 
+                All she was missing was accountability, She increase productivity to a level that she didn't realise was possible. 
 some knowledge on.
               </p>
               <p
