@@ -34,10 +34,7 @@ const ThirdPage = () => {
               "text-center font-normal text-[16px] text-[#2F2F2F]"
             )}
           >
-            Within my e-learning company, at the point I sold the business, we
-            had 16 members of staff, we had served over 4,000 clients globally
-            across seven years, and were one of the largest trading education
-            companies on earth.
+            Within my accountability coaching I have worked with 160+ clients, from 15+ countries.
           </p>
           <p
             className={cn(
@@ -45,8 +42,7 @@ const ThirdPage = () => {
               "text-center font-normal text-[16px] text-[#2F2F2F]"
             )}
           >
-            Last year, I won the prestigious 'Two Comma Club X' award from
-            ClickFunnels for collecting over $10,000,000 in cash.
+            I have worked with entrepreneurs, students from UC Berkeley, Georgia Tech, Harvard University PHD, employees from Google, Amazon, Microsoft. 
           </p>
           <p
             className={cn(
@@ -54,8 +50,7 @@ const ThirdPage = () => {
               "text-center font-normal text-[16px] text-[#2F2F2F]"
             )}
           >
-            Building the company was fun, fulfilling, rewarding and made me a
-            multi-millionaire by the time I turned 30.
+            Now I am focused on helping entrepreneurs with my accountability coaching skills. .
           </p>
           <a
             href="https://www.saidurrahman.org/schedule"
