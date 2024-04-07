@@ -27,7 +27,7 @@ export default async function Home() {
         </div>
 
         {/* content 1 */}
-        <div className="max-w-[1170px] mx-auto mt-[85px] md:mt-[110px] px-[20px] ">
+        <div hidden className="max-w-[1170px] mx-auto mt-[85px] md:mt-[110px] px-[20px] ">
           <section className="flex flex-col md:flex-row gap-y-[40px] gap-x-[60px]">
             <div className="flex-1">
               <HomeContent
