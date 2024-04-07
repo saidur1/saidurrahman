@@ -1,5 +1,4 @@
 import { cn } from "@/lib/utils";
-import NavbarDropdownItem from "./navbar-dropdown-item";
 import NavbarItem from "./navbar-item";
 
 const NavbarRoutes = () => {
@@ -18,36 +17,20 @@ const NavbarRoutes = () => {
     },
     {
       id: 3,
-      name: "Contact",
+      name: "Work With Me",
       dropdown: false,
-      href: "/contact",
+      href: "/work-with-me",
     },
-    {
-      id: 4,
-      name: "Reviews",
-      href: "/reviews",
-      dropdown: false,
-    },
-    // {
-    //     id: 4,
-    //     name: "Free Training",
-    //     href: "/free-training",
-    //     dropdown: false,
-    // },
   ];
   return (
-    <section className="mt-[50px] md:mt-0">
+    <section className="w-full h-[60px]">
       <div
         className={cn(
-          "flex flex-col md:flex-row  h-full md:items-center gap-x-[12px] md:gap-x-[62px]"
+          "flex justify-center  h-[60px] items-center gap-x-[12px] md:gap-x-[62px]"
         )}
       >
         {routes.map(({ dropdown, name, href, id, menus }) => {
-          if (dropdown) {
-            return <NavbarDropdownItem key={id} menus={menus} name={name} />;
-          } else {
-            return <NavbarItem key={id} name={name} href={href} />;
-          }
+          return <NavbarItem key={id} name={name} href={href} />;
         })}
       </div>
     </section>
