@@ -31,7 +31,7 @@ const SecondPage = () => {
     },
   ];
   return (
-    <div hidden className=" my-[100px] max-w-[1093px] mx-auto h-auto w-full z-40 text-black flex flex-col md:flex-row gap-x-[50px] px-[20px]">
+    <div className=" my-[100px] max-w-[1093px] mx-auto h-auto w-full z-40 text-black flex flex-col md:flex-row gap-x-[50px] px-[20px]">
       <div className="flex-1 ">
         <h1 className="text-[#2F2F2F] text-[26px] md:text-[36px] font-normal border-b-[1px] text-center">
           Why{" "}
