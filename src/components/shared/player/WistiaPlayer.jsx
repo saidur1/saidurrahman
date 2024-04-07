@@ -21,6 +21,7 @@ const WistiaPlayer = () => {
         borderRadius: "10px",
         boxShadow: "0 10px 6px -6px #777",
         overflow: "hidden", // To hide the overflow of the swatch image
+        height: "110%",
       }}
     >
       <div

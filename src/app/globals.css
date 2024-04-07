@@ -147,3 +147,7 @@ html {
   width: 100%;
   z-index: -50;
 }
+
+.wistia_grid_57_center {
+  height: 99% !important;
+}

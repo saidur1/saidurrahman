@@ -1,4 +1,4 @@
-import YouTubePlayer from "@/components/shared/player/YoutubePlayer";
+import WistiaPlayer from "@/components/shared/player/WistiaPlayer";
 import { cn } from "@/lib/utils";
 import { Raleway } from "next/font/google";
 
@@ -18,13 +18,14 @@ const FirstPage = () => {
       >
         Here's how I might be able to help you
       </h1>
-      <div className="mt-[61px] px-[20px]">
-        <YouTubePlayer
+      <div className="mt-[61px] px-[20px] max-w-[1093px] h-auto mx-auto">
+        {/* <YouTubePlayer
           videoId="0vcgxhRPdz8"
           playerWidth={1093}
           playerHeight={520}
           isBorder={false}
-        />
+        /> */}
+        <WistiaPlayer />
       </div>
       <div className="flex justify-center mt-[50px] px-[20px]">
         <a
