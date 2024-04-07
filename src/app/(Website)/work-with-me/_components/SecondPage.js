@@ -39,7 +39,7 @@ const SecondPage = () => {
             className="font-semibold
               "
           >
-            Work With Will?
+            Work With Saidur?
           </span>
         </h1>
         <div className="space-y-[21px] md:space-y-[41px] mt-[41px] flex-1">
