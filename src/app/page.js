@@ -102,7 +102,7 @@ export default async function Home() {
 
         <section className="mt-[75px] md:mt-[155px] mb-[100px] md:mb-[175px] max-w-[1170px] mx-auto px-[20px]">
           <h1 className="font-raleway text-center text-[20px] md:text-[32px] text-[#2D2D2D] mb-[118px]">
-            Thanks for reading my story. <br />
+                  {/* Thanks for reading my story.*/}<br />
             <span className="font-bold">
               Add Me On linkedIn,{" "}
               <a href="https://www.linkedin.com/in/saidurrahmanorg" target="_linkedin" className="text-[rgb(26,119,189)]">
