@@ -4,7 +4,6 @@ import { Inter } from "next/font/google";
 import { ToastContainer } from "react-toastify";
 
 // Components
-import NProgress from "@/components/progressBar/NProgress";
 import GoogleAnalytics from "@/utils/GoogleAnalytics";
 
 // CSS
@@ -26,8 +25,6 @@ export default function RootLayout({ children }) {
         {/* Google analytics */}
         <GoogleAnalytics />
         {/* Google analytics */}
-
-        <NProgress />
         <ToastContainer />
         <CookiesProvider>{children}</CookiesProvider>
       </body>
