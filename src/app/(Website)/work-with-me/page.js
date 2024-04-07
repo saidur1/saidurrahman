@@ -102,7 +102,7 @@ const Page = () => {
                   "text-[#E43b2c] text-center font-bold w-full md:w-[456px] mx-auto text-[18px]",
                   openSans.className
                 )}
-              > {/* hidden 
+              > 
                 Do you currently have a large personal brand or audience, or one
                 you are currently building, but you do not know how to monetise
                 it? */}
@@ -116,21 +116,21 @@ const Page = () => {
                   openSans.className,
                   "text-[#2D2D2D] text-[15px] w-full md:w-[456px] mx-auto text-center"
                 )}
-              > {/* hidden
+              > 
                 He had this problem. I solved it for him, and he went on to make
                 $145,000 in net-cash in the following eight weeks.
-              </p> */}
+              </p>
               <p
                 className={cn(
                   openSans.className,
                   "text-[#2D2D2D] text-[15px] w-full md:w-[456px] mx-auto text-center"
                 )}
-              > {/*hidden
+              > 
                 All he was missing was product-strategy, some knowledge on
                 implementation, and he's now got an offering that will generate
                 over $450,000 <span className="font-bold">per-year</span> in
                 net-cash going forwards.
-              </p> */}
+              </p>
               <p
                 className={cn(
                   openSans.className,
@@ -167,10 +167,10 @@ const Page = () => {
                 "text-[#E43b2c] text-center font-bold w-full md:w-[456px] mx-auto text-[18px]",
                 openSans.className
               )}
-            > {/* hidden 
+            >
               Do you currently own an online business, but you are stuck at 'x'
               per-month, and you cannot scale past it, no matter what you try?
-            </h1> */}
+            </h1>
             <p className="text-center text-[15px]">
               Meet my client{" "}
               <span className="font-semibold italic">Jared Roger.</span>
@@ -180,23 +180,23 @@ const Page = () => {
                 openSans.className,
                 "text-[#2D2D2D] text-[15px] w-full md:w-[456px] mx-auto text-center"
               )}
-            > {/*hidden 
+            >
               He had this problem. I solved it for him, and he went on to make
               $781,000 in net-cash in the following 10 months, building his
               monthly revenue from $19.8K per-month to{" "}
               <span className="font-bold">$189K per-month</span>, growing his
               business by +854%.
-            </p> */}
+            </p> 
             <p
               className={cn(
                 openSans.className,
                 "text-[#2D2D2D] text-[15px] w-full md:w-[456px] mx-auto text-center"
               )}
-            > {/* hidden 
+            > 
               All he was missing was product-strategy, some knowledge on
               implementation, and he's now tracking for $2.3M in annual revenue,
               sustainably and predictably, going forwards.
-            </p> */}
+            </p>
             <p
               className={cn(
                 openSans.className,
