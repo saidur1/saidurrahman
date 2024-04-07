@@ -32,7 +32,7 @@ const Page = () => {
             <span className="font-bold">
               I began working with entrepreneurs
             </span>{" "}
-            to help them stay focused and productive by keeping them accountable.
+            to help them stay focused and productive by holding them accountable to their goals.
           </h1>
           <p
             className={cn(
