@@ -11,15 +11,15 @@ const NavbarRoutes = () => {
     },
     {
       id: 2,
-      name: "Blog",
-      dropdown: false,
-      href: "/blog",
-    },
-    {
-      id: 3,
       name: "Work With Me",
       dropdown: false,
       href: "/work-with-me",
+    },
+    {
+      id: 3,
+      name: "Blog",
+      dropdown: false,
+      href: "/blog",
     },
   ];
   return (
