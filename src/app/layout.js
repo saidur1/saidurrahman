@@ -3,8 +3,6 @@ import { CookiesProvider } from "next-client-cookies/server";
 import { Inter } from "next/font/google";
 import { ToastContainer } from "react-toastify";
 
-import Script from 'next/script' 
-{/*above line for live chat*/}
 
 
 // Components
@@ -31,19 +29,6 @@ export default function RootLayout({ children }) {
         {/* Google analytics */}
         <ToastContainer />
         <CookiesProvider>{children}</CookiesProvider>
-{/*live chat code below*/}
-<Script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5d7b72919f6b7a4457e180c6/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</Script>
-
       </body>
     </html>
   );
