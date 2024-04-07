@@ -28,11 +28,11 @@ const Page = () => {
               "text-[24px] md:text-[36px] text-[#2D2D2D] text-center w-full md:w-[828px] mx-auto"
             )}
           >
-            Recently,{" "}
+            {" "}
             <span className="font-bold">
-              I began sharing everything I've learned with others
+              I began working with entrepreneurs
             </span>{" "}
-            to help other talented people share their value with the world
+            to help them stay focused and productive by keeping them accountable.
           </h1>
           <p
             className={cn(
