@@ -34,7 +34,7 @@ const ThirdPage = () => {
               "text-center font-normal text-[16px] text-[#2F2F2F]"
             )}
           >
-            Within my accountability coaching I have worked with 160+ clients, from 15+ countries.
+            I have worked with entrepreneurs, students from UC Berkeley, Georgia Tech, Harvard University PHD, and employees from Google, Amazon, and Microsoft. 
           </p>
           <p
             className={cn(
@@ -42,7 +42,7 @@ const ThirdPage = () => {
               "text-center font-normal text-[16px] text-[#2F2F2F]"
             )}
           >
-            I have worked with entrepreneurs, students from UC Berkeley, Georgia Tech, Harvard University PHD, employees from Google, Amazon, Microsoft. 
+            Within my accountability coaching I have worked with 160+ clients, from 15+ countries. I was also traveled different countries while I was working online. 
           </p>
           <p
             className={cn(
@@ -50,7 +50,7 @@ const ThirdPage = () => {
               "text-center font-normal text-[16px] text-[#2F2F2F]"
             )}
           >
-            Now I am focused on helping entrepreneurs with my accountability coaching skills. .
+            Now I am focused on helping entrepreneurs to improve their productivity with my accountability coaching skills.
           </p>
           <a
             href="https://www.saidurrahman.org/schedule"
