@@ -119,7 +119,6 @@ export default async function Home() {
               Add Me On linkedIn,{" "}
               <a href="https://www.linkedin.com/in/saidurrahmanorg" target="_linkedin" className="text-[rgb(26,119,189)]">
                 here.
-              
               </a>
             </span>
           </h1>
