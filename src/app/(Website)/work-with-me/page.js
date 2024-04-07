@@ -226,9 +226,7 @@ const Page = () => {
                   openSans.className
                 )}
               >
-                Do you currently have a large personal brand or audience, or one
-                you are currently building, but you do not know how to monetise
-                it?
+                Are you an entrepreneur, trying to get a lot done and looking for someone to keep you accountable?
               </h1>
               <p className="text-center text-[15px]">
                 Meet my client{" "}
