@@ -64,7 +64,7 @@ const Page = () => {
               </h1>
               <p className="text-center text-[15px]">
                 If yes, meet my client{" "}
-                <span className="font-semibold italic">Mike Diamonds.</span>
+                <span className="font-semibold italic">Michael Virahsawmy.</span>
               </p>
               <p
                 className={cn(
@@ -116,7 +116,7 @@ const Page = () => {
               </h1>
               <p className="text-center text-[15px]">
                 If yes, meet my client{" "}
-                <span className="font-semibold italic">Mike Thurston.</span>
+                <span className="font-semibold italic">Richard Rowlands.</span>
               </p>
               <p
                 className={cn(
@@ -180,7 +180,7 @@ const Page = () => {
             </h1>
             <p className="text-center text-[15px]">
               If yes, meet my client{" "}
-              <span className="font-semibold italic">Mike Diamonds.</span>
+              <span className="font-semibold italic">Jared Roger.</span>
             </p>
             <p
               className={cn(
@@ -232,7 +232,7 @@ const Page = () => {
               </h1>
               <p className="text-center text-[15px]">
                 If yes, meet my client{" "}
-                <span className="font-semibold italic">Mike Thurston.</span>
+                <span className="font-semibold italic">Faith Aumor.</span>
               </p>
               <p
                 className={cn(
