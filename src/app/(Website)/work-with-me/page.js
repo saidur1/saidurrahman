@@ -218,7 +218,7 @@ const Page = () => {
         </div> */}
 
         {/* fourth */}
-        {/* <div  className="mt-[50px] md:mt-[122px] max-w-[1093px] mx-auto">
+        <div className="mt-[50px] md:mt-[122px] max-w-[1093px] mx-auto">
           <div className="my-[50px] flex flex-col md:flex-row gap-y-[50px] gap-x-[50px] px-[20px]">
             <div className={cn("w-full flex-1 lg:w-[504px], space-y-[33px]")}>
               <h1
@@ -270,7 +270,7 @@ const Page = () => {
               />
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
       <div className="max-w-[1093px] mx-auto mt-[50px] px-[20px] md:mt-[100px]">
         <h1
