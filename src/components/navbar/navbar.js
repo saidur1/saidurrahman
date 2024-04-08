@@ -1,6 +1,6 @@
 import NavbarRoutes from "./navbar-routes";
 
-const Navbar2 = () => {
+const Navbar = () => {
   return (
     <>
       <div className="h-[60px] md:h-[109px] w-full md:flex justify-center items-center bg-[rgb(224,224,224)] ">
@@ -14,4 +14,4 @@ const Navbar2 = () => {
   );
 };
 
-export default Navbar2;
+export default Navbar;
