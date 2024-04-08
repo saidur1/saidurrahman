@@ -102,7 +102,7 @@ const Page = () => {
           </div>
         </div>
         {/* second */}
-        <div hidden className="mt-[50px] md:mt-[122px] max-w-[1093px] mx-auto">
+        {/* <div hidden className="mt-[50px] md:mt-[122px] max-w-[1093px] mx-auto">
           <div className="my-[50px] flex flex-col-reverse md:flex-row gap-y-[50px] gap-x-[50px] px-[20px]">
             <div className={cn("w-full flex-1 lg:w-[504px], space-y-[33px]")}>
               <h1
@@ -157,10 +157,10 @@ const Page = () => {
               />
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* third */}
-        <div className="py-[50px] md:my-[122px] flex flex-col md:flex-row gap-y-[50px] gap-x-[50px] max-w-[1093px] mx-auto px-[20px]">
+        {/* <div className="py-[50px] md:my-[122px] flex flex-col md:flex-row gap-y-[50px] gap-x-[50px] max-w-[1093px] mx-auto px-[20px]">
           <div className="shadow-[0_10px_6px_-6px_#777] flex-1 w-full md:w-[481px] h-auto md:h-[283px] bg-black rounded-[6px]">
             <YouTubePlayer
               videoId="bQpFHO7IQlo"
@@ -215,7 +215,7 @@ const Page = () => {
               <span className="underline">costing you?</span>
             </p>
           </div>
-        </div>
+        </div> */}
 
         {/* fourth */}
         {/* <div  className="mt-[50px] md:mt-[122px] max-w-[1093px] mx-auto">
