@@ -25,7 +25,7 @@ const VideoIntro = () => {
           playerHeight={520}
           isBorder={false}
         /> */}
-        <WistiaPlayer />
+        <WistiaPlayer videoId="30ktnx5jkx" />
       </div>
       <div className="flex justify-center mt-[50px] px-[20px]">
         <a
