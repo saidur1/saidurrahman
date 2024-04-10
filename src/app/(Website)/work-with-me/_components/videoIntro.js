@@ -7,7 +7,7 @@ const raleway = Raleway({
   weight: ["300", "400", "500", "600", "700", "800"],
 });
 
-const FirstPage = () => {
+const VideoIntro = () => {
   return (
     <div className="mt-[61px]">
       <h1
@@ -25,7 +25,7 @@ const FirstPage = () => {
           playerHeight={520}
           isBorder={false}
         /> */}
-        <WistiaPlayer />
+        <WistiaPlayer videoId="30ktnx5jkx" />
       </div>
       <div className="flex justify-center mt-[50px] px-[20px]">
         <a
@@ -44,4 +44,4 @@ const FirstPage = () => {
   );
 };
 
-export default FirstPage;
+export default VideoIntro;

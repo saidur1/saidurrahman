@@ -1,7 +1,7 @@
 "use client";
 import { useEffect } from "react";
 
-const WistiaPlayer = () => {
+const WistiaPlayer = ({ videoId }) => {
   useEffect(() => {
     // Ensure the script is loaded only once / test
     const script = document.createElement("script");
@@ -21,7 +21,7 @@ const WistiaPlayer = () => {
         borderRadius: "10px",
         boxShadow: "0 10px 6px -6px #777",
         overflow: "hidden", // To hide the overflow of the swatch image
-        height: "110%",
+        height: "100%",
       }}
     >
       <div
@@ -39,7 +39,7 @@ const WistiaPlayer = () => {
           }}
         >
           <div
-            className="wistia_embed wistia_async_30ktnx5jkx seo=false videoFoam=true"
+            className={`wistia_embed wistia_async_${videoId} seo=false videoFoam=true`}
             style={{ height: "100%", position: "relative", width: "100%" }}
           >
             <div
@@ -56,7 +56,7 @@ const WistiaPlayer = () => {
               }}
             >
               <img
-                src="https://fast.wistia.com/embed/medias/30ktnx5jkx/swatch"
+                src={`https://fast.wistia.com/embed/medias/${videoId}/swatch`}
                 style={{
                   filter: "blur(5px)",
                   height: "100%",
