@@ -7,7 +7,7 @@ const raleway = Raleway({
   weight: ["300", "400", "500", "600", "700", "800"],
 });
 
-const FirstPage = () => {
+const VideoIntro = () => {
   return (
     <div className="mt-[61px]">
       <h1
@@ -44,4 +44,4 @@ const FirstPage = () => {
   );
 };
 
-export default FirstPage;
+export default VideoIntro;

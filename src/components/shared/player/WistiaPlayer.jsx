@@ -1,7 +1,7 @@
 "use client";
 import { useEffect } from "react";
 
-const WistiaPlayer = () => {
+const WistiaPlayer = ({ videoId }) => {
   useEffect(() => {
     // Ensure the script is loaded only once / test
     const script = document.createElement("script");

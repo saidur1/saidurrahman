@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 import { Open_Sans, Raleway } from "next/font/google";
 import SecondPage from "./_components/SecondPage";
 import ThirdPage from "./_components/ThirdPage";
-import FirstPage from "./_components/firstPage";
+import VideoIntro from "./_components/videoIntro";
 
 const raleway = Raleway({
   subsets: ["latin-ext"],
@@ -16,7 +16,7 @@ const openSans = Open_Sans({
 const Page = () => {
   return (
     <div>
-      <FirstPage />
+      <VideoIntro />
       <SecondPage />
       <ThirdPage />
       <div className="relative bg-[#f2e6f3] pb-[122px] pt-[80px]  md:pt-[122px]">
