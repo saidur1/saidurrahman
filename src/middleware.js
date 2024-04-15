@@ -57,7 +57,7 @@ export async function middleware(request) {
     return NextResponse.redirect("https://www.linkedin.com/in/saidurrahmanorg");
   } else if (path === "/z") {
     return NextResponse.redirect(
-      "https://zoom.us/j/4548282153?pwd=bWRpM0o4UlVnTTUwbWYwL2JHSTQwdz09"
+      "https://zoom.us/j/4886266526?pwd=L2ZTdG9QbkU4ZHdDTUs5dFhqT1RoZz09"
     );
   } else if (path === "/c") {
     return NextResponse.redirect("https://calendly.com/saidur/schedule");
