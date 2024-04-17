@@ -3,12 +3,11 @@ import { CookiesProvider } from "next-client-cookies/server";
 import { Inter } from "next/font/google";
 import { ToastContainer } from "react-toastify";
 
-
-
 // Components
 import GoogleAnalytics from "@/utils/GoogleAnalytics";
 
 // CSS
+import LiveChat from "@/components/shared/LiveChat/LiveChat";
 import "react-toastify/dist/ReactToastify.css";
 import "./globals.css";
 
@@ -24,6 +23,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.className}`} suppressHydrationWarning={true}>
+        {/* Live Chat */}
+        <LiveChat />
         {/* Google analytics */}
         <GoogleAnalytics />
         {/* Google analytics */}

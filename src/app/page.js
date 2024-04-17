@@ -27,7 +27,10 @@ export default async function Home() {
         </div>
 
         {/* content 1 */}
-        <div hidden className="max-w-[1170px] mx-auto mt-[85px] md:mt-[110px] px-[20px] ">
+        <div
+          hidden
+          className="max-w-[1170px] mx-auto mt-[85px] md:mt-[110px] px-[20px] "
+        >
           <section className="flex flex-col md:flex-row gap-y-[40px] gap-x-[60px]">
             <div className="flex-1">
               <HomeContent
@@ -50,7 +53,10 @@ export default async function Home() {
         </div>
 
         {/* content 2 */}
-        <div hidden className="max-w-[1170px] mx-auto px-[20px]  mt-[85px] md:mt-[125px]">
+        <div
+          hidden
+          className="max-w-[1170px] mx-auto px-[20px]  mt-[85px] md:mt-[125px]"
+        >
           <section className="flex flex-col md:flex-row gap-y-[40px] gap-x-[60px] ">
             <div className="flex-1">
               <HomeContent
@@ -74,7 +80,10 @@ export default async function Home() {
         </div>
 
         {/* content 3 */}
-        <div hidden className="max-w-[1170px] mx-auto px-[20px] mt-[85px] md:mt-[125px]">
+        <div
+          hidden
+          className="max-w-[1170px] mx-auto px-[20px] mt-[85px] md:mt-[125px]"
+        >
           <section className="flex flex-col md:flex-row gap-y-[40px] gap-x-[60px] ">
             <div className="flex-1">
               <HomeContent
@@ -102,10 +111,15 @@ export default async function Home() {
 
         <section className="mt-[75px] md:mt-[155px] mb-[100px] md:mb-[175px] max-w-[1170px] mx-auto px-[20px]">
           <h1 className="font-raleway text-center text-[20px] md:text-[32px] text-[#2D2D2D] mb-[118px]">
-                  {/* Thanks for reading my story.*/}<br />
+            {/* Thanks for reading my story.*/}
+            <br />
             <span className="font-bold">
               Add Me On linkedIn,{" "}
-              <a href="https://www.linkedin.com/in/saidurrahmanorg" target="_linkedin" className="text-[rgb(26,119,189)]">
+              <a
+                href="https://www.linkedin.com/in/saidurrahmanorg"
+                target="_linkedin"
+                className="text-[rgb(26,119,189)]"
+              >
                 here.
               </a>
             </span>
