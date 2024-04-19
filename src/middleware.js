@@ -4,7 +4,11 @@ import { NextResponse } from "next/server";
 export async function middleware(request) {
   const path = request.nextUrl.pathname;
 
-  if (path === "/fb") {
+  if (path === "/lf") {
+    return NextResponse.redirect(
+      "https://us.bigin.online/org836263977/forms/lead-form"
+    );
+  } else if (path === "/fb") {
     return NextResponse.redirect("https://www.facebook.com/saidurrahmanfb");
   } else if (path === "/li") {
     return NextResponse.redirect("https://www.linkedin.com/in/saidurrahmanorg");
