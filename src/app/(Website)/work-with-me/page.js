@@ -88,8 +88,8 @@ const Page = () => {
             ))}
           </div>
         </div>
-        <div className="w-full mt-[20px] md:mt-0 lg:w-[525px] flex-1">
-          <div className="w-full h-auto md:h-[350px] lg:w-[520px] lg:h-[350px] relative">
+        <div className="w-full mt-[20px] md:mt-0 lg:w-[525px] flex-1 ">
+          <div className="w-full  h-[240px]  md:h-[250px] md:w-auto lg:w-[520px] lg:h-[350px]  relative">
             <Image
               src="https://res.cloudinary.com/dzlrpspps/image/upload/v1711890178/Projects/Saidur/Accountability_Community_with_Saidur_Rahman_x2uwbt.png"
               fill
@@ -105,7 +105,7 @@ const Page = () => {
       <section className="bg-[#f2e6f3]  relative">
         <div className="flex flex-col md:flex-row gap-x-[50px] mt-[50px] md:mt-0 py-[50px] md:pb-0 md:pt-[100px] max-w-[1093px] mx-auto relative px-[20px]">
           <div className="flex-1">
-            <div className="w-full lg:w-[502px] h-[370px] relative">
+            <div className="w-full  h-[340px]  md:h-[350px] md:w-auto lg:w-[520px] lg:h-[350px] relative  flex justify-center items-center">
               <Image
                 src="https://res.cloudinary.com/dzlrpspps/image/upload/v1711890670/Projects/Saidur/Accountability_Community_1_-_Saidur_Rahman_vacwxg.png"
                 fill

@@ -15,7 +15,7 @@ const WistiaPlayer = ({ videoId }) => {
   }, []);
   return (
     <div
-      className="wistia-wrapper pb-2"
+      className="wistia-wrapper pb-[2px] md:pb-2"
       style={{
         border: "3px solid black",
         borderRadius: "10px",
