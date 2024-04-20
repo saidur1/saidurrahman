@@ -15,7 +15,7 @@ const WistiaPlayer = ({ videoId }) => {
   }, []);
   return (
     <div
-      className="wistia-wrapper"
+      className="wistia-wrapper pb-2"
       style={{
         border: "3px solid black",
         borderRadius: "10px",
@@ -59,7 +59,7 @@ const WistiaPlayer = ({ videoId }) => {
                 src={`https://fast.wistia.com/embed/medias/${videoId}/swatch`}
                 style={{
                   filter: "blur(5px)",
-                  height: "100%",
+                  height: "90%",
                   objectFit: "contain",
                   width: "100%",
                 }}
