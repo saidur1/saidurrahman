@@ -1,9 +1,12 @@
+// Packages
+
+// Components
+
+import WistiaPlayer from "@/components/shared/player/WistiaPlayer";
 import YouTubePlayer from "@/components/shared/player/YoutubePlayer";
 import { cn } from "@/lib/utils";
 import { Open_Sans, Raleway } from "next/font/google";
-import SecondPage from "./_components/SecondPage";
-import ThirdPage from "./_components/ThirdPage";
-import VideoIntro from "./_components/videoIntro";
+import Image from "next/image";
 
 const raleway = Raleway({
   subsets: ["latin-ext"],
@@ -14,11 +17,149 @@ const openSans = Open_Sans({
   weight: ["400", "500", "600", "700"],
 });
 const Page = () => {
+  const whyWorkData = [
+    {
+      id: 1,
+      text: "I was struggling to be an entrepreneur, after quitting my 9-5 job.",
+    },
+    {
+      id: 2,
+      text: "To improve my productivity I asked my brother to hold me accountable. Thats how I learned the power of accountability.",
+    },
+    {
+      id: 3,
+      text: "One of my clients from IT services I was offering back then, offered to pay me to hold him accountable. my accountability coaching journey began.",
+    },
+  ];
   return (
     <div>
-      <VideoIntro />
-      <SecondPage />
-      <ThirdPage />
+      {/* video intro */}
+      <div className="mt-[61px]">
+        <h1
+          className={cn(
+            raleway.className,
+            "text-[#2D2D2D] text-[36px] font-bold text-center"
+          )}
+        >
+          Here's how I might be able to help you
+        </h1>
+        <div className="mt-[61px] px-[20px] max-w-[1093px] h-auto mx-auto">
+          {/* pass video id to change a video */}
+          <WistiaPlayer videoId="30ktnx5jkx" />
+        </div>
+        <div className="flex justify-center mt-[50px] px-[20px]">
+          <a
+            href="https://www.saidurrahman.org/schedule"
+            target="_schedule"
+            className="text-white font-semibold text-[36px] bg-[rgb(1,116,199)] hover:shadow-[inset_0px_2px_2px_0_rgba(255,255,255,0.22),_0_233px_233px_0,rgba(255,255,255,0.12)_inset] hover:outline-none border-[1px] border-[rgba(0,0,0,0.2)] rounded-[3px] px-[25px] py-[10px] w-full lg:w-[1093px] text-center hover:bg-[#0c69a8] duration-300 cursor-pointer"
+          >
+            Click Here To Book A Call
+            <p className="text-[12px] md:text-[12px] font-normal text-white/50">
+              Please Do Not Book A Call Until You Have Watched The Above Video
+              in-Full
+            </p>
+          </a>
+        </div>
+      </div>
+
+      {/* why work with saidur section */}
+      <div className=" my-[100px] max-w-[1093px] mx-auto h-auto w-full z-40 text-black flex flex-col md:flex-row gap-x-[50px] px-[20px]">
+        <div className="flex-1 ">
+          <h1 className="text-[#2F2F2F] text-[26px] md:text-[36px] font-normal border-b-[1px] text-center">
+            Why{" "}
+            <span
+              className="font-semibold
+              "
+            >
+              Work With Saidur?
+            </span>
+          </h1>
+          <div className="space-y-[21px] md:space-y-[41px] mt-[41px] flex-1">
+            {whyWorkData.map(({ id, text }) => (
+              <p
+                className={cn(
+                  raleway.className,
+                  "text-center font-normal text-[16px] text-[#2F2F2F]"
+                )}
+                key={id}
+              >
+                {text}
+              </p>
+            ))}
+          </div>
+        </div>
+        <div className="w-full mt-[20px] md:mt-0 lg:w-[525px] flex-1">
+          <div className="w-full h-auto md:h-[350px] lg:w-[520px] lg:h-[350px] relative">
+            <Image
+              src="https://res.cloudinary.com/dzlrpspps/image/upload/v1711890178/Projects/Saidur/Accountability_Community_with_Saidur_Rahman_x2uwbt.png"
+              fill
+              alt="Saidur Rahman Accountability Coach To 
+            Entrepreneurs"
+              className="border-black border-[2px] object-contain"
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* Introduce work history */}
+      <section className="bg-[#f2e6f3]  relative">
+        <div className="flex flex-col md:flex-row gap-x-[50px] mt-[50px] md:mt-0 py-[50px] md:pb-0 md:pt-[100px] max-w-[1093px] mx-auto relative px-[20px]">
+          <div className="flex-1">
+            <div className="w-full lg:w-[502px] h-[370px] relative">
+              <Image
+                src="https://res.cloudinary.com/dzlrpspps/image/upload/v1711890670/Projects/Saidur/Accountability_Community_1_-_Saidur_Rahman_vacwxg.png"
+                fill
+                alt="Saidur Rahman Accountability Coach 
+              to Entrepreneurs 1"
+                className="border-black border-[2px] object-contain"
+              />
+            </div>
+          </div>
+          <div className="space-y-[22px] md:space-y-[32px] flex-1 mt-[50px] md:mt-0">
+            <p
+              className={cn(
+                raleway.className,
+                "text-center font-normal text-[16px] text-[#2F2F2F]"
+              )}
+            >
+              I have worked with entrepreneurs, students from UC Berkeley,
+              Georgia Tech, Harvard University PHD, and employees from Google,
+              Amazon, and Microsoft.
+            </p>
+            <p
+              className={cn(
+                raleway.className,
+                "text-center font-normal text-[16px] text-[#2F2F2F]"
+              )}
+            >
+              Within my accountability coaching I have worked with 160+ clients,
+              from 15+ countries. I was also traveled different countries while
+              I was working online.
+            </p>
+            <p
+              className={cn(
+                raleway.className,
+                "text-center font-normal text-[16px] text-[#2F2F2F]"
+              )}
+            >
+              Now I am focused on helping entrepreneurs to improve their
+              productivity with my accountability coaching skills.
+            </p>
+            <a
+              href="https://www.saidurrahman.org/schedule"
+              target="_schedule"
+              className="text-white font-semibold text-[26px] bg-[rgb(1,116,199)] hover:shadow-[inset_0px_2px_2px_0_rgba(255,255,255,0.22),_0_233px_233px_0,rgba(255,255,255,0.12)_inset] hover:outline-none border-[1px] border-[rgba(0,0,0,0.2)] rounded-[3px] px-[25px] py-[10px] duration-300 w-full text-center hover:bg-[#0c69a8] flex flex-col items-center"
+            >
+              Click Here To Book A Call
+              <span className="text-[10px] font-normal text-white/50">
+                Please Do Not Book A Call Until You Have Watched The Above Video
+                in-Full
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+
       <div className="relative bg-[#f2e6f3] pb-[122px] pt-[80px]  md:pt-[122px]">
         {/* first */}
         <div className=" max-w-[1093px] mx-auto px-[20px] md:px-0">
