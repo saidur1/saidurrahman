@@ -1,5 +1,5 @@
 "use client";
-import CallBookHeading from "@/components/Fonts/CallBookHeading";
+import CallBookHeading from "@/components/shared/CallBookHeading";
 import { InlineWidget } from "react-calendly";
 import { FooterAction } from "../work-with-me/page";
 
