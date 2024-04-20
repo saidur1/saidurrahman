@@ -1,5 +1,4 @@
 import WebWrapper from "@/components/shared/WebWrapper/WebWrapper";
-import { getToday } from "@/lib/today";
 import { cn } from "@/lib/utils";
 import { Raleway } from "next/font/google";
 
@@ -45,7 +44,7 @@ const Page = () => {
     <WebWrapper>
       <div className="pb-[100px] px-[20px]">
         <p className="text-[12px] text-center text-[rgb(136,136,136)] mt-[80px]">
-          {getToday()}
+          Tuesday 20th June, 2023
         </p>
         <h1
           className={cn(
@@ -79,20 +78,23 @@ const Page = () => {
           can significantly contribute to the growth and success of their
           businesses.
         </p>
-            
       </div>
-              <section className="mt-[75px] md:mt-[155px] mb-[100px] md:mb-[175px] max-w-[1170px] mx-auto px-[20px]">
-          <h1 className="font-raleway text-center text-[20px] md:text-[32px] text-[#2D2D2D] mb-[118px]">
-            Thanks for reading my blog. <br />
-            <span className="font-bold">
-              Add Me On linkedIn,{" "}
-              <a href="https://www.linkedin.com/in/saidurrahmanorg" target="_linkedin" className="text-[rgb(26,119,189)]">
-                here.
-              </a>
-            </span>
-          </h1>
-          <div className="hidden md:block bg-[rgba(45,45,45,1)] h-[1px] w-full"></div>
-        </section>
+      <section className="mt-[75px] md:mt-[155px] mb-[100px] md:mb-[175px] max-w-[1170px] mx-auto px-[20px]">
+        <h1 className="font-raleway text-center text-[20px] md:text-[32px] text-[#2D2D2D] mb-[118px]">
+          Thanks for reading my blog. <br />
+          <span className="font-bold">
+            Add Me On linkedIn,{" "}
+            <a
+              href="https://www.linkedin.com/in/saidurrahmanorg"
+              target="_linkedin"
+              className="text-[rgb(26,119,189)]"
+            >
+              here.
+            </a>
+          </span>
+        </h1>
+        <div className="hidden md:block bg-[rgba(45,45,45,1)] h-[1px] w-full"></div>
+      </section>
     </WebWrapper>
   );
 };
