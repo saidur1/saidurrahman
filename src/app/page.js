@@ -1,8 +1,10 @@
+//Packages
+import Image from "next/image";
+
 // Components
 import HomeContent from "@/components/content/HomeContent";
 import Intro from "@/components/content/Intro";
 import WebWrapper from "@/components/shared/WebWrapper/WebWrapper";
-import Image from "next/image";
 
 export default async function Home() {
   return (
