@@ -122,7 +122,7 @@ export default async function Home() {
                 target="_linkedin"
                 className="text-[rgb(26,119,189)]"
               >
-                here.
+                here
               </a>
             </span>
           </h1>
