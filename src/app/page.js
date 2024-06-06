@@ -116,10 +116,10 @@ export default async function Home() {
             {/* Thanks for reading my story.*/}
             <br />
             <span className="font-bold">
-              Add Me On linkedIn,{" "}
+              Add Me On Instagram,{" "}
               <a
-                href="https://www.linkedin.com/in/saidurrahmanorg"
-                target="_linkedin"
+                href="https://www.instagram.com/saidurrahmanorg/"
+                target="-instagram"
                 className="text-[rgb(26,119,189)]"
               >
                 here

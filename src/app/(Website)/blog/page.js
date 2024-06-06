@@ -83,10 +83,10 @@ const Page = () => {
         <h1 className="font-raleway text-center text-[20px] md:text-[32px] text-[#2D2D2D] mb-[118px]">
           Thanks for reading my blog. <br />
           <span className="font-bold">
-            Add Me On linkedIn,{" "}
+            Add Me On Instagram,{" "}
             <a
-              href="https://www.linkedin.com/in/saidurrahmanorg"
-              target="_linkedin"
+              href="https://www.instagram.com/saidurrahmanorg/"
+              target="_instagram"
               className="text-[rgb(26,119,189)]"
             >
               here.

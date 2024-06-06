@@ -11,7 +11,7 @@ export async function middleware(request) {
   } else if (path === "/fb") {
     return NextResponse.redirect("https://www.facebook.com/saidurrahmanfb");
   } else if (path === "/li") {
-    return NextResponse.redirect("https://www.linkedin.com/in/saidurrahmanorg");
+    return NextResponse.redirect("https://www.instagram.com/saidurrahmanorg/");
   } else if (path === "/z") {
     return NextResponse.redirect(
       "https://zoom.us/j/4886266526?pwd=L2ZTdG9QbkU4ZHdDTUs5dFhqT1RoZz09"

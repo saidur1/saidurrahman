@@ -467,9 +467,9 @@ export const FooterAction = () => {
       )}
     >
       <span className="font-bold">Have Questions?</span> No problem. <br /> Add
-      Me On Linkedin{" "}
+      Me On Instagram{" "}
       <a
-        href="https://www.linkedin.com/in/saidurrahmanorg"
+        href="https://www.instagram.com/saidurrahmanorg/"
         target="whatsapp"
         className="text-[#1A77BD] hover:underline font-bold"
       >
