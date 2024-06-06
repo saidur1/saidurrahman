@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${inter.className}`} suppressHydrationWarning={true}>
         {/* Live Chat */}
-        <LiveChat />
+        {/* <LiveChat /> */}
         {/* Google analytics */}
         <GoogleAnalytics />
         {/* Google analytics */}
