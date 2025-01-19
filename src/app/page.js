@@ -7,7 +7,7 @@ import Intro from "@/components/content/Intro";
 import WebWrapper from "@/components/shared/WebWrapper/WebWrapper";
 
 export default async function Home() {
-    redirect('/schedule'); /// remove this link to get website back
+  
   
   return (
     <>
