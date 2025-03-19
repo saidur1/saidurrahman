@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
         {/* Live Chat */}
         {/* <LiveChat /> */}
         {/* Google analytics */}
-        <GoogleAnalytics />
+
         {/* Google analytics */}
         <ToastContainer />
         <CookiesProvider>{children}</CookiesProvider>
